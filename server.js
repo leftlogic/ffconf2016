@@ -17,7 +17,8 @@ global.idify = s => {
 // compiled, this is the cleanest solution.
 global.moment = moment;
 
-if (process.env.NODE_ENV !== 'production') {
+// FIXME just run in express for now
+if (true || process.env.NODE_ENV !== 'production') {
   // Yeah...don't ask.
   var config = require('./harp.json');
   Object.keys(config.globals).forEach(function (key) {
