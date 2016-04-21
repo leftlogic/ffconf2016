@@ -1,0 +1,24 @@
+doctype html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"
+html#remysharp-com
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    title= title || site_title
+    - var desc = title === site_Xtitle ? title + ' :: ' + site_description : title || site_description
+    meta(name="description" content="#{desc}")
+    meta(name="HandheldFriendly" content="True")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="theme-color" content="#1A1A1A")
+
+    block meta
+
+    link(rel="icon" sizes="192x192" href="/images/avatar-favicon.png")
+    link(rel="manifest" href="/manifest.json")
+    link(rel="shortcut icon" href="/favicon.ico")
+    link(rel="stylesheet" type="text/css" href="/css/base.css?#{version}")
+  body(id="#{current.path.join('-')}-page")
+
+    block content
+
+    //- footer
+    //-   p Footer
