@@ -1,0 +1,18 @@
+/* TEAM */
+
+Art Direction by Remy Sharp - @rem
+
+Development by Remy Sharp & Giulia Alfonsi - @rem & @electric_g
+
+Design by Chris Mahon - @chrismahon
+
+
+/* SITE */
+
+Handcrafted JavaScript, HTML5, SVG and CSS3
+
+Built on Node.js, Harp, Jade and SASS
+
+Running on Heroku
+
+See how it's all put together on GitHub: https://github.com/leftlogic/ffconf2016

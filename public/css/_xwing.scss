@@ -1,0 +1,139 @@
+/* X-Wing
+   ========================================================================== */
+// @import "fixedsticky";
+$svgwidth: 1150px;
+$svgheight: 349px;
+
+.masthead { // this selector is here because it depends on the presence of the xwing
+  &.phase-0 {
+    margin-bottom: $svgheight;
+    margin-bottom: calc(100vh - #{$svgheight});
+  }
+
+  .no-svg & {
+    margin-bottom: 0;
+  }
+}
+
+#countdown {
+  background: black;
+  font-family: 'OCR-A';
+  bottom: 20px;
+  left: 50%;
+  margin-left: -100px;
+  position: absolute;
+  pointer-events: all;
+}
+
+.flash {
+  animation: flash 100ms steps(1) forwards infinite;
+  background: #000;
+}
+
+@-webkit-keyframes flash {
+  /* from {
+    background: #000;
+  } */
+  50% {
+    background: #f00;
+  }
+}
+
+
+.xwing-wrapper {
+  // overflow: hidden;
+  width: 100%;
+  bottom: 0;
+  // never the target of mouse events
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events
+  pointer-events: none;
+  position: fixed;
+  // transform: translateZ(0);
+
+  svg {
+    bottom: 0;
+    display: block;
+    left: calc((100% - #{$svgwidth}) / 2);
+    position: relative;
+    width: #{$svgwidth};
+
+    * {
+      pointer-events: all;
+    }
+    #xwing-link {
+      rect {
+        stroke: $c-grey-title;
+      }
+      text {
+        fill: $c-grey-title;
+        font-size: 30px;
+        stroke: none;
+      }
+      // tspan {
+      //   font-size: 0;
+      // }
+      a {
+        rect {
+          stroke: $c-yellow;
+        }
+        text {
+          fill: $c-yellow;
+        }
+      }
+      a:hover, a:focus {
+        rect {
+          fill: $c-yellow;
+        }
+        text {
+          fill: $c-grey-title;
+        }
+      }
+    }
+  }
+
+  .no-svg & {
+    display: none;
+  }
+}
+
+@include mq-min-check(320px) {
+  // $svgwidth: 1150px;
+  // .xwing-wrapper svg {
+  //   left: calc((100% - #{$svgwidth}) / 2);
+  //   width: #{$svgwidth};
+  // }
+}
+
+@include mq-min-check(1000px) {
+  .xwing-wrapper {
+    &:before, &:after {
+      background: linear-gradient(to right, #000 0%, rgba(0, 0, 0, 0) 100%);
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 100%;
+      left: calc(50% - #{$svgwidth / 2});
+      position: absolute;
+      top: 0;
+      width: 100px;
+      z-index: 1;
+    }
+    &:after {
+      background: linear-gradient(to left, #000 0%, rgba(0, 0, 0, 0) 100%) no-repeat;
+      left: auto;
+      right: calc(50% - #{$svgwidth / 2});
+    }
+  }
+}
+
+
+// .xwing-btn2 {
+//   -webkit-transform-origin: 50% 50%;
+//           transform-origin: 50% 50%;
+//   -webkit-transition: all 1s;
+//           transition: all 1s;
+// }
+// .xwing-btn2-rotate {
+//   -webkit-transform: rotate(45deg);
+//           transform: rotate(45deg);
+// }

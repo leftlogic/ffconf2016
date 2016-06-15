@@ -1,0 +1,89 @@
+@mixin font-face($name, $url, $weight: normal, $style: normal, $original: $name) {
+  @font-face {
+    /*font-family: '#{$original}';*/
+    font-family: $name;
+    src: url('#{$url}.eot');
+    src: url('#{$url}.eot?#iefix') format('embedded-opentype'),
+       url('#{$url}.woff2') format('woff2'),
+       url('#{$url}.woff') format('woff'),
+       url('#{$url}.ttf') format('truetype'),
+       url('#{$url}.svg##{$original}') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+// Clearfix method to clear floats
+@mixin clearfix {
+  &:before, &:after { content: ""; display: table; }
+  &:after { clear: both; }
+  //*zoom: 1;// for IE6/7 only
+}
+%clearfix {
+  @include clearfix;
+}
+
+@mixin box-sizing ($val) {
+  @each $prefix in -webkit-, -moz-, '' {
+  #{$prefix}box-sizing: $val;
+  }
+}
+
+
+// =============================================================================
+// Media queries
+// =============================================================================
+
+// Media queries min-width
+// @param number $width min-width
+// @param number $ratio device pixel ratio
+@mixin mq-min ($width, $ratio: 1) {
+  @if $ratio > 1 {
+    @if $width > 0 {
+      @include mq-comment($width, $ratio);
+      @media all and (min-width: $width) and (-webkit-min-device-pixel-ratio: $ratio),
+           all and (min-width: $width) and (min-resolution: #{$ratio * 96}dpi) {
+        @content;
+      }
+    }
+    @else {
+      @include mq-comment($width, $ratio);
+      @media (-webkit-min-device-pixel-ratio: $ratio),
+           (min-resolution: #{$ratio * 96}dpi) {
+        @content;
+      }
+    }
+  }
+  @else {
+    @include mq-comment($width, $ratio);
+    @media all and (min-width: $width) {
+      @content;
+    }
+  }
+}
+
+$fix-mqs: false !default;
+
+// Media queries min-width conditional: print mq for normal css and print its
+// content for non mq css only if its width is >= of the non mq layout
+// http://jakearchibald.github.com/sass-ie/
+// @param number $width min-width
+// @param number $ratio device pixel ratio
+@mixin mq-min-check ($width, $ratio: 1) {
+  @if $fix-mqs {
+    @if $fix-mqs >= $width and $ratio == 1 {
+        @content;
+    }
+  }
+  @else {
+    @include mq-min($width, $ratio) {
+      @content;
+    }
+  }
+}
+
+// Creates comment header for media queries
+@mixin mq-comment ($width, $ratio) {
+/* #{$width} #{$ratio}x
+   ========================================================================== */
+}

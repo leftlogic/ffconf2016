@@ -1,6 +1,10 @@
 ffconf2015
 ===============
 
+### TODO
+
+* Service worker?
+
 ##### How to disable minified code while developing the website
 
 In `node_modules/terraform/lib/stylesheet/processors/scss.js` change `outputStyle: 'compressed'` to `outputStyle: 'expanded'`.

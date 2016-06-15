@@ -1,0 +1,75 @@
+- var menu = ['sessions', 'workshops', 'diversity-statement', 'locations', 'sponsors']
+- var text = {}
+- text.location = 'Brighton UK'
+- text.date = completeDate.format('MMM Do YYYY')
+- text.datetime = completeDate.format('YYYY-MM-DDTHH:mm')
+
+- var line = 'Tickets @ £160+VAT will be sold on the 15th and 22nd July at 11am BST.'
+- var button = ''
+- var buy = true
+- var buttonLink = false
+
+if config.phase == 1
+  if config.soldout.conference
+    if config.soldout.workshops
+      - line = 'Tickets for this phase sold out. More go on sale 22nd July.'
+      - button = 'Sold Out'
+      - buy = false
+    else
+      - line = 'Workshop (+conf pass) tickets available now. Next batch on sale 22nd July.'
+      - button = 'Buy Tickets'
+      - buy = true
+  else
+    - line = 'Conference & workshop (+conf pass) tickets available to buy!'
+    - button = 'Buy Tickets'
+    - buy = true
+if config.phase >= 2 && config.phase < 4
+  if config.soldout.conference
+    if config.soldout.workshops
+      - line = 'All tickets for this years\' conference have been sold.'
+      - button = 'Sold Out'
+      - buy = false
+    else
+      - line = 'Workshop (+conf pass) available to buy. Last few remaining.'
+      - button = 'Buy Tickets'
+      - buy = true
+  else
+    - line = 'Conference & workshop (+conf pass) available now. Last chance batch.'
+    - button = 'Buy Tickets'
+    - buy = true
+if config.phase == 4
+    - line = ''
+    - buttonLink = 'https://www.youtube.com/playlist?list=PLXmT1r4krsTqrwW2jjXIXuCtFQ-5BIn-s'
+    - button = 'Watch Now'
+    - buy = false
+
+
+header.masthead(role='banner', class='phase-'+config.phase)
+  if line != ''
+    p.tickets-lines= line
+
+  div.logo-wrapper
+    svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 282 260.667')
+      desc
+        h1.logo(role='heading', aria-level='1')
+          span ffconf 2016
+      path(stroke-miterlimit='10', d='M61 1v20.01l-20-.01v20h-20v20h-20v198.667h220v-20h20v-20h20v-19.667h20v-199h-220zm160 76h-30v26.667h30v33.333h-30v80h-30v-80h-50v80h-30.731l-.003-80h-19.266v-33h20v-60.333h60v33.333h-30v26.667h50v-60h60v33.333z', fill='none', shape-rendering='crispEdges', stroke-width='3')
+
+  time.dtstart(title=text.datetime, datetime=text.datetime)= text.date
+  = "\n"
+  span.dtlocation= text.location
+
+  if config.phase >= 1
+    nav.nav-main(role='navigation')
+      each item in menu
+        a(href='#' + item)=capitalize(item)
+        = "\n"
+
+  div.tickets-wrapper
+    if button != ''
+      if buy
+        a.tickets-button(href=ticketUrl, target='_blank')!= button
+      else if buttonLink
+        a.tickets-button(href=buttonLink, target='_blank')!= button
+      else
+        span.tickets-button!= button

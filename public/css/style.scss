@@ -1,0 +1,397 @@
+@charset "UTF-8";
+
+@import "var";
+@import "mixin";
+
+// @include font-face('OCR-A', "http://media.ffconf.org/fonts/OCR-A");
+// @include font-face('Steelfish', "http://media.ffconf.org/fonts/steelfish_rg");
+
+*, *:after, *:before {
+  @include box-sizing(border-box);
+}
+body {
+  background: $c-black;
+  color: $c-text-normal;
+  font: 17px/1.75 'OCR-A', monospace;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+/* Typography
+   ========================================================================== */
+a {
+  text-decoration: none;
+
+  &:link, &:visited {
+    color: $c-yellow;
+  }
+  &:hover, &:focus, &:active {
+    color: $c-white;
+  }
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, strong {
+  font-size: inherit;
+  font-weight: normal;
+  margin: 0;
+}
+em {
+  font-style: normal;
+}
+h2, h3 {
+  color: $c-white;
+}
+.section-title {
+  font-size: 32px;
+  line-height: 1;
+  margin: 0 0 90px;
+  padding-top: 22px;
+  text-align: center;
+
+  .main-sponsors & {
+    font-size: 60px;
+    letter-spacing: 4px;
+    margin-top: 52px;
+  }
+}
+.sponsor-title {
+  color: $c-grey-title;
+  font-size: 30px;
+  letter-spacing: 4px;
+  line-height: 1;
+  margin: 10px 0 30px;
+}
+.dtstart,
+.dtlocation,
+.session-time,
+.workshop-time,
+.workshop-list h4,
+.location-description {
+  color: $c-blue;
+}
+.session-content p,
+.workshop-content,
+.workshop-list {
+  text-transform: none;
+}
+.workshop-content-extended {
+  padding-top: 1em;
+
+  p {
+    margin: 1em 0;
+  }
+}
+.workshop-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  h4 {
+    margin: 1em 0 0;
+  }
+}
+.tbc {
+  color: $c-grey-title;
+}
+.more-sessions {
+}
+.wrapper-bottom {
+  background: $c-grey-bg;
+  // box-shadow: 0 0 20px 10px rgba(0,0,0,.5);
+  font-family: Steelfish, Verdana;
+  font-size: 20px;
+  letter-spacing: 2px;
+  position: relative;
+  text-align: center;
+}
+
+
+/* Grid
+   ========================================================================== */
+.masthead,
+.main,
+.footer {
+  margin: 0 auto;
+  max-width: 1002px;
+  padding: 6.25%;
+}
+
+
+/* Header
+   ========================================================================== */
+.masthead {
+  text-align: center;
+}
+.nav-main {
+  margin: 56px auto 24px;
+  max-width: 480px;
+
+  a {
+    display: block;
+    padding: 10px 0;
+
+    &:hover, &:focus, &:active {
+    }
+  }
+}
+.logo-wrapper {
+  margin: 24px auto 36px;
+  max-width: 280px;
+  width: 58%;
+  -webkit-transform: perspective(262px) rotateX(45deg);
+          transform: perspective(262px) rotateX(45deg);
+
+  .i-hate-safari & {
+    -webkit-transform: none;
+            transform: none;
+  }
+
+  svg {
+    stroke: $c-yellow;
+  }
+}
+.no-svg .logo-wrapper {
+  height: 386px;
+  max-width: none;
+  width: 418px;
+}
+.logo {
+  margin: 40px auto;
+  // max-width: 306px;
+  // width: 50%;
+
+  span {
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    // background-size: 100% 100%;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding: 100% 0 0;
+    text-indent: -200%;
+  }
+}
+.dtstart,
+.dtlocation {
+  display: block;
+  margin: 20px 0;
+}
+.tickets-button {
+  border: 2px solid $c-grey-title;
+  border-radius: 10px;
+  color: $c-grey-title;
+  display: none;
+  padding: 1em;
+
+  .no-svg & {
+    display: inline;
+  }
+}
+a.tickets-button {
+  border-color: $c-yellow;
+  color: $c-yellow;
+
+  &:hover, &:focus, &:active {
+    background: $c-yellow;
+    color: $c-grey-title;
+  }
+}
+
+
+/* Sections
+   ========================================================================== */
+.sub-hr {
+  border-top: 1px solid $c-grey-divider;
+  padding-top: 20px;
+
+  &:first-of-type {
+    border-top: 0 none;
+  }
+}
+
+.sessions-wrapper {
+  // clear: both;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.session-wrapper,
+.workshop-wrapper,
+.monty {
+  padding-bottom: 20px;
+}
+
+/* Non Speaker Session
+   ========================================================================== */
+
+
+/* Speaker Session
+   ========================================================================== */
+.session-speaker-img-wrapper {
+  display: none;
+}
+// .session-speaker-img {
+//   background-position: 50% 50%;
+//   background-size: cover;
+//   height: 87px;
+//   margin-right: 12px; // 24px
+//   margin-top: 9px;
+//   width: 87px;
+
+//   & img {
+//     visibility: hidden;
+//   }
+// }
+.session-content {
+  // clear: both;
+  padding-top: 25px;
+
+  .session-style-titles & {
+    padding-top: 12px;
+  }
+}
+.session-links {
+  margin-top: 20px;
+
+  a {
+    display: block;
+    line-height: 2.5;
+  }
+}
+
+/* Workshops
+   ========================================================================== */
+.workshop-content-wrapper,
+.workshop-list {
+  margin-top: 25px;
+}
+
+
+/* Locations
+   ========================================================================== */
+.locations {
+  &, & ul {
+    // clear: both;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+.location-title {
+  margin-bottom: 25px;
+}
+.location {
+  margin-bottom: 20px; //30px
+
+  p {
+    margin: 0;
+  }
+}
+
+
+/* Sponsors
+   ========================================================================== */
+.main-sponsors {
+}
+.sponsor {
+  background: $c-white;
+  border-radius: 5px;
+  height: 50vw;
+  margin: 20px auto;
+  max-width: 280px;
+  width: 100%; // this is for IE
+
+  a {
+    display: block;
+    height: 100%;
+    padding: 10px;
+    width: 100%;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  img {
+    border: 0 none; // IE fix
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+}
+.sponsor-title {
+  // margin-bottom: 36px;
+}
+
+
+/* Footer
+   ========================================================================== */
+.footer {
+  padding-bottom: 30px;
+  padding-top: 22px;
+}
+.blurb,
+.codeofconduct {
+  margin: 0 auto;
+  max-width: 580px;
+}
+#left-logic {
+  // height: 23px;
+  margin: 30% auto;
+  width: 65%;
+
+  object {
+    display: block;
+  }
+}
+.left-logic {
+  display: none;
+}
+.no-svg .left-logic {
+  background-image: url(../images/left-logic.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 113px 23px;
+  border-bottom: 0 none;
+  overflow: hidden;
+  display: block;
+  text-indent: -200%;
+  height: 91px;
+  margin: 0 auto;
+  width: 414px;
+}
+
+
+/* Starfield
+   ========================================================================== */
+.fullscreen {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+.page-wrapper {
+  position: relative;
+  z-index: 1;
+  // Momentum Scrolling on iOS Overflow Elements
+  // https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/
+  -webkit-overflow-scrolling: touch;
+}
+
+.diversity p {
+  margin: 28px 0;
+
+  &:last-child {
+    margin-bottom: 88px; //30px
+  }
+}
+
+@import "mq";
+@import "xwing";

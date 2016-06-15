@@ -1,0 +1,245 @@
+/* Mediaqueries
+   ========================================================================== */
+@include mq-min-check(320px) {
+  .masthead,
+  .xwing {
+    will-change: transform;
+  }
+
+  .xwing-wrapper {
+    transform: scale(0.75) translateY(60px)
+  }
+
+  .masthead,
+  .main,
+  .footer {
+    padding: 20px;
+  }
+  .session-links {
+    a {
+      display: inline;
+
+      &:before {
+        color: $c-blue;
+        content: "/";
+        padding: 0 .5em;
+      }
+
+      &:first-child {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+  .sponsor-1st {
+    max-height: 180px;
+  }
+  .sponsor-2nd {
+    height: 120px;
+    max-width: 190px;
+  }
+  .sponsor-3rd {
+    height: 80px;
+    max-width: 127px;
+  }
+  #left-logic {
+    height: 46px;
+    margin: 90px auto;
+    width: 210px;
+  }
+  .left-logic {
+    // background-size: 100%;
+    // height: 46px;
+  }
+}
+
+
+@include mq-min-check(640px) {
+  .xwing-wrapper {
+    transform: scale(1) translateY(0);
+  }
+  .masthead,
+  .main,
+  .footer {
+    padding: 30px;
+  }
+  .dtstart,
+  .dtlocation,
+  .nav-main,
+  .tickets-button {
+    font-size: 30px;
+  }
+  .section-title {
+    font-size: 60px;
+  }
+  .break {
+    @include clearfix;
+  }
+  .session-header {
+    @include clearfix;
+  }
+  .session-content {
+    display: table;
+    width: 100%
+  }
+  .session-links {
+    display: table-caption;
+    margin-top: -35px;
+    text-align: right;
+  }
+  .schedule-title,
+  .session-speaker-name {
+    // clear: left;
+    float: left;
+  }
+  .session-time,
+  .location-description {
+    float: right;
+  }
+  .locations ul {
+    margin-bottom: 20px;
+  }
+  .location {
+    margin-bottom: 0;
+  }
+}
+
+
+@include mq-min-check(768px) {
+  .masthead,
+  .main,
+  .footer {
+    padding: 20px;
+  }
+  .session-title,
+  .workshop-title,
+  .location-title {
+    font-size: 30px;
+  }
+
+
+  .session-speaker-img-wrapper {
+    display: block;
+  }
+  .session-speaker-img {
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 250px;
+    margin: 10px 40px 20px 0;
+    width: 127px;
+  }
+  .session-content {
+    padding-top: 40px;
+
+    .session-style-titles & {
+      padding-bottom: 17px;
+      padding-top: 0;
+    }
+  }
+  .session-wrapper {
+    // display: table;
+    // width: 100%;
+  }
+  .session-speaker-img-wrapper,
+  .session-about-wrapper {
+    display: table-cell;
+    vertical-align: top;
+    width: 100%
+  }
+  .session-speaker-img-wrapper {
+    width: 167px;
+  }
+  .session-header {
+    // float: left;
+    margin-top: 17px;
+  }
+
+
+  .workshop-time {
+    display: inline;
+    padding-left: 0.5em;
+  }
+  .workshop-content-wrapper {
+    @include clearfix;
+    margin-bottom: 66px;
+    // margin-top: 66px;
+  }
+  .workshop-content {
+    float: left;
+    width: 65.28%;
+    width: calc((100% - (40px * 5)) / 6 * 4 + (40px * 3));
+  }
+  .workshop-list {
+    float: right;
+    margin-top: 0;
+    width: 30.56%;
+    width: calc((100% - (40px * 5)) / 6 * 2 + 40px);
+
+    li:first-child h4 {
+      margin-top: 0;
+    }
+  }
+
+  .locations {
+    font-size: 0;
+    text-align: center;
+
+    & > li {
+      display: inline-block;
+      font-size: 17px;
+      margin-left: 40px;
+      vertical-align: top;
+      width: calc((100% - (40px * 2)) / 3);
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    .sub-hr {
+      border-top: 0 none;
+      padding-top: 0;
+    }
+  }
+  .location {
+    margin-bottom: 25px;
+  }
+  .location-description {
+    float: none;
+    margin-top: 6px;
+  }
+
+  .sponsors-wrapper {
+    font-size: 0;
+  }
+  .sponsor {
+    display: inline-block;
+    margin: 0 0 0 40px;
+    max-width: 100%;
+    vertical-align: middle;
+    width: calc((100% - (40px * 5)) / 3 + 40px);
+
+    &:first-child {
+      margin-left: 0;
+    }
+    a {
+      border: 0 none;
+    }
+  }
+  .sponsor-2nd {
+    width: calc((100% - (40px * 7)) / 4);
+  }
+  .sponsor-3rd {
+    width: calc((100% - (40px * 5)) / 6);
+  }
+
+  .blurb,
+  .codeofconduct {
+    max-width: 628px;
+  }
+}
+
+
+@include mq-min-check(1024px) {
+
+}

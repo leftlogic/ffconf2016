@@ -1,0 +1,397 @@
+{
+  "locations": [
+    {
+      "type": "Venues",
+      "location": [
+        {
+          "name": "Duke of Yorks",
+          "detail": "Conference",
+          "url": "http://www.picturehouses.co.uk/cinema/Duke_Of_Yorks/"
+        },
+        {
+          "name": "Lighthouse",
+          "detail": "Workshops",
+          "url": "http://goo.gl/maps/GTYX"
+        },
+        {
+          "name": "The Fountainhead",
+          "detail": "Pre Party",
+          "url": "http://goo.gl/maps/6FH8"
+        },
+        {
+          "name": "TBA",
+          "detail": "After Party",
+          ":url": "http://goo.gl/maps/xe61"
+        }
+      ]
+    },
+    {
+      "type": "Hotels",
+      "location": [
+        {
+          "name": "Jury's Inn",
+          "url": "http://brightonhotels.jurysinns.com/",
+          "detail": "from £64",
+          "extra": "next to Train station & close to venue",
+          ":extra-discount": "quote \"Left Logic\" for the discount"
+        },
+        {
+          "name": "Travellodge",
+          "url": "http://www.travelodge.co.uk/hotels/18/Brighton-hotel",
+          "detail": "from £28"
+        },
+        {
+          "name": "My Hotel",
+          "url": "http://www.myhotels.com/my-hotel-brighton/index.html",
+          "detail": "from £90",
+          "extra": "standard and superior respectively"
+        },
+        {
+          "name": "Old Ship Hotel",
+          "url": "http://www.thehotelcollection.co.uk/hotels/old-ship-brighton-hotel/",
+          "detail": "from £82",
+          "extra": "close to after party venue"
+        }
+      ]
+    },
+    {
+      "type": "Food/Drink",
+      "location": [
+        {"name": "Bardsley's", "detail": "fish 'n chips", "url": "http://www.bardsleys-fishandchips.co.uk/map"},
+        {"name": "The Open House", "detail": "good pub food", "url": "http://goo.gl/maps/eZPV8"},
+        {"name": "The Joker", "detail": "wings & salt beef", "url": "http://goo.gl/VNUwb"},
+        {"name": "La Choza", "detail": "mexican street food", "url": "http://www.hareandhoundsbrighton.com/"}
+      ]
+    }
+  ],
+  "sponsors": {
+    "1st": {
+      "title": "platinum",
+      "list": [
+        {
+          "name": "Google Chrome",
+          "url": "https://developers.google.com/live/chrome/",
+          "img": "chrome.png"
+        },
+        {
+          "name": "uSwitch",
+          "url": "http://ustyle.guide",
+          "img": "uswitch.png"
+        }
+      ]
+    },
+    "2nd": {
+      "title": "gold",
+      "list": [
+        {
+          "name": "brandwatch",
+          "url": "https://www.brandwatch.com/",
+          "img": "brandwatch.png"
+        },
+        {
+          "name": "Unruly",
+          "url": "http://tech.unruly.co",
+          "img": "unruly.png"
+        },
+        {
+          "name": "Microsoft Edge",
+          "url": "http://dev.modern.ie",
+          "img": "edge-logo-clipped.svg"
+        },
+        {
+          "name": "Lyst",
+          "url": "http://developers.lyst.com",
+          "img": "lyst.png"
+        }
+      ]
+    },
+    "3rd": {
+      "title": "silver",
+      "list": [
+        {
+          "name": "Confwall",
+          "url": "https://confwall.com/?utm_source=ff2015-site&utm_medium=sponsor&utm_campaign=ff2015-site",
+          "img": "confwall.png"
+        },
+        {
+          "name": "potato",
+          "url": "https://p.ota.to/",
+          "img": "potato.png"
+        },
+        {
+          "name": "Telerik",
+          "url": "http://www.telerik.com/",
+          "img": "telerik.png"
+        },
+        {
+          "name": "Snyk",
+          "url": "https://twitter.com/snyksec/",
+          "img": "snyk2.svg"
+        },
+        {
+          "name": "Five Simple Steps",
+          "url": "http://www.fivesimplesteps.com/",
+          "img": "fss.gif"
+        }
+      ]
+    }
+  },
+  "sessions": {
+    "sessions": [
+      {
+        "break": true,
+        "title": "Registration",
+        "duration": 40
+      },
+      {
+        "break": true,
+        "title": "Opening remarks",
+        "duration": 10
+      },
+      {
+        "duration": 40,
+        "title": "JavaScript that doesn’t hurt your feelings",
+        "speaker": {
+          "name": "Robin Mehner",
+          "twitter": "rmehner",
+          "photo": "robin.jpg"
+        },
+        "description": "JavaScript just had its 20th birthday this year and it has come a long way. But many fail to recognise this and still code like it’s 1999. This talk will take you through my favourite features of recent JavaScript editions, shows you how to use them in your project today and will give you an outlook of even better things to come.",
+        "bio": "",
+        "links": [],
+        "slides": false,
+        "audio": "",
+        "video": ""
+      },
+      {
+        "duration": 40,
+        "title": "SVG in motion",
+        "speaker": {
+          "name": "Sara Soueidan",
+          "twitter": "sarasoueidan",
+          "photo": "sara.jpg"
+        },
+        "description": "Scalable Vector Graphics (SVG) are taking over a lot of our design tools by offering us more flexibility over those tools. In this talk, we will cover everything we need to know before attempting to animate SVGs, including animation gotchas, how-tos and pre-animation requisites such as optimization and embedding, among others, and how each of those affects the animation process.",
+        "bio": "",
+        "links": [],
+        "slides": "",
+        "audio": "",
+        "video": ""
+      },
+      {
+        "break": true,
+        "title": "Coffee break (30 mins)",
+        "duration": 30
+      },
+      {
+        "duration": 40,
+        "title": "Operations: a developer's guide",
+        "speaker": {
+          "name": "Anna Shipman",
+          "twitter": "annashipman",
+          "photo": "anna.jpg"
+        },
+        "description": "An introduction to the web ops skills that will help you be a better developer. What you need to know about virtualisation, containerisation and wrangling servers, and some tools we use that might make development easier. I spent two years on the infrastructure team so you don't have to!",
+        "bio": "",
+        "links": [],
+        "slides": false,
+        "audio": "",
+        "video": ""
+      },
+      {
+        "duration": 40,
+        "title": "The Web Audio Phenomenon that Shall Not Be Named",
+        "speaker": {
+          "name": "John K. Paul",
+          "twitter": "johnkpaul",
+          "photo": "john.jpg"
+        },
+        "description": "Natural languages have many nooks and crannies, but there's a particular rabbit hole that will obsess you from the start. In this talk, you'll learn about the oddest psychological phenomenon ever to be thrown at getUserMedia and the odd parallels between learning human, natural languages and learning programming languages.",
+        "bio": "",
+        "links": [],
+        "slides": false,
+        "audio": "",
+        "video": ""
+      },
+      {
+        "break": true,
+        "duration": 90,
+        "title": "Lunch break (90 mins)"
+      },
+      {
+        "duration": 40,
+        "title": "How to win at mobile accessibility",
+        "speaker": {
+          "name": "Marcy Sutton",
+          "twitter": "marcysutton",
+          "photo": "marcy.jpg"
+        },
+        "description": "The mobile web-vs-native debate rages on–who's winning? How can we create mobile experiences that are accessible and reliable to people with disabilities? In this talk, we'll dive head-first into the mobile debate and reemerge informed on how we can use our skills as web developers to create brilliant mobile apps.",
+        "bio": "",
+        "links": [],
+        "slides": false,
+        "audio": "",
+        "video": ""
+      },
+
+      {
+        "duration": 40,
+        "title": "You should use <insert library/framework>, it's the bestestest!",
+        "speaker": {
+          "name": "Paul Lewis",
+          "twitter": "aerotwist",
+          "photo": "paul.jpg"
+        },
+        "description": "\"You should use [insert library or framework here], it's the bestestest!\" is pretty standard modern web development chatter. But how do you separate the hype from the reality? Let's have a look at how we can gather data to assess the fit of code to your projects.",
+        "bio": "",
+        "links": [],
+        "slides": false,
+        "audio": "",
+        "video": ""
+      },
+
+
+      {
+        "break": true,
+        "duration": 30,
+        "title": "Cake break (30 mins)"
+      },
+
+      {
+        "duration": 40,
+        "title": "Code Calligrams",
+        "speaker": {
+          "name": "Martin Kleppe",
+          "twitter": "aemkei",
+          "photo": "martin.jpg"
+        },
+        "description": "Programming is art: It is like painting, but instead of drawing on a canvas we populate computer screens with colours. And rather than using brushes, we combine bits and bytes to trace an ever-changing flow of images.\n\nIn this talk, you'll be introduced to the art of \"Creative Coding\" and how to generate beautiful new worlds, using nothing else than the languages of the Web.",
+        "bio": "",
+        "links": [],
+        "slides": "",
+        "audio": "",
+        "video": ""
+      },
+
+      {
+        "duration": 40,
+        "title": "A Talk about Everything",
+        "speaker": {
+          "name": "Lena Reinhard",
+          "twitter": "lrnrd",
+          "photo": "lena.jpg"
+        },
+        "description": "Software influences the lives of billions of humans every day. As people working on it, we face a broad variety of challenges – and we have a responsibility towards each of these humans. Let's take a look at the status of software development today, and see what each of us can do to act according to this responsibility.",
+        "bio": "",
+        "links": [],
+        "slides": false,
+        "audio": "",
+        "video": ""
+      },
+
+      {
+        "break": true,
+        "duration": 20,
+        "title": "Closing remarks"
+      },
+      {
+        "break": true,
+        "start": "18:15",
+        "end": "Late",
+        "duration": 90,
+        "afterparty": true,
+        "title": "After Party"
+      }
+    ]
+  },
+  "workshops": [
+    {
+      "title": "Performance Matters",
+      "slug": "perfmatters",
+      "ticket": {
+        "url": "",
+        "price": "425"
+      },
+
+      "details": {
+        "date": "5th Nov 2015",
+        "time": "09:00 — 17:00",
+        "venue": "Lighthouse, Brighton"
+      },
+
+      "speaker": {
+        "name": "Paul Lewis",
+        "twitter": "aerotwist"
+      },
+
+      "description": "Performance is an integral part of any successful project. In fact, as the next billion people come online, performance will become increasingly important. Having a performant site isn't just about getting things to load quickly with concatentation, minification, and the critical rendering path, it's also about responding to the user's input quickly and efficiently; it's about smooth scrolling and timely animations. Ultimately it's about getting pixels onto the user's screen quickly and keeping things fast.",
+      "extendedDescription": "This workshop is going to take you on a deep dive through the pixel pipeline, from the initial page request through to pixels on the screen. We will stop at every point in the pipeline to focus on what tools we have our disposal, what the common bottlenecks are, and how we can go about fixing them.\n\nTowards the end of the day you'll have the opportunity to apply your knowledge to your own sites, and come away more confident of how to include performance and profiling in your day-to-day work.",
+      "topics": [
+        {
+          "title": "Choosing the right battles",
+        "description": "The performance landscape and learning what matters to your users."
+        },
+
+        {
+          "title": "The Critical Rendering Path",
+        "description": "Discover how the browser converts requests into pixels."
+        },
+
+        {
+          "title": "JavaScript",
+        "description": "How to schedule your JavaScript properly, and assess its performance impact."
+        },
+
+        {
+          "title": "Styles, Layout, Paint and Composite",
+          "description": "Learn how to work with the browser to make visual updates as performant as possible."
+        }
+      ]
+    },
+    {
+      "title": "Mastering browser devtools",
+      "slug": "debug-and-tools",
+      "ticket": {
+        "url": "",
+        "price": "425"
+      },
+
+      "details": {
+        "date": "5th Nov 2015",
+        "time": "09:00 — 17:00",
+        "venue": "Lighthouse, Brighton"
+      },
+
+      "speaker": {
+        "name": "Remy Sharp",
+        "twitter": "rem",
+        "photo": "remy-devtools.jpg"
+      },
+
+      "topics" : [
+        {
+          "title": "Console",
+          "description": "Power features beyond console.log"
+        },
+        {
+          "title": "Network",
+          "description": "What's slow, why and the detail behind a request"
+        },
+        {
+          "title": "Source",
+          "description": "How to make DevTools your development IDE"
+        },
+        {
+          "title": "Performance",
+          "description": "How to read and investigate rendering issues"
+        },
+        {
+          "title": "Mobile",
+          "description": "Using the tools you know to debug tiny machines"
+        }
+      ],
+      "description": "Sure, you've moved past \"alert\" debugging and discovered console.log, but did you know you can replay XHR requests instead of having to repeat your steps to make the request? Or that you can proxy your local server through a browser configuration so your mobile phone can see it? This workshop is dedicated to learning the native developer tools baked in to the browser to make our life a little more bearable.",
+      "extendedDescription": "We will look at features of Chrome DevTools, what's available in Firefox debugging suite. We'll also look at remote mobile debugging using native tools and also look at the alternative tools where native support isn't available.\n\nThe workshop will mostly be about the foundation of debugging techniques, which apply way beyond just a single browser's debugger tool, but will raise your expectation of all web debugging environments."
+    }
+  ]
+}

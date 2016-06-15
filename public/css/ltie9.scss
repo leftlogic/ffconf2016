@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@import "var";
+@import "mixin";
+
+#left-logic {
+  // height: 47px;
+  // width: 226px;
+}
+
+// IE7
+*:first-child+html {
+}

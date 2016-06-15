@@ -1,1 +1,6 @@
-node_modules
+.DS_Store
+*.log
+nodemon.json
+public/fonts/
+www/
+node_modules/

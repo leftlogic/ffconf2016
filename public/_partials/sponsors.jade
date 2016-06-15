@@ -1,0 +1,17 @@
+section.main.main-sponsors(role='region', aria-labelledby='sponsors')
+  h2#sponsors.section-title(role='heading', aria-level='2') Sponsors
+
+  each cat, key in public._data.sponsors
+    if cat.list.length
+      section.monty(class=key + '-monty')
+        h3.sponsor-title(role='heading', aria-level='3')= capitalize(cat.title) + ' Sponsors'
+        div.sponsors-wrapper
+          each sponsor in cat.list
+            section.sponsor(class='sponsor-' + key)
+              a(href=sponsor.url, target="_blank", title=sponsor.name)
+                img(src='/images/sponsors/' + sponsor.img, alt=sponsor.name)
+  
+  if config.sponsorsAvailable
+    section.monty(class=small-monty)
+      h3.sponsor-title(role='heading', aria-level='3') Become a sponsor
+      a(href="/sponsorship.html") See our sponsorship pack &amp; get in touch today
