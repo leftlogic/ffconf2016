@@ -1,0 +1,18 @@
+version: v1.5.0
+ignore: {}
+patch:
+  'npm:marked:20150520':
+    - jstransformer-marked > marked:
+        patched: '2016-06-17T10:38:01.977Z'
+    - harp > terraform > marked:
+        patched: '2016-06-17T10:38:01.977Z'
+  'npm:tar:20151103':
+    - harp > download-github-repo > download > decompress > tar:
+        patched: '2016-06-17T10:38:01.977Z'
+  'npm:uglify-js:20151024':
+    - harp > terraform > harp-minify > uglify-js:
+        patched: '2016-06-17T10:38:01.977Z'
+    - harp > terraform > harp-jade > transformers > uglify-js:
+        patched: '2016-06-17T10:38:01.977Z'
+    - harp > terraform > harp-minify > html-minifier > uglify-js:
+        patched: '2016-06-17T10:38:01.977Z'
