@@ -15,15 +15,14 @@ section.main(role='region', aria-labelledby='workshops')
     //-     sub.button-sub Includes Conference Ticket
     section.workshop-wrapper.sub-hr(id=workshop.slug)
       header
-        h3.workshop-title(role='heading', aria-level='3')!=global.marked(workshop.title)
+        h3.workshop-title(role='heading', aria-level='3')= workshop.title
         div
           a.workshop-speaker-name(target='_blank' href='https://twitter.com/#{workshop.speaker.twitter}')= workshop.speaker.name
           div.workshop-time= workshop.details.date + ', ' +  workshop.details.time
       div.workshop-content-wrapper
         div.workshop-content
           !=global.marked(workshop.description)
-          div.workshop-content-extended
-            !=global.marked(workshop.extendedDescription)
+          !=global.marked(workshop.extendedDescription)
         if workshop.topics
           ul.workshop-list
             each topic in workshop.topics

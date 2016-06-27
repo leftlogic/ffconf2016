@@ -1,19 +1,9 @@
 /* Mediaqueries
    ========================================================================== */
 @include mq-min-check(320px) {
-  .masthead,
-  .xwing {
-    will-change: transform;
-  }
-
-  .xwing-wrapper {
-    transform: scale(0.75) translateY(60px)
-  }
-
-  .masthead,
   .main,
   .footer {
-    padding: 20px;
+    padding: 40px;
   }
   .session-links {
     a {
@@ -45,7 +35,7 @@
   }
   #left-logic {
     height: 46px;
-    margin: 90px auto;
+    margin: 90px 0;
     width: 210px;
   }
   .left-logic {
@@ -56,9 +46,6 @@
 
 
 @include mq-min-check(640px) {
-  .xwing-wrapper {
-    transform: scale(1) translateY(0);
-  }
   .masthead,
   .main,
   .footer {
@@ -73,27 +60,17 @@
   .section-title {
     font-size: 60px;
   }
-  .break {
-    @include clearfix;
-  }
-  .session-header {
-    @include clearfix;
-  }
   .session-content {
-    display: table;
-    width: 100%
+    
   }
   .session-links {
-    display: table-caption;
-    margin-top: -35px;
-    text-align: right;
+    display: inline-block;
   }
   .schedule-title,
-  .session-speaker-name {
-    // clear: left;
-    float: left;
+  .session-speaker-name,
+  .session-time {
+    display: inline;
   }
-  .session-time,
   .location-description {
     float: right;
   }
@@ -119,16 +96,6 @@
   }
 
 
-  .session-speaker-img-wrapper {
-    display: block;
-  }
-  .session-speaker-img {
-    background-position: 50% 50%;
-    background-size: cover;
-    height: 250px;
-    margin: 10px 40px 20px 0;
-    width: 127px;
-  }
   .session-content {
     padding-top: 40px;
 
@@ -141,14 +108,10 @@
     // display: table;
     // width: 100%;
   }
-  .session-speaker-img-wrapper,
   .session-about-wrapper {
     display: table-cell;
     vertical-align: top;
     width: 100%
-  }
-  .session-speaker-img-wrapper {
-    width: 167px;
   }
   .session-header {
     // float: left;
@@ -161,21 +124,12 @@
     padding-left: 0.5em;
   }
   .workshop-content-wrapper {
-    @include clearfix;
     margin-bottom: 66px;
     // margin-top: 66px;
   }
   .workshop-content {
-    float: left;
-    width: 65.28%;
-    width: calc((100% - (40px * 5)) / 6 * 4 + (40px * 3));
   }
   .workshop-list {
-    float: right;
-    margin-top: 0;
-    width: 30.56%;
-    width: calc((100% - (40px * 5)) / 6 * 2 + 40px);
-
     li:first-child h4 {
       margin-top: 0;
     }
@@ -231,11 +185,6 @@
   }
   .sponsor-3rd {
     width: calc((100% - (40px * 5)) / 6);
-  }
-
-  .blurb,
-  .codeofconduct {
-    max-width: 628px;
   }
 }
 

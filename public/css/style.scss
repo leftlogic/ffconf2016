@@ -3,19 +3,15 @@
 @import "var";
 @import "mixin";
 
-// @include font-face('OCR-A', "http://media.ffconf.org/fonts/OCR-A");
-// @include font-face('Steelfish', "http://media.ffconf.org/fonts/steelfish_rg");
-
 *, *:after, *:before {
   @include box-sizing(border-box);
 }
 body {
-  background: $c-black;
-  color: $c-text-normal;
-  font: 17px/1.75 'OCR-A', monospace;
+  background: $c-white;
+  color: $c-text;
+  font: 18px/1.667 $f-main, monospace;
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
 }
 
 /* Typography
@@ -24,10 +20,10 @@ a {
   text-decoration: none;
 
   &:link, &:visited {
-    color: $c-yellow;
+    color: $c-blue;
   }
   &:hover, &:focus, &:active {
-    color: $c-white;
+    color: $c-green;
   }
 }
 p {
@@ -39,48 +35,44 @@ h1, h2, h3, h4, strong {
   font-weight: normal;
   margin: 0;
 }
+h2 {
+  color: $c-grey-title;
+  font-family: $f-title;
+  font-weight: bold;
+}
+h3 {
+  color: $c-grey-subtitle;
+}
 em {
   font-style: normal;
 }
-h2, h3 {
-  color: $c-white;
-}
 .section-title {
-  font-size: 32px;
-  line-height: 1;
-  margin: 0 0 90px;
-  padding-top: 22px;
-  text-align: center;
-
-  .main-sponsors & {
-    font-size: 60px;
-    letter-spacing: 4px;
-    margin-top: 52px;
-  }
+  font-size: 40px;
+  line-height: 1.25;
+  text-transform: lowercase;
 }
+.location-title,
 .sponsor-title {
   color: $c-grey-title;
-  font-size: 30px;
-  letter-spacing: 4px;
-  line-height: 1;
-  margin: 10px 0 30px;
+  font-size: 25px;
+  line-height: 2;
 }
 .dtstart,
 .dtlocation,
 .session-time,
 .workshop-time,
-.workshop-list h4,
 .location-description {
-  color: $c-blue;
+  color: $c-green;
 }
-.session-content p,
-.workshop-content,
-.workshop-list {
-  text-transform: none;
+h3, h4,
+.nav-main,
+.session-speaker-name,
+.workshop-speaker-name,
+.workshop-time,
+.location {
+  text-transform: uppercase;
 }
-.workshop-content-extended {
-  padding-top: 1em;
-
+.workshop-content {
   p {
     margin: 1em 0;
   }
@@ -91,32 +83,23 @@ h2, h3 {
   padding: 0;
 
   h4 {
+    color: $c-grey-title;
     margin: 1em 0 0;
   }
 }
 .tbc {
-  color: $c-grey-title;
+  // color: $c-grey-title;
 }
 .more-sessions {
-}
-.wrapper-bottom {
-  background: $c-grey-bg;
-  // box-shadow: 0 0 20px 10px rgba(0,0,0,.5);
-  font-family: Steelfish, Verdana;
-  font-size: 20px;
-  letter-spacing: 2px;
-  position: relative;
-  text-align: center;
 }
 
 
 /* Grid
    ========================================================================== */
-.masthead,
 .main,
 .footer {
   margin: 0 auto;
-  max-width: 1002px;
+  max-width: 1000px;
   padding: 6.25%;
 }
 
@@ -127,16 +110,23 @@ h2, h3 {
   text-align: center;
 }
 .nav-main {
-  margin: 56px auto 24px;
-  max-width: 480px;
+  background: $c-blue;
 
   a {
+    color: $c-white;
     display: block;
+    font-size: 20px;
     padding: 10px 0;
 
     &:hover, &:focus, &:active {
+      background: $c-green;
     }
   }
+}
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .logo-wrapper {
   margin: 24px auto 36px;
@@ -151,7 +141,7 @@ h2, h3 {
   }
 
   svg {
-    stroke: $c-yellow;
+    // stroke: $c-yellow;
   }
 }
 .no-svg .logo-wrapper {
@@ -181,9 +171,9 @@ h2, h3 {
   margin: 20px 0;
 }
 .tickets-button {
-  border: 2px solid $c-grey-title;
+  // border: 2px solid $c-grey-title;
   border-radius: 10px;
-  color: $c-grey-title;
+  // color: $c-grey-title;
   display: none;
   padding: 1em;
 
@@ -192,12 +182,12 @@ h2, h3 {
   }
 }
 a.tickets-button {
-  border-color: $c-yellow;
-  color: $c-yellow;
+  // border-color: $c-yellow;
+  // color: $c-yellow;
 
   &:hover, &:focus, &:active {
-    background: $c-yellow;
-    color: $c-grey-title;
+    // background: $c-yellow;
+    // color: $c-grey-title;
   }
 }
 
@@ -205,7 +195,7 @@ a.tickets-button {
 /* Sections
    ========================================================================== */
 .sub-hr {
-  border-top: 1px solid $c-grey-divider;
+  border-top: 1px solid rgba($c-grey-title, .2);
   padding-top: 20px;
 
   &:first-of-type {
@@ -231,21 +221,6 @@ a.tickets-button {
 
 /* Speaker Session
    ========================================================================== */
-.session-speaker-img-wrapper {
-  display: none;
-}
-// .session-speaker-img {
-//   background-position: 50% 50%;
-//   background-size: cover;
-//   height: 87px;
-//   margin-right: 12px; // 24px
-//   margin-top: 9px;
-//   width: 87px;
-
-//   & img {
-//     visibility: hidden;
-//   }
-// }
 .session-content {
   // clear: both;
   padding-top: 25px;
@@ -255,8 +230,6 @@ a.tickets-button {
   }
 }
 .session-links {
-  margin-top: 20px;
-
   a {
     display: block;
     line-height: 2.5;
@@ -267,7 +240,7 @@ a.tickets-button {
    ========================================================================== */
 .workshop-content-wrapper,
 .workshop-list {
-  margin-top: 25px;
+  // margin-top: 25px;
 }
 
 
@@ -282,10 +255,10 @@ a.tickets-button {
   }
 }
 .location-title {
-  margin-bottom: 25px;
+  // margin-bottom: 25px;
 }
 .location {
-  margin-bottom: 20px; //30px
+  // margin-bottom: 20px; //30px
 
   p {
     margin: 0;
@@ -337,14 +310,9 @@ a.tickets-button {
   padding-bottom: 30px;
   padding-top: 22px;
 }
-.blurb,
-.codeofconduct {
-  margin: 0 auto;
-  max-width: 580px;
-}
 #left-logic {
   // height: 23px;
-  margin: 30% auto;
+  margin: 30% 0;
   width: 65%;
 
   object {
@@ -369,22 +337,8 @@ a.tickets-button {
 }
 
 
-/* Starfield
+/* Diversity
    ========================================================================== */
-.fullscreen {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  z-index: 0;
-}
-.page-wrapper {
-  position: relative;
-  z-index: 1;
-  // Momentum Scrolling on iOS Overflow Elements
-  // https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/
-  -webkit-overflow-scrolling: touch;
-}
-
 .diversity p {
   margin: 28px 0;
 
@@ -393,5 +347,5 @@ a.tickets-button {
   }
 }
 
+
 @import "mq";
-@import "xwing";

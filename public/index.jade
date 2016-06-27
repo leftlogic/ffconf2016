@@ -50,26 +50,22 @@ html(id=id)
     include js/formatting
     include js/markdown
 
-    div#fullScreen.fullscreen
-      canvas#canvas2d
+    include _partials/header
 
-    div.page-wrapper
-      include _partials/header
+    if config.phase >= 0.5
+      include _partials/sessions
 
-      if config.phase >= 0.5
-        include _partials/sessions
+    if config.phase >= 0.5
+      include _partials/workshops
 
-      if config.phase >= 0.5
-        include _partials/workshops
+    if config.phase >= 0.5
+      include _partials/locations
 
-      if config.phase >= 0.5
-        include _partials/locations
+    include _partials/diversity
 
-      include _partials/diversity
+    include _partials/sponsors
 
-      div#bottom.wrapper-bottom
-        include _partials/sponsors
-        include _partials/footer
+    include _partials/footer
 
     <!--[if gt IE 8]><!-->
     script(src='/js/script.js')

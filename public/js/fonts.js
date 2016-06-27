@@ -1,8 +1,8 @@
 // http://crocodillon.com/blog/non-blocking-web-fonts-using-localstorage
 (function() {
-  var md5 = 'da5991c4878552756bbcdd3404bbb28a';
+  var md5 = 'c8c5676ae28fd20f3ddd940e8060fb08';
   var key = 'fonts';
-  var url = '/css/webfonts.json';
+  var url = '/css/fonts.c8c5676ae28fd20f3ddd940e8060fb08.woff.json';
 
   function insertFont(value) {
     var style = document.createElement('style');

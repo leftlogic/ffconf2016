@@ -159,9 +159,9 @@
         "description": "JavaScript just had its 20th birthday this year and it has come a long way. But many fail to recognise this and still code like it’s 1999. This talk will take you through my favourite features of recent JavaScript editions, shows you how to use them in your project today and will give you an outlook of even better things to come.",
         "bio": "",
         "links": [],
-        "slides": false,
-        "audio": "",
-        "video": ""
+        "slides": "aaa",
+        "audio": "bbb",
+        "video": "ccc"
       },
       {
         "duration": 40,

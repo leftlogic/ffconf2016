@@ -35,9 +35,6 @@ section.main(class='session-style-' + config.mode, role='region', aria-labelledb
                 h3.schedule-title(role='heading', aria-level='3')= session.title
                 div.session-time!=session.start + ' &mdash; ' + session.end
           else
-            if config.phase >= 3 && session.speaker.photo
-              div.session-speaker-img-wrapper
-                div.session-speaker-img(style='background-image:url(/images/speakers/' + session.speaker.photo + ')')
             div.session-about-wrapper
               header.session-header
                 h3.session-title(role='heading', aria-level='3')= session.title
@@ -49,12 +46,6 @@ section.main(class='session-style-' + config.mode, role='region', aria-labelledb
                       span= session.speaker.name
                 if config.phase == 3
                   div.session-time.session-speaker-time!=session.start + ' &mdash; ' + session.end
-              div.session-content
-                if session.description
-                  !=global.marked(session.description)
-                if config.phase >= 3 && session.bio
-                  div.session-bio
-                    !=global.marked(session.bio)
                 if config.phase == 4
                   if session.slides || session.audio || session.video
                     div.session-links
@@ -64,6 +55,12 @@ section.main(class='session-style-' + config.mode, role='region', aria-labelledb
                         a(href=session.audio) Audio
                       if session.video
                         a(href=session.video) Video
+              div.session-content
+                if session.description
+                  !=global.marked(session.description)
+                if config.phase >= 3 && session.bio
+                  div.session-bio
+                    !=global.marked(session.bio)
 
     if totalSessions < 8
       li.session-wrapper.sub-hr.js-session(id='slugMoreToCome')

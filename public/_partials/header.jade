@@ -1,4 +1,4 @@
-- var menu = ['sessions', 'workshops', 'diversity-statement', 'locations', 'sponsors']
+- var menu = ['sessions', 'workshops', 'locations', 'diversity', 'sponsors']
 - var text = {}
 - text.location = 'Brighton UK'
 - text.date = completeDate.format('MMM Do YYYY')
@@ -61,9 +61,13 @@ header.masthead(role='banner', class='phase-'+config.phase)
 
   if config.phase >= 1
     nav.nav-main(role='navigation')
-      each item in menu
-        a(href='#' + item)=capitalize(item)
-        = "\n"
+      div.nav-button
+        span.nav-button-open#nav-button-open open menu
+        span.nav-button-close#nav-button-close close menu
+      ul.nav-list
+        each item in menu
+          li
+            a(href='#' + item)=item
 
   div.tickets-wrapper
     if button != ''

@@ -30,7 +30,9 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(express.static(__dirname + '/public'));
   app.use(harp.mount(__dirname + '/public'));
 
-  app.listen(process.env.PORT || 9000);
+  var server = app.listen(port, function(){
+    console.log('Listening at http://%s:%s', server.address().address, server.address().port);
+  });
 } else {
   harp.compile(__dirname, outputPath, (errors) => {
     if (errors) {
