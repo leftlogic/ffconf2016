@@ -8,6 +8,13 @@
       return [];
     }
   };
+  var $$ = function (s) {
+    try {
+      return document.querySelector(s);
+    } catch (e) {
+      return [];
+    }
+  };
 
   var skipNav = false; // if we want to scroll down without showing the menu
   var $nav = $('.nav-main');
@@ -51,4 +58,15 @@
       if (!pageYOffset) window.scrollTo(0, $nav[0].offsetHeight);
     }, 750);
   }
+
+  // hide show menu
+  var $navList = $$('#nav-list');
+  var $navButton = $$('#nav-button');
+  var $navOpen = $$('#nav-button-open');
+  var $navClose = $$('#nav-button-close');
+  $navButton.addEventListener('click', function() {
+    $navList.classList.toggle('hide');
+    $navClose.classList.toggle('show');
+    $navOpen.classList.toggle('show');
+  });
 })();

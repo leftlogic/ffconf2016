@@ -46,15 +46,12 @@
 
 
 @include mq-min-check(640px) {
-  .masthead,
   .main,
   .footer {
     padding: 30px;
   }
   .dtstart,
-  .dtlocation,
-  .nav-main,
-  .tickets-button {
+  .dtlocation {
     font-size: 30px;
   }
   .section-title {
@@ -84,7 +81,6 @@
 
 
 @include mq-min-check(768px) {
-  .masthead,
   .main,
   .footer {
     padding: 20px;

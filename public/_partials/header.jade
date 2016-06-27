@@ -61,19 +61,19 @@ header.masthead(role='banner', class='phase-'+config.phase)
 
   if config.phase >= 1
     nav.nav-main(role='navigation')
-      div.nav-button
-        span.nav-button-open#nav-button-open open menu
-        span.nav-button-close#nav-button-close close menu
-      ul.nav-list
+      div.nav-button#nav-button
+        span.nav-button-toggle.show#nav-button-open open menu
+        span.nav-button-toggle#nav-button-close close menu
+      ul.nav-list.hide#nav-list
         each item in menu
           li
             a(href='#' + item)=item
 
-  div.tickets-wrapper
-    if button != ''
-      if buy
-        a.tickets-button(href=ticketUrl, target='_blank')!= button
-      else if buttonLink
-        a.tickets-button(href=buttonLink, target='_blank')!= button
-      else
-        span.tickets-button!= button
+        li.tickets-wrapper
+          if button != ''
+            if buy
+              a.tickets-button(href=ticketUrl, target='_blank')!= button
+            else if buttonLink
+              a.tickets-button(href=buttonLink, target='_blank')!= button
+            else
+              span.tickets-button!= button

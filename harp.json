@@ -12,12 +12,10 @@
     "config": {
       "phase": 3,
       "soldout": {
-        "conference": false,
-        "day1": false,
-        "day2": false,
-        "workshops": false,
-        "workshop1": false,
-        "workshop2": false
+        "conference": true,
+        "workshops": true,
+        "workshop1": true,
+        "workshop2": true
       },
       "mode": "schedule",
       "comments": {

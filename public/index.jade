@@ -30,16 +30,13 @@ html(id=id)
 
     script.
       var confDays = [new Date('#{dates[0]}'), new Date('#{dates[1]}')];
+      document.documentElement.className += ' yes-js';
       // SVG support
       function supportsSVG() {
         return !! document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
       }
       if (!supportsSVG()) {
         document.documentElement.className += ' no-svg';
-      }
-      // Is Safari?
-      if (/constructor/i.test(window.HTMLElement)) {
-        document.documentElement.className += ' i-hate-safari';
       }
     script(src='/js/fonts.js')
 

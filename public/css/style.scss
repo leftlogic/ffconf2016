@@ -111,22 +111,39 @@ h3, h4,
 }
 .nav-main {
   background: $c-blue;
-
-  a {
-    color: $c-white;
-    display: block;
     font-size: 20px;
+
+  a, .nav-button {
+    color: $c-white;
+    cursor: pointer;
+    display: block;
     padding: 10px 0;
 
     &:hover, &:focus, &:active {
       background: $c-green;
     }
   }
+  .nav-button {
+    display: none;
+  }
+  .yes-js & .nav-button {
+    display: block;
+  }
 }
 .nav-list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  .yes-js &.hide {
+    display: none;
+  }
+}
+.nav-button-toggle {
+  display: none;
+}
+.nav-button-toggle.show {
+  display: block;
 }
 .logo-wrapper {
   margin: 24px auto 36px;
@@ -171,24 +188,10 @@ h3, h4,
   margin: 20px 0;
 }
 .tickets-button {
-  // border: 2px solid $c-grey-title;
-  border-radius: 10px;
-  // color: $c-grey-title;
-  display: none;
-  padding: 1em;
-
-  .no-svg & {
-    display: inline;
-  }
-}
-a.tickets-button {
-  // border-color: $c-yellow;
-  // color: $c-yellow;
-
-  &:hover, &:focus, &:active {
-    // background: $c-yellow;
-    // color: $c-grey-title;
-  }
+  color: $c-grey-title;
+  display: block;
+  font-size: 20px;
+  padding: 10px 0;
 }
 
 
