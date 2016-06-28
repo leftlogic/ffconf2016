@@ -76,17 +76,18 @@ header.masthead(role='banner', class='phase-'+config.phase)
         text(x='50%', y='86.5%')= text.tag
 
   if config.phase >= 1
-    nav.nav-main(role='navigation')
-      div.tickets-wrapper
-        if button != ''
-          if buy
-            a.tickets-button(href=ticketUrl, target='_blank')!= button
-          else if buttonLink
-            a.tickets-button(href=buttonLink, target='_blank')!= button
-          else
-            span.tickets-button!= button
-      ul.nav-list#nav-list
-        each item in menu
-          li
-            a(href='#' + item)=item
+    div.nav-main-wrapper
+      nav.nav-main(role='navigation')
+        div.tickets-wrapper
+          if button != ''
+            if buy
+              a.tickets-button(href=ticketUrl, target='_blank')!= button
+            else if buttonLink
+              a.tickets-button(href=buttonLink, target='_blank')!= button
+            else
+              span.tickets-button!= button
+        ul.nav-list#nav-list
+          each item in menu
+            li
+              a(href='#' + item)=item
 

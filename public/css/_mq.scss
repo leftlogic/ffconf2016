@@ -48,11 +48,8 @@
 @include mq-min-check(640px) {
   .main,
   .footer {
-    padding: 30px;
-  }
-  .dtstart,
-  .dtlocation {
-    font-size: 30px;
+    width: calc(100% - 80px);
+    padding: 0;
   }
   .section-title {
     font-size: 60px;
@@ -83,13 +80,72 @@
 @include mq-min-check(768px) {
   .main,
   .footer {
-    padding: 20px;
+    width: calc(100% - 40px);
   }
   .session-title,
   .workshop-title,
   .location-title {
     font-size: 30px;
   }
+  .nav-main-wrapper {
+    padding: 0 20px;
+  }
+  .nav-main {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 100px;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  .nav-list {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: auto;
+    position: static;
+    width: auto;
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      color: $c-white;
+      display: block;
+      padding: 10px 4px 7px;
+
+      &:hover, &:focus, &:active {
+        background: $c-white;
+        color: $c-blue;
+      }
+    }
+  }
+  .tickets-button {
+    background: $c-white;
+    color: $c-blue;
+    padding: 10px 16px 7px;
+  }
+  .logo-wrapper {
+    max-width: 1000px;
+    padding: 20px 0;
+    width: calc(100% - 40px);
+
+    svg {
+      display: inline-block;
+      max-height: none;
+      max-width: none;
+      width: 50%;
+    }
+  }
+  #svg-desc {
+    margin: 0 0 0 -9%;
+  }
+  .svg-desc-text {
+    font-size: 25px;
+  }
+
 
 
   .session-content {
