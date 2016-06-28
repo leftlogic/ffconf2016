@@ -2,7 +2,10 @@
 <title>Left Logic</title>
 <style>
 #leftlogic {
-  fill: #787878;
+  fill: #B5B5B5;
+}
+#rectangle_square {
+  fill: #FFF;
 }
 a:hover #square_big,
 a:focus #square_big,

@@ -34,9 +34,9 @@
     max-width: 127px;
   }
   #left-logic {
-    height: 46px;
-    margin: 90px 0;
-    width: 210px;
+    height: 43px;
+    margin: 50px 0;
+    width: 190px;
   }
   .left-logic {
     // background-size: 100%;
@@ -237,6 +237,11 @@
   }
   .sponsor-3rd {
     width: calc((100% - (40px * 5)) / 6);
+  }
+
+  #left-logic {
+    height: 57px;
+    width: 254px;
   }
 }
 
