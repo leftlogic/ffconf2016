@@ -4,12 +4,15 @@ html(id=id)
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='mobile-web-app-capable', content='yes')
     meta(name='description', content=siteDescription)
     meta(name='format-detection', content='telephone=no')
 
     title= siteTitle
 
-    link(rel='icon', href='/favicon.png')
+    link(rel='shortcut icon', href='/images/logo-192.png')
+    link(rel='icon', sizes='192x192', href='/images/logo-192.png')
     link(rel='stylesheet', href='/css/style.css')
     link(rel='all-the-source', href=source)
     link(rel='author', href='/humans.txt')
@@ -38,7 +41,10 @@ html(id=id)
       if (!supportsSVG()) {
         document.documentElement.className += ' no-svg';
       }
+    
+    <!--[if gt IE 8]>
     script(src='/js/fonts.js')
+    <![endif]-->
 
   - var completeDate = moment(dates[0] + ' ' + startTime)
 
@@ -64,6 +70,6 @@ html(id=id)
 
     include _partials/footer
 
-    <!--[if gt IE 8]><!-->
+    <!--[if gt IE 8]>
     script(src='/js/script.js')
-    <!--<![endif]-->
+    <![endif]-->

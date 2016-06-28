@@ -1,8 +1,11 @@
 - var menu = ['sessions', 'workshops', 'locations', 'diversity', 'sponsors']
 - var text = {}
-- text.location = 'Brighton UK'
-- text.date = completeDate.format('MMM Do YYYY')
-- text.datetime = completeDate.format('YYYY-MM-DDTHH:mm')
+- text.intro1 = '1 day conference'
+- text.intro2 = 'run twice'
+- text.tag = '#ffconf'
+- text.location1 = 'Duke of York\'s'
+- text.location2 = 'Brighton, UK'
+- text.date = 'November 10 & 11'
 
 - var line = 'Tickets @ £160+VAT will be sold on the 15th and 22nd July at 11am BST.'
 - var button = ''
@@ -45,35 +48,45 @@ if config.phase == 4
 
 
 header.masthead(role='banner', class='phase-'+config.phase)
-  if line != ''
-    p.tickets-lines= line
+  //- if line != ''
+  //-   p.tickets-lines= line
 
   div.logo-wrapper
-    svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 282 260.667')
+    svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 500 500')
       desc
         h1.logo(role='heading', aria-level='1')
           span ffconf 2016
-      path(stroke-miterlimit='10', d='M61 1v20.01l-20-.01v20h-20v20h-20v198.667h220v-20h20v-20h20v-19.667h20v-199h-220zm160 76h-30v26.667h30v33.333h-30v80h-30v-80h-50v80h-30.731l-.003-80h-19.266v-33h20v-60.333h60v33.333h-30v26.667h50v-60h60v33.333z', fill='none', shape-rendering='crispEdges', stroke-width='3')
-
-  time.dtstart(title=text.datetime, datetime=text.datetime)= text.date
-  = "\n"
-  span.dtlocation= text.location
+      <circle id="svg-logo-circle" cx="250" cy="250" r="250"></circle><path id="svg-logo-ff" d="M199.81 370.09V239.54h71.75v130.55c0 2.57.93 4.784 2.8 6.65 1.865 1.87 4.08 2.8 6.65 2.8h26.6c2.564 0 4.78-.93 6.65-2.8 1.865-1.866 2.8-4.08 2.8-6.65V239.54h48.65c2.565 0 4.78-.93 6.65-2.8 1.865-1.866 2.8-4.08 2.8-6.65v-23.1c0-2.566-.935-4.78-2.8-6.65-1.87-1.866-4.085-2.8-6.65-2.8h-48.65v-12.25c0-8.4 2.215-14.29 6.65-17.676 4.43-3.38 11.315-5.075 20.65-5.075h24.85c2.565 0 4.78-.93 6.65-2.8 1.865-1.867 2.8-4.08 2.8-6.65v-23.1c0-2.567-.935-4.78-2.8-6.65-1.87-1.867-4.085-2.8-6.65-2.8h-28.35c-22.17 0-39.26 4.783-51.275 14.35-12.02 9.57-18.025 25.2-18.025 46.9v15.75h-71.75v-12.25c0-8.4 2.215-14.29 6.65-17.677 4.43-3.38 11.315-5.075 20.65-5.075h24.85c2.565 0 4.78-.93 6.65-2.8 1.865-1.866 2.8-4.08 2.8-6.65v-23.1c0-2.566-.935-4.78-2.8-6.65-1.87-1.866-4.085-2.8-6.65-2.8h-28.35c-22.17 0-39.26 4.784-51.275 14.35-12.02 9.57-18.025 25.2-18.025 46.9v15.75h-23.1c-2.57 0-4.785.934-6.65 2.8-1.87 1.87-2.8 4.084-2.8 6.65v23.1c0 2.57.93 4.784 2.8 6.65 1.865 1.87 4.08 2.8 6.65 2.8h23.1v130.55c0 2.57.93 4.784 2.8 6.65 1.865 1.87 4.08 2.8 6.65 2.8h26.6c2.565 0 4.78-.93 6.65-2.8 1.865-1.866 2.8-4.08 2.8-6.65z"></path>
+    svg#svg-desc(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 500 500')
+      desc
+        div.svg-desc-textfallback
+          span= text.intro1
+          span= text.intro2
+          span= text.date
+          span= text.location1
+          span= text.location2
+          span= text.tag
+      <circle id="svg-desc-circle" cx="250" cy="250" r="248"></circle>
+      g.svg-desc-text
+        text(x='50%', y='26.5%')= text.intro1
+        text(x='50%', y='38.5%')= text.intro2
+        text(x='50%', y='50.5%')= text.date
+        text(x='50%', y='62.5%')= text.location1
+        text(x='50%', y='74.5%')= text.location2
+        text(x='50%', y='86.5%')= text.tag
 
   if config.phase >= 1
     nav.nav-main(role='navigation')
-      div.nav-button#nav-button
-        span.nav-button-toggle.show#nav-button-open open menu
-        span.nav-button-toggle#nav-button-close close menu
-      ul.nav-list.hide#nav-list
+      div.tickets-wrapper
+        if button != ''
+          if buy
+            a.tickets-button(href=ticketUrl, target='_blank')!= button
+          else if buttonLink
+            a.tickets-button(href=buttonLink, target='_blank')!= button
+          else
+            span.tickets-button!= button
+      ul.nav-list#nav-list
         each item in menu
           li
             a(href='#' + item)=item
 
-        li.tickets-wrapper
-          if button != ''
-            if buy
-              a.tickets-button(href=ticketUrl, target='_blank')!= button
-            else if buttonLink
-              a.tickets-button(href=buttonLink, target='_blank')!= button
-            else
-              span.tickets-button!= button

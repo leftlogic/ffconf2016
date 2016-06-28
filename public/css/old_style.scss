@@ -7,9 +7,9 @@
   @include box-sizing(border-box);
 }
 body {
-  background: $c-white url(../images/bg.png);
+  background: $c-white;
   color: $c-text;
-  font: 18px/1.667 $f-main;
+  font: 18px/1.667 $f-main, monospace;
   margin: 0;
   padding: 0;
 }
@@ -107,14 +107,11 @@ h3, h4,
 /* Header
    ========================================================================== */
 .masthead {
-  background: $c-grey-subtitle url(../images/bg-header.png);
   text-align: center;
 }
-/* Nav */
 .nav-main {
   background: $c-blue;
-  font-size: 20px;
-  width: 100%;
+    font-size: 20px;
 
   a, .nav-button {
     color: $c-white;
@@ -126,89 +123,54 @@ h3, h4,
       background: $c-green;
     }
   }
+  .nav-button {
+    display: none;
+  }
+  .yes-js & .nav-button {
+    display: block;
+  }
 }
 .nav-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  /* Hide only visually, but have it available for screen readers: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-.tickets-button {
-  
-}
-/* Logo */
-.logo-wrapper {
-  margin: 0 auto;
-  max-width: 250px;
-  padding: 6.25% 0;
-  width: 87.5%; // 100% - (6.25% * 2)
 
-  svg {
-    display: block;
-    margin: 0 auto;
-    max-height: 40vh;
-    max-width: 250px;
-    width: 100%;
-  }
-}
-#svg-logo-circle {
-  fill: $c-green-logo;
-  fill-opacity: .6;
-}
-#svg-logo-ff {
-   fill: $c-white;
-}
-#svg-desc {
-  margin-top: -13%;
-}
-@media all and (orientation: landscape) {
-  #svg-desc {
-    margin-top: -6vh;
-  }
-}
-@media all and (orientation: portrait) and (max-width: 320px) {
-  #svg-desc {
-    margin-top: -8%;
-  }
-}
-#svg-desc-circle {
-  fill: transparent;
-  stroke: $c-green-logo;
-  stroke-opacity: .6;
-  stroke-width: 3;
-}
-.svg-desc-text {
-  fill: $c-white;
-  font-family: inherit;
-  font-size: 36px;
-  text-anchor: middle;
-  text-transform: uppercase;
-
-  .no-svg & {
+  .yes-js &.hide {
     display: none;
   }
 }
-.svg-desc-textfallback {
-  color: $c-white;
-  font-size: inherit;
-  text-transform: uppercase;
+.nav-button-toggle {
+  display: none;
+}
+.nav-button-toggle.show {
+  display: block;
+}
+.logo-wrapper {
+  margin: 24px auto 36px;
+  max-width: 280px;
+  width: 58%;
+  -webkit-transform: perspective(262px) rotateX(45deg);
+          transform: perspective(262px) rotateX(45deg);
 
-  & span {
-    display: block;
+  .i-hate-safari & {
+    -webkit-transform: none;
+            transform: none;
+  }
+
+  svg {
+    // stroke: $c-yellow;
   }
 }
-
 .no-svg .logo-wrapper {
+  height: 386px;
+  max-width: none;
+  width: 418px;
 }
 .logo {
+  margin: 40px auto;
+  // max-width: 306px;
+  // width: 50%;
+
   span {
     background-image: url(../images/logo.png);
     background-repeat: no-repeat;
@@ -220,18 +182,16 @@ h3, h4,
     text-indent: -200%;
   }
 }
-
-@media all and (max-width: 768px) and (max-height: 768px) {
-  .masthead {
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-  }
-  .logo-wrapper {
-    padding: 0;
-    width: 100%;
-  }
+.dtstart,
+.dtlocation {
+  display: block;
+  margin: 20px 0;
+}
+.tickets-button {
+  color: $c-grey-title;
+  display: block;
+  font-size: 20px;
+  padding: 10px 0;
 }
 
 

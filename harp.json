@@ -4,20 +4,20 @@
     "siteDescription": "ffconf 2016 is a one day JavaScript Conference at the Duke of York’s Picturehouse in Brighton, UK run on 10th and 11th November 2016",
     "dates": ["2016-11-10", "2016-11-11"],
     "startTime": "09:00",
-    "analytics": "",
+    "analytics": "UA-1656750-42",
     "id": "ffconf-2016",
     "ticketPrice": "160",
     "ticketUrl" : "https://leftlogic.stagehq.com/",
     "source": "https://github.com/leftlogic/ffconf2016",
     "config": {
-      "phase": 3,
+      "phase": 1,
       "soldout": {
-        "conference": true,
-        "workshops": true,
-        "workshop1": true,
-        "workshop2": true
+        "conference": false,
+        "workshops": false,
+        "workshop1": false,
+        "workshop2": false
       },
-      "mode": "schedule",
+      "mode": "titles",
       "comments": {
         "mode-options": "titles|speakers|schedule // just a comment",
         "phase-options": {
