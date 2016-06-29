@@ -49,10 +49,11 @@
   // 100% height
   var h = document.documentElement.clientHeight;
   var w = document.documentElement.clientWidth;
+  var maxH = h / 100 * 40;
   if (h < 768 && w < 768) {
     document.querySelector('#masthead').style.height = h + 'px';
-    document.querySelector('#svg-logo').style.maxHeight = h + 'px';
-    document.querySelector('#svg-desc').style.maxHeight = h + 'px';
+    document.querySelector('#svg-logo').style.maxHeight = maxH + 'px';
+    document.querySelector('#svg-desc').style.maxHeight = maxH + 'px';
   }
 
   // if today is conference day, then scroll the current session into view
