@@ -82,11 +82,15 @@
   .footer {
     width: calc(100% - 40px);
   }
+  .section-title {
+    text-align: center;
+  }
   .session-title,
   .workshop-title,
   .location-title {
     font-size: 30px;
   }
+
   .nav-main-wrapper {
     padding: 0 20px;
   }
@@ -216,27 +220,39 @@
   }
 
   .sponsors-wrapper {
-    font-size: 0;
+    background: $c-white;
+    display: flex;
+    justify-content: space-around;
   }
   .sponsor {
-    display: inline-block;
-    margin: 0 0 0 40px;
-    max-width: 100%;
-    vertical-align: middle;
-    width: calc((100% - (40px * 5)) / 3 + 40px);
-
-    &:first-child {
-      margin-left: 0;
-    }
     a {
-      border: 0 none;
+      text-align: center;
+      width: auto;
+    }
+  }
+  .sponsor-1st {
+    height: 210px;
+    max-height: none;
+    max-width: none;
+    width: auto;
+
+    img {
+      max-width: 350px;
     }
   }
   .sponsor-2nd {
-    width: calc((100% - (40px * 7)) / 4);
+    height: 110px;
+    max-width: 140px;
+
+    img {
+    }
   }
   .sponsor-3rd {
-    width: calc((100% - (40px * 5)) / 6);
+    height: 110px;
+
+    img {
+      max-height: 60px;
+    }
   }
 
   #left-logic {
