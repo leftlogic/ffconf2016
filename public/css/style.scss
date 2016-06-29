@@ -129,22 +129,41 @@ h3, h4,
   z-index: 0
 }
 .masthead-bg {
-  background: pink;
-  // bottom: 53px;
-  bottom: 0;
+  bottom: 53px;
+  // bottom: 0;
   display: block;
+  font-size: 0;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: -1;
 
-  img {
-    display: block;
+  &:before {
+    content: 'ciao';
+    display: inline-block;
     height: 100%;
-    object-fit: cover;
+    vertical-align: middle;
+  }
+
+  img {
+    display: inline-block;
+    vertical-align: middle;
     width: 100%;
   }
+
+  @supports (object-fit: cover) {
+    &:before {
+      display: none;
+    }
+    & img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
 }
+
 /* Nav */
 .nav-main-wrapper {
   background: $c-blue;
