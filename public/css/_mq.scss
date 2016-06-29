@@ -228,6 +228,10 @@
     a {
       text-align: center;
       width: auto;
+
+      &:hover, &:focus, &:active {
+        outline: 1px solid rgba($c-grey-title, .2);
+      }
     }
   }
   .sponsor-1st {
