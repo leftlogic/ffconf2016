@@ -13,9 +13,11 @@
       "phase": 1,
       "soldout": {
         "conference": false,
+        "day1": false,
+        "day2": false,
         "workshops": false,
-        "perfmatters": false,
-        "debug-and-tools": false
+        "perfmatters": true,
+        "debug-and-tools": true
       },
       "mode": "titles",
       "comments": {

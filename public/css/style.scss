@@ -51,7 +51,7 @@ em {
   line-height: 1.25;
   text-transform: lowercase;
 }
-.workshop-title,
+.workshop-full .workshop-title,
 .location-title,
 .sponsor-title {
   color: $c-grey-title;
@@ -59,6 +59,7 @@ em {
   line-height: 2;
 }
 .session-time,
+.workshop-date,
 .workshop-time,
 .location-description {
   color: $c-green;
@@ -67,9 +68,16 @@ h3, h4,
 .nav-main,
 .session-speaker-name,
 .workshop-speaker-name,
-.workshop-time,
+.workshop-date,
 .location {
   text-transform: uppercase;
+}
+.workshop-summary .workshop-speaker-name {
+  color: $c-green;
+
+  &:hover, &:focus, &:active {
+    color: $c-blue;
+  }
 }
 .workshop-content {
   p {
@@ -334,6 +342,9 @@ h3, h4,
 .workshop-content-wrapper,
 .workshop-list {
   // margin-top: 25px;
+}
+.workshop-header-image-wrapper {
+  display: none;
 }
 
 

@@ -303,13 +303,14 @@
     {
       "title": "Performance Matters",
       "slug": "perfmatters",
+      "photo": "paul.png",
       "ticket": {
         "url": "",
         "price": "425"
       },
 
       "details": {
-        "date": "5th Nov 2015",
+        "date": "November 9 2016",
         "time": "09:00 — 17:00",
         "venue": "Lighthouse, Brighton"
       },
@@ -346,13 +347,14 @@
     {
       "title": "Mastering browser devtools",
       "slug": "debug-and-tools",
+      "photo": "remy.png",
       "ticket": {
         "url": "",
         "price": "425"
       },
 
       "details": {
-        "date": "5th Nov 2015",
+        "date": "November 9 2016",
         "time": "09:00 — 17:00",
         "venue": "Lighthouse, Brighton"
       },

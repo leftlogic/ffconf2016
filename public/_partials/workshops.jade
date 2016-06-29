@@ -1,24 +1,30 @@
 section.main(role='region', aria-labelledby='workshops')
   h2#workshops.section-title(role='heading', aria-level='2') Workshops
   each workshop, index in public._data.workshops
-    //- if config.phase < 4
-    //-   div.button-wrapper
-    //-     if config.phase >= 1
-    //-       if config.soldout[workshop.slug]
-    //-         span.button.button-disabled Sold Out
-    //-       else
-    //-         a.button(href=workshop.ticket.url, target='_blank') Tickets £#{workshop.ticket.price}
-    //-           small  + VAT
-    //-     else
-    //-       span.button.button-disabled Tickets £#{workshop.ticket.price}
-    //-         small  + VAT
-    //-     sub.button-sub Includes Conference Ticket
-    section.workshop-wrapper.sub-hr(id=workshop.slug)
-      header
-        h3.workshop-title(role='heading', aria-level='3')= workshop.title
-        div
-          a.workshop-speaker-name(target='_blank' href='https://twitter.com/#{workshop.speaker.twitter}')= workshop.speaker.name
-          div.workshop-time= workshop.details.date + ', ' +  workshop.details.time
+    section.workshop-wrapper.workshop-full.sub-hr(id=workshop.slug)
+      header.workshop-header
+        div.workshop-header-content
+          h3.workshop-title(role='heading', aria-level='3')= workshop.title
+          div
+            a.workshop-speaker-name(target='_blank' href='https://twitter.com/#{workshop.speaker.twitter}')= workshop.speaker.name
+          div.workshop-date= workshop.details.date 
+          div.workshop-time= workshop.details.time
+          //- div
+          //-   a.button(href=workshop.ticket.url) Buy tickets
+
+          if config.phase < 4
+            div
+              if config.phase >= 1
+                if config.soldout[workshop.slug]
+                  span.button.button-disabled Sold Out
+                else
+                  a.button(href=workshop.ticket.url, target='_blank') Buy tickets
+              else
+                //- span.button.button-disabled Tickets £#{workshop.ticket.price}
+                //-   small  + VAT
+                a.button(href=workshop.ticket.url, target='_blank') Buy tickets
+        div.workshop-header-image-wrapper
+          div.workshop-header-image(style='background-image:url(/images/workshops/' + workshop.photo + ')')
       div.workshop-content-wrapper
         div.workshop-content
           !=global.marked(workshop.description)
