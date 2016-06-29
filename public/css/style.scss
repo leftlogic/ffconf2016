@@ -68,6 +68,7 @@ h3, h4,
 .nav-main,
 .session-speaker-name,
 .workshop-speaker-name,
+.session-links,
 .workshop-date,
 .location {
   text-transform: uppercase;
@@ -332,8 +333,13 @@ h3, h4,
 }
 .session-links {
   a {
+    color: $c-green;
     display: block;
     line-height: 2.5;
+
+    &:hover, &:focus, &:active {
+      color: $c-blue;
+    }
   }
 }
 
