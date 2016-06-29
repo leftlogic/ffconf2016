@@ -51,6 +51,10 @@
     width: calc(100% - 80px);
     padding: 0;
   }
+  .button {
+    font-size: 20px;
+    padding: 8px 32px;
+  }
   .section-title {
     font-size: 60px;
   }
@@ -128,8 +132,14 @@
   }
   .tickets-button {
     background: $c-white;
-    color: $c-blue;
     padding: 10px 16px 7px;
+
+    &, &:link, &:visited {
+      color: $c-blue;
+    }
+    &:hover, &:focus, &:active {
+      color: $c-white;
+    }
   }
   .logo-wrapper {
     max-width: 1000px;

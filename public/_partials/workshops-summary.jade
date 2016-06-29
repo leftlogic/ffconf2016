@@ -15,8 +15,8 @@ section.main(role='region', aria-labelledby='workshops')
     //-     sub.button-sub Includes Conference Ticket
     section.workshop-wrapper.sub-hr(id=workshop.slug)
       header
-        h3.workshop-title(role='heading', aria-level='3')= workshop.title
+        h3.workshop-summary-title(role='heading', aria-level='3')= workshop.title
         div
           a.workshop-speaker-name(target='_blank' href='https://twitter.com/#{workshop.speaker.twitter}')= workshop.speaker.name
         div
-          a.workshop-more(href='/workshops#' + workshop.slug) More Info
+          a.button(href='/workshops#' + workshop.slug) More Info

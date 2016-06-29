@@ -19,7 +19,7 @@ body {
 a {
   text-decoration: none;
 
-  &:visited {
+  &, &:link, &:visited {
     color: $c-blue;
   }
   &:hover, &:focus, &:active {
@@ -51,6 +51,7 @@ em {
   line-height: 1.25;
   text-transform: lowercase;
 }
+.workshop-title,
 .location-title,
 .sponsor-title {
   color: $c-grey-title;
@@ -90,6 +91,21 @@ h3, h4,
 }
 .more-sessions {
 }
+.button {
+  background: $c-blue;
+  display: inline-block;
+  padding: 5px 20px;
+  text-transform: uppercase;
+
+  &, &:link, &:visited {
+    color: $c-white;
+  }
+
+  &:hover, &:focus, &:active {
+    background: $c-green;
+    color: $c-white;
+  }
+}
 
 
 /* Grid
@@ -116,14 +132,8 @@ h3, h4,
   width: 100%;
 }
 .tickets-button {
-  color: $c-white;
   display: block;
   padding: 10px 0;
-
-  &:hover, &:focus, &:active {
-    background: $c-green;
-    color: $c-white;
-  }
 }
 .nav-list {
   list-style: none;
