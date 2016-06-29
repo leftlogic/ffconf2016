@@ -122,8 +122,28 @@ h3, h4,
 /* Header
    ========================================================================== */
 .masthead {
-  background: $c-grey-subtitle url(../images/bg-header.png);
+  background: $c-grey-subtitle;
+  overflow: hidden;
+  position: relative;
   text-align: center;
+  z-index: 0
+}
+.masthead-bg {
+  background: pink;
+  // bottom: 53px;
+  bottom: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+
+  img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
 }
 /* Nav */
 .nav-main-wrapper {
@@ -167,6 +187,10 @@ h3, h4,
     width: 100%;
   }
 }
+#svg-logo {
+  position: relative;
+  z-index: 1;
+}
 #svg-logo-circle {
   fill: $c-green-logo;
   fill-opacity: .6;
@@ -188,10 +212,9 @@ h3, h4,
   }
 }
 #svg-desc-circle {
-  fill: transparent;
+  fill: $c-grey-title;
   stroke: $c-green-logo;
-  stroke-opacity: .6;
-  stroke-width: 3;
+  opacity: .7;
 }
 .svg-desc-text {
   fill: $c-white;

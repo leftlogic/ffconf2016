@@ -51,9 +51,15 @@ header.masthead(role='banner', class='phase-'+config.phase)
   //- if line != ''
   //-   p.tickets-lines= line
 
+  picture.masthead-bg
+    source(srcset='/images/bg-header-1500_1x.png 1x, /images/bg-header-1500_2x.png 2x', media='(min-width: 751px)')
+    source(srcset='/images/bg-header-750_1x.png 1x, /images/bg-header-750_2x.png 2x', media='(min-width: 401px)')
+    source(srcset='/images/bg-header-400_1x.png 1x, /images/bg-header-400_2x.png 2x', media='(max-width: 400px)')
+    img(src="/images/bg-header-400_1x.png", alt="Photos of previous years attendants")
+
   div.logo-wrapper
     a(href='/')
-      svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 500 500')
+      svg#svg-logo(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 500 500')
         desc
           h1.logo(role='heading', aria-level='1')
             span ffconf 2016
@@ -67,7 +73,7 @@ header.masthead(role='banner', class='phase-'+config.phase)
           span= text.location1
           span= text.location2
           span= text.tag
-      <circle id="svg-desc-circle" cx="250" cy="250" r="248"></circle>
+      <circle id="svg-desc-circle" stroke-width="3" cx="250" cy="250" r="248"></circle>
       g.svg-desc-text
         text(x='50%', y='26.5%')= text.intro1
         text(x='50%', y='38.5%')= text.intro2
