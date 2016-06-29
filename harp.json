@@ -14,8 +14,8 @@
       "soldout": {
         "conference": false,
         "workshops": false,
-        "workshop1": false,
-        "workshop2": false
+        "perfmatters": false,
+        "debug-and-tools": false
       },
       "mode": "titles",
       "comments": {
