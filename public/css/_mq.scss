@@ -105,6 +105,22 @@
     background-size: contain;
     padding-top: 119%;
   }
+
+  .quote {
+    align-items: flex-start;
+    display: flex;
+    padding: 5% 0;
+
+    img {
+      margin-right: 60px;
+      max-width: none;
+      width: 130px
+    }
+  }
+  .quote-image-wrapper {
+    margin-bottom: 0;
+    margin-top: 0.5em;
+  }
 }
 
 

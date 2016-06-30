@@ -153,7 +153,7 @@
         },
         "description": "JavaScript just had its 20th birthday this year and it has come a long way. But many fail to recognise this and still code like it’s 1999. This talk will take you through my favourite features of recent JavaScript editions, shows you how to use them in your project today and will give you an outlook of even better things to come.",
         "bio": "",
-        "links": [],
+        "links": ["111", "222222"],
         "slides": "aaa",
         "audio": "bbb",
         "video": "ccc"
@@ -389,6 +389,48 @@
       ],
       "description": "Sure, you've moved past \"alert\" debugging and discovered console.log, but did you know you can replay XHR requests instead of having to repeat your steps to make the request? Or that you can proxy your local server through a browser configuration so your mobile phone can see it? This workshop is dedicated to learning the native developer tools baked in to the browser to make our life a little more bearable.",
       "extendedDescription": "We will look at features of Chrome DevTools, what's available in Firefox debugging suite. We'll also look at remote mobile debugging using native tools and also look at the alternative tools where native support isn't available.\n\nThe workshop will mostly be about the foundation of debugging techniques, which apply way beyond just a single browser's debugger tool, but will raise your expectation of all web debugging environments."
+    }
+  ],
+  "quotes": [
+    {
+      "text": "0",
+      "photo": "remy.png",
+      "author": "Remy Sharp, FFConf 2015"
+    },
+    {
+      "text": "1",
+      "photo": "remy.png",
+      "author": "Remy Sharp, FFConf 2015"
+    },
+    {
+      "text": "2",
+      "photo": "remy.png",
+      "author": "Remy Sharp, FFConf 2015"
+    },
+    {
+      "text": "3",
+      "photo": "remy.png",
+      "author": "Remy Sharp, FFConf 2015"
+    },
+    {
+      "text": "4",
+      "photo": "remy.png",
+      "author": "Remy Sharp, FFConf 2015"
+    },
+    {
+      "text": "5",
+      "photo": "remy.png",
+      "author": "Remy Sharp, FFConf 2015"
+    },
+    {
+      "text": "6",
+      "photo": "remy.png",
+      "author": "Remy Sharp, FFConf 2015"
+    },
+    {
+      "text": "7",
+      "photo": "remy.png",
+      "author": "Remy Sharp, FFConf 2015"
     }
   ]
 }

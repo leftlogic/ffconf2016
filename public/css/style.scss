@@ -457,4 +457,36 @@ h3, h4,
 }
 
 
+/* Diversity
+   ========================================================================== */
+.quote-wrapper {
+  background: $c-grey-title;
+  color: $c-white;
+}
+.quote {
+  p {
+    &:before {
+      content: '\201C';
+    }
+    &:after {
+      content: '\201D';
+    }
+  }
+
+  cite {
+    color: $c-text;
+    font-style: normal;
+  }
+
+  img {
+    display: block;
+    max-width: 65px;
+    width: 100%;
+  }
+}
+.quote-image-wrapper {
+  margin-bottom: 1.5em;
+}
+
+
 @import "mq";

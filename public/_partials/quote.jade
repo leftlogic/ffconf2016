@@ -1,0 +1,13 @@
+mixin quote(c)
+  - var quote = public._data.quotes[0];
+  - public._data.quotes.shift();
+
+  if quote
+    div.quote-wrapper
+      blockquote.main.quote
+        div.quote-image-wrapper
+          img(src="/images/quotes/" + quote.photo, alt="")
+        div.quote-content-wrapper
+          p= quote.text
+          footer
+            cite= quote.author
