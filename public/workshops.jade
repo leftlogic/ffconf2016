@@ -4,5 +4,6 @@ include _partials/quote
 block content
 
   if config.phase >= 0.5
-    include _partials/workshops
+    div.main-wrapper
+      include _partials/workshops
     +quote()

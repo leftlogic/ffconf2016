@@ -3,7 +3,7 @@ section#sponsors.main.main-sponsors(role='region', aria-labelledby='sponsors')
 
   each cat, key in public._data.sponsors
     if cat.list.length
-      section.monty(class=key + '-monty')
+      section.monty(class='monty-' + key)
         h3.sponsor-title(role='heading', aria-level='3')= capitalize(cat.title) + ' Sponsors'
         div.sponsors-wrapper
           each sponsor in cat.list

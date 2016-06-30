@@ -35,7 +35,7 @@
   }
   #left-logic {
     height: 43px;
-    margin: 50px 0;
+    margin: 50px 0 0;
     width: 190px;
   }
   .left-logic {
@@ -53,13 +53,10 @@
   }
   .button {
     font-size: 20px;
-    padding: 8px 32px;
+    padding: 0 32px;
   }
   .tickets-button {
     padding: 10px 0;
-  }
-  .section-title {
-    font-size: 60px;
   }
   .session-content {
     
@@ -93,17 +90,18 @@
     }
   }
   .workshop-header-content {
-    padding: 30px;
+    padding: 50px;
     width: 50%
   }
   .workshop-header-image-wrapper {
     display: block;
+    height: 100%;
     width: 50%;
   }
   .workshop-header-image {
     background-repeat: no-repeat;
-    background-size: contain;
-    padding-top: 119%;
+    background-size: cover;
+    height: 100%;
   }
 
   .quote {
@@ -121,23 +119,43 @@
     margin-bottom: 0;
     margin-top: 0.5em;
   }
+  .quote-content-wrapper {
+    width: 100%;
+  }
+  // .quote-wrapper:nth-of-type(even) {
+  //   & .quote {
+  //     flex-direction: row-reverse;
+  //     text-align: right;
+  //   }
+  //   & img {
+  //     margin-left: 60px;
+  //     margin-right: 0;
+  //   }
+  // }
 }
 
 
 @include mq-min-check(768px) {
   body {
     font-size: 20px;
+    line-height: 50px;
   }
   .main,
   .footer {
     width: calc(100% - 40px);
   }
   .section-title {
+    font-size: 100px;
+    line-height: 1;
+    padding: 117px 0 133px;
     text-align: center;
   }
-  .workshop-full .workshop-title,
-  .location-title {
+  .workshop-title,
+  .location-title,
+  .sponsor-title {
     font-size: 35px;
+    line-height: 50px;
+    padding-bottom: 50px;
   }
 
   .masthead-bg {
@@ -213,10 +231,18 @@
     font-size: 25px;
   }
 
+  .sessions-wrapper {
+    padding-bottom: 75px;
+  }
+  .session-wrapper {
+    padding: 25px 0 24px;
 
-
+    &:first-child {
+      padding-top: 1px;
+    }
+  }
   .session-content {
-    padding-top: 40px;
+    padding-top: 0;
 
     .session-style-titles & {
       // padding-bottom: 17px;
@@ -226,10 +252,15 @@
   .session-wrapper {
   }
   .session-header {
-    // float: left;
-    margin-top: 17px;
   }
 
+  .workshop-summary {
+    padding-bottom: 0;
+  }
+  .workshop-header {
+    height: 500px;
+    margin-bottom: 100px;
+  }
 
   .workshop-content-wrapper {
     // margin-bottom: 66px;
@@ -245,11 +276,12 @@
 
   .locations {
     font-size: 0;
+    padding-bottom: 50px;
     text-align: center;
 
     & > li {
       display: inline-block;
-      font-size: 17px;
+      font-size: 20px;
       margin-left: 40px;
       vertical-align: top;
       width: calc((100% - (40px * 2)) / 3);
@@ -264,13 +296,21 @@
     }
   }
   .location {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
   }
   .location-description {
     float: none;
-    margin-top: 6px;
   }
 
+  .main-sponsors {
+    padding: 50px 0 0;
+  }
+  .monty {
+    padding: 50px 0 100px;
+  }
+  .monty-3rd {
+    padding-top: 100px;
+  }
   .sponsors-wrapper {
     background: $c-white;
     display: flex;
@@ -293,7 +333,7 @@
     width: auto;
 
     img {
-      max-width: 350px;
+      max-width: 330px;
     }
   }
   .sponsor-2nd {
@@ -311,9 +351,24 @@
     }
   }
 
+  .footer {
+    padding-bottom: 100px;
+  }
   #left-logic {
-    height: 57px;
-    width: 254px;
+    height: 50px;
+    width: 221px;
+  }
+
+  .quote-wrapper {
+    line-height: 1.9;
+  }
+
+  .diversity {
+    padding-bottom: 50px;
+
+    p {
+      padding-bottom: 50px;
+    }
   }
 }
 

@@ -4,16 +4,20 @@ include _partials/quote
 block content
 
   if config.phase >= 0.5
-    include _partials/sessions
+    div.main-wrapper
+      include _partials/sessions
     +quote()
 
   if config.phase >= 0.5
-    include _partials/workshops-summary
+    div.main-wrapper
+      include _partials/workshops-summary
     +quote()
 
   if config.phase >= 0.5
-    include _partials/locations
+    div.main-wrapper
+      include _partials/locations
     +quote()
 
-  include _partials/diversity
+  div.main-wrapper
+    include _partials/diversity
   +quote()

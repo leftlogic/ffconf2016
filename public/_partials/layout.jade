@@ -57,9 +57,10 @@ html(id=id)
 
     block content
 
-    include /_partials/sponsors
+    div.main-wrapper
+      include /_partials/sponsors
 
-    include /_partials/footer
+      include /_partials/footer
 
     <!--[if gt IE 8]> -->
     script(src='/js/script.js')

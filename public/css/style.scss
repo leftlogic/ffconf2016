@@ -7,8 +7,8 @@
   @include box-sizing(border-box);
 }
 body {
-  background: $c-white url(../images/pattern.png);
-  background-size: 320px 50px;
+  // background: $c-white url(../images/pattern.png);
+  // background-size: 320px 50px;
   color: $c-text;
   font: 18px/1.667 $f-main;
   margin: 0;
@@ -16,7 +16,18 @@ body {
 }
 @include mq-min-check(0, 2) {
   body {
-    background-image: url(../images/pattern2x.png);
+    // background-image: url(../images/pattern2x.png);
+  }
+}
+
+.main-wrapper {
+  background: $c-white url(../images/pattern.png);
+  background-size: 320px 50px;
+
+  @include mq-min-check(0, 2) {
+    & {
+      background-image: url(../images/pattern2x.png);
+    }
   }
 }
 
@@ -452,10 +463,10 @@ h3, h4,
 /* Diversity
    ========================================================================== */
 .diversity p {
-  margin: 28px 0;
+  // margin: 28px 0;
 
   &:last-child {
-    margin-bottom: 88px; //30px
+    // margin-bottom: 88px; //30px
   }
 }
 
