@@ -2,6 +2,7 @@
   "globals": {
     "siteTitle": "ffconf :: JavaScript Conference :: 10th & 11th November 2016",
     "siteDescription": "ffconf 2016 is a one day JavaScript Conference at the Duke of York’s Picturehouse in Brighton, UK run on 10th and 11th November 2016",
+    "shortName": "ffconf 2016",
     "dates": ["2016-11-10", "2016-11-11"],
     "startTime": "09:00",
     "analytics": "UA-1656750-42",

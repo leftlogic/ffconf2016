@@ -3,38 +3,13 @@
   "name": "ffconf 2016",
   "icons": [
     {
-      "src": "images/icon96.png",
-      "sizes": "96x96",
-      "type": "image/jpeg"
-    },
-    {
-      "src": "images/icon144.png",
-      "sizes": "144x144",
-      "type": "image/jpeg"
-    },
-    {
-      "src": "images/icon192.png",
+      "src": "/images/favicons/android-chrome-192x192.png",
       "sizes": "192x192",
-      "type": "image/jpeg"
+      "type": "image/png"
     },
     {
-      "src": "images/icon256.png",
-      "sizes": "256x256",
-      "type": "image/jpeg"
-    },
-    {
-      "src": "images/icon384.png",
-      "sizes": "384x384",
-      "type": "image/jpeg"
-    },
-    {
-      "src": "images/icon512.png",
+      "src": "/images/favicons/android-chrome-512x512.png",
       "sizes": "512x512",
-      "type": "image/jpeg"
-    },
-    {
-      "src": "images/apple-touch-icon.png",
-      "sizes": "180x180",
       "type": "image/png"
     }
   ],

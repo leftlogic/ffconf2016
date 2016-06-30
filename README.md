@@ -33,3 +33,18 @@ Now generate the Google Fonts link and run:
 ```bash
 $ ./node_modules/font-store/bin/font-store "https://fonts.googleapis.com/css?family=Anonymous+Pro|Rubik:700"
 ```
+
+
+### Create favicons
+
+Use https://realfavicongenerator.net
+
+* Favicon for iOS - Web Clip: add a solid background, color `#1A1A1A`, size as default
+* Favicon for Android Chrome: no change
+* Windows Metro: use the original, color is `blue`
+* Safari Pinned Tab: turn your picture into a monochrom icon, threshold as default
+* Favicon Generator Options:
+  * path: `/images/favicons`
+  * app name: `ffconf 2016`
+
+Delete the generated `manifest.json`, we already have our own, just check to reference the images correctly.
