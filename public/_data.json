@@ -393,18 +393,13 @@
   ],
   "quotes": [
     {
-      "text": "0",
+      "text": "1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam iure itaque praesentium perferendis incidunt accusantium? Expedita nostrum, veritatis quo.",
       "photo": "remy.png",
       "author": "Remy Sharp, FFConf 2015"
     },
     {
-      "text": "1",
-      "photo": "remy.png",
-      "author": "Remy Sharp, FFConf 2015"
-    },
-    {
-      "text": "2",
-      "photo": "remy.png",
+      "text": "2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus voluptatem dolores, labore reiciendis nostrum eveniet cum officiis dignissimos voluptates debitis.",
+      "photo": "remy2.png",
       "author": "Remy Sharp, FFConf 2015"
     },
     {
@@ -414,21 +409,11 @@
     },
     {
       "text": "4",
-      "photo": "remy.png",
+      "photo": "remy2.png",
       "author": "Remy Sharp, FFConf 2015"
     },
     {
       "text": "5",
-      "photo": "remy.png",
-      "author": "Remy Sharp, FFConf 2015"
-    },
-    {
-      "text": "6",
-      "photo": "remy.png",
-      "author": "Remy Sharp, FFConf 2015"
-    },
-    {
-      "text": "7",
       "photo": "remy.png",
       "author": "Remy Sharp, FFConf 2015"
     }
