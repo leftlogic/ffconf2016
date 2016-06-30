@@ -47,8 +47,8 @@
   }
 
   // 100% height
-  var h = document.documentElement.clientHeight;
-  var w = document.documentElement.clientWidth;
+  var h = window.innerHeight;
+  var w = window.innerWidth;
   var maxH = h / 100 * 40;
   if (h < 768 && w < 768) {
     document.querySelector('#masthead').style.height = h + 'px';
