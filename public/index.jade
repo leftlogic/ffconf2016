@@ -1,28 +1,19 @@
 extends _partials/layout.jade
 include _partials/quote
 
-
 block content
-  - var c = 0;
-  - var a = [];
-  - for (var i = 0; i < public._data.quotes.length; i++) { a.push(i); }
-  - shuffle(a);
 
   if config.phase >= 0.5
     include _partials/sessions
-    +quote(c)
-    //- c++;
+    +quote()
 
   if config.phase >= 0.5
     include _partials/workshops-summary
-    +quote(c)
-    //- c++;
+    +quote()
 
   if config.phase >= 0.5
     include _partials/locations
-    +quote(c)
-    //- c++;
+    +quote()
 
   include _partials/diversity
-  +quote(c)
-    //- c++;
+  +quote()

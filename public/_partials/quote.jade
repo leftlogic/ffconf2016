@@ -1,6 +1,5 @@
-mixin quote(c)
-  - var quote = public._data.quotes[0];
-  - public._data.quotes.shift();
+mixin quote()
+  - var quote = public._data.quotes.shift();
 
   if quote
     div.quote-wrapper
