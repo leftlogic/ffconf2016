@@ -219,19 +219,21 @@
       color: $c-white;
     }
   }
+  
   .logo-wrapper {
     max-width: 1000px;
-    padding: 50px 0 0;
+    padding: 50px 0;
     width: calc(100% - 40px);
 
-    svg {
-      display: inline-block;
-      max-height: none;
-      max-width: none;
-      width: 50%;
-    }
   }
-  #svg-desc {
+  .circle {
+    display: inline-block;
+    max-height: none;
+    max-width: none;
+    vertical-align: middle;
+    width: 50%;
+  }
+  .circle2 {
     margin: 0 0 0 -9%;
   }
   .svg-desc-text {

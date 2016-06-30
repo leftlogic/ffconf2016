@@ -223,15 +223,31 @@ h3, h4,
 
   svg {
     display: block;
-    margin: 0 auto;
-    max-height: 40vh;
-    max-width: 250px;
-    width: 100%;
   }
 }
-#svg-logo {
+.circle {
+  display: block;
+  margin: 0 auto;
+  max-height: 40vh;
+  max-width: 250px;
+  width: 100%;
+}
+.circle1 {
   position: relative;
   z-index: 1;
+}
+.circle2 {
+  margin-top: -13%;
+  @media all and (orientation: landscape) {
+    & {
+      margin-top: -6vh;
+    }
+  }
+  @media all and (orientation: portrait) and (max-width: 320px) {
+    & {
+      margin-top: -8%;
+    }
+  }
 }
 #svg-logo-circle {
   fill: $c-green-logo;
@@ -239,19 +255,6 @@ h3, h4,
 }
 #svg-logo-ff {
    fill: $c-white;
-}
-#svg-desc {
-  margin-top: -13%;
-}
-@media all and (orientation: landscape) {
-  #svg-desc {
-    margin-top: -6vh;
-  }
-}
-@media all and (orientation: portrait) and (max-width: 320px) {
-  #svg-desc {
-    margin-top: -8%;
-  }
 }
 #svg-desc-circle {
   fill: $c-grey-title;
