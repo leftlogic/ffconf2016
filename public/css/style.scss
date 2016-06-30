@@ -7,17 +7,10 @@
   @include box-sizing(border-box);
 }
 body {
-  // background: $c-white url(../images/pattern.png);
-  // background-size: 320px 50px;
   color: $c-text;
-  font: 18px/1.667 $f-main;
+  font: 18px/25px $f-main;
   margin: 0;
   padding: 0;
-}
-@include mq-min-check(0, 2) {
-  body {
-    // background-image: url(../images/pattern2x.png);
-  }
 }
 
 .main-wrapper {
@@ -29,6 +22,18 @@ body {
       background-image: url(../images/pattern2x.png);
     }
   }
+}
+
+/* Reset */
+h1, h2, h3, h4,
+p, strong, em,
+ul, ol, li {
+  font-size: inherit;
+  font-style: normal;
+  font-weight: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Typography
@@ -43,29 +48,17 @@ a {
     color: $c-green;
   }
 }
-p {
-  margin: 0;
-  padding: 0;
-}
-h1, h2, h3, h4, strong {
-  font-size: inherit;
-  font-weight: normal;
-  margin: 0;
-}
 h2 {
   color: $c-grey-title;
   font-family: $f-title;
-  font-weight: bold;
 }
 h3 {
   color: $c-grey-subtitle;
 }
-em {
-  font-style: normal;
-}
 .section-title {
   font-size: 40px;
-  line-height: 1.25;
+  line-height: 50px;
+  padding-bottom: 25px;
   text-transform: lowercase;
 }
 .workshop-full .workshop-title,
@@ -73,7 +66,7 @@ em {
 .sponsor-title {
   color: $c-grey-title;
   font-size: 25px;
-  line-height: 2;
+  line-height: 25px;
 }
 .session-time,
 .workshop-date,
@@ -87,7 +80,8 @@ h3, h4,
 .workshop-speaker-name,
 .session-links,
 .workshop-date,
-.location {
+.location,
+.button {
   text-transform: uppercase;
 }
 .workshop-summary .workshop-speaker-name {
@@ -97,29 +91,19 @@ h3, h4,
     color: $c-blue;
   }
 }
-.workshop-content {
-  p {
-    // margin: 1em 0;
-  }
-}
 .workshop-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
   h4 {
     color: $c-grey-title;
-    margin: 1em 0 0;
+    margin: 25px 0 0;
   }
 }
-.more-sessions {
-}
+
 .button {
   background: $c-blue;
   display: inline-block;
-  padding: 5px 20px;
-  text-transform: uppercase;
-
+  padding: 8px 20px;
+}
+a.button {
   &, &:link, &:visited {
     color: $c-white;
   }
@@ -137,8 +121,7 @@ h3, h4,
 .footer {
   margin: 0 auto;
   max-width: 800px;
-  padding: 6.25%;
-  // width: 78.125%;
+  padding: 51px 6.25% 25px;
 }
 
 
@@ -153,7 +136,6 @@ h3, h4,
 }
 .masthead-bg {
   bottom: 53px;
-  // bottom: 0;
   display: block;
   font-size: 0;
   position: absolute;
@@ -162,7 +144,7 @@ h3, h4,
   z-index: -1;
 
   &:before {
-    content: 'ciao';
+    content: '';
     display: inline-block;
     height: 100%;
     vertical-align: middle;
@@ -195,12 +177,9 @@ h3, h4,
 }
 .tickets-button {
   display: block;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 .nav-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   /* Hide only visually, but have it available for screen readers: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
   border: 0;
   clip: rect(0 0 0 0);
@@ -211,9 +190,7 @@ h3, h4,
   position: absolute;
   width: 1px;
 }
-.tickets-button {
-  
-}
+
 /* Logo */
 .logo-wrapper {
   margin: 0 auto;
@@ -282,13 +259,10 @@ h3, h4,
   }
 }
 
-.no-svg .logo-wrapper {
-}
 .logo {
   span {
     background-image: url(../images/logo.png);
     background-repeat: no-repeat;
-    // background-size: 100% 100%;
     display: block;
     height: 0;
     overflow: hidden;
@@ -314,24 +288,18 @@ h3, h4,
 /* Sections
    ========================================================================== */
 .sub-hr {
-  border-top: 1px solid rgba($c-grey-title, .2);
-  padding-top: 20px;
+  // border-top: 1px solid rgba($c-grey-title, .2);
+  // padding-top: 20px;
 
   &:first-of-type {
-    border-top: 0 none;
+    // border-top: 0 none;
   }
 }
 
-.sessions-wrapper {
-  // clear: both;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 .session-wrapper,
 .workshop-wrapper,
 .monty {
-  padding-bottom: 20px;
+  padding: 25px 0;
 }
 
 /* Non Speaker Session
@@ -340,19 +308,12 @@ h3, h4,
 
 /* Speaker Session
    ========================================================================== */
-.session-content {
-  // clear: both;
-  padding-top: 25px;
-
-  .session-style-titles & {
-    // padding-top: 12px;
-  }
-}
 .session-links {
+  margin: 12.5px 0;
+
   a {
     color: $c-green;
     display: block;
-    line-height: 2.5;
 
     &:hover, &:focus, &:active {
       color: $c-blue;
@@ -362,52 +323,75 @@ h3, h4,
 
 /* Workshops
    ========================================================================== */
-.workshop-content-wrapper,
-.workshop-list {
-  // margin-top: 25px;
-}
 .workshop-header-image-wrapper {
   display: none;
+}
+.workshop-wrapper .button {
+  margin: 25px 0 9px;
+}
+.workshop-full .workshop-details,
+.workshop-content p {
+  padding-top: 25px;
+}
+.workshop-full {
+  border-top: 1px solid rgba($c-grey-title, .2);
+  margin-top: 25px;
+  padding-top: 50px;
+
+  &:first-of-type {
+    border-top: 0 none;
+    margin-top: 0;
+    padding-top: 25px;
+  }
 }
 
 
 /* Locations
    ========================================================================== */
 .locations {
-  &, & ul {
-    // clear: both;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  padding-bottom: 25px;
+
+  & > li {
+    margin-top: 50px;
   }
 }
-.location-title {
-  // margin-bottom: 25px;
-}
 .location {
-  // margin-bottom: 20px; //30px
+  margin-top: 25px;
+}
 
-  p {
-    margin: 0;
+
+/* Diversity
+   ========================================================================== */
+.diversity p {
+  padding-top: 25px;
+
+  &:last-child {
+    padding-bottom: 25px;
   }
 }
 
 
 /* Sponsors
    ========================================================================== */
-.main-sponsors {
+.monty {
+  padding-top: 0;
+
+  &:first-child {
+    padding-top: 25px;
+  }
 }
 .sponsor {
   background: $c-white;
-  height: 50vw;
-  margin: 20px auto;
+  height: 150px;
+  margin: 25px auto;
   max-width: 240px;
   width: 100%; // this is for IE
 
   a {
     display: block;
     height: 100%;
-    padding: 10px;
+    padding: 25px;
+    text-align: center;
     width: 100%;
 
     &:before {
@@ -425,25 +409,24 @@ h3, h4,
     vertical-align: middle;
   }
 }
-.sponsor-title {
-  // margin-bottom: 36px;
+.small-monty a {
+  display: block;
+  padding-top: 25px;
 }
 
 
 /* Footer
    ========================================================================== */
 .footer {
-  padding-bottom: 30px;
-  padding-top: 22px;
+  padding-top: 25px;
+
+  p {
+  padding-bottom: 25px;
+  }
 }
 #left-logic {
-  // height: 23px;
-  margin: 30% 0;
+  margin: 25px 0;
   width: 65%;
-
-  object {
-    display: block;
-  }
 }
 .left-logic {
   display: none;
@@ -463,18 +446,7 @@ h3, h4,
 }
 
 
-/* Diversity
-   ========================================================================== */
-.diversity p {
-  // margin: 28px 0;
-
-  &:last-child {
-    // margin-bottom: 88px; //30px
-  }
-}
-
-
-/* Diversity
+/* Quotes
    ========================================================================== */
 .quote-wrapper {
   background: $c-grey-title;
@@ -502,8 +474,8 @@ h3, h4,
   }
 }
 .quote-image-wrapper {
-  margin-bottom: 1.5em;
+  margin-bottom: 25px;
 }
 
 
-@import "mq";
+// @import "mq";

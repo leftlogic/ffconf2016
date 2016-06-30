@@ -3,7 +3,8 @@
 @include mq-min-check(320px) {
   .main,
   .footer {
-    padding: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .session-links {
     a {
