@@ -8,6 +8,7 @@ html(id=id)
     meta(name='mobile-web-app-capable', content='yes')
     meta(name='description', content=siteDescription)
     meta(name='format-detection', content='telephone=no')
+    meta(name='theme-color', content='#00F5C0')
 
     title= siteTitle
 
@@ -16,6 +17,7 @@ html(id=id)
     link(rel='stylesheet', href='/css/style.css')
     link(rel='all-the-source', href=source)
     link(rel='author', href='/humans.txt')
+    link(rel='manifest', href='/manifest.json')
 
     <!--[if lt IE 9]>
     script(src='/js/html5shiv.min.js')
