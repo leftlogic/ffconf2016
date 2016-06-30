@@ -21,7 +21,7 @@ body {
 }
 
 .main-wrapper {
-  background: $c-white url(../images/pattern.png);
+  background: $c-bg url(../images/pattern.png);
   background-size: 320px 50px;
 
   @include mq-min-check(0, 2) {
