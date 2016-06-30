@@ -17,7 +17,7 @@ section.main(role='region', aria-labelledby='workshops')
       header.workshop-header
         div.workshop-header-content
           h3.workshop-title(role='heading', aria-level='3')= workshop.title
-          div
+          div.workshop-details
             a.workshop-speaker-name(target='_blank' href='https://twitter.com/#{workshop.speaker.twitter}')= workshop.speaker.name
           div
             a.button(href='/workshops#' + workshop.slug) More Info
