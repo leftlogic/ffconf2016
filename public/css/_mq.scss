@@ -164,14 +164,17 @@
     position: static;
     width: auto;
 
+    display: flex;
+    justify-content: space-between;
+
     li {
-      display: inline-block;
+      // display: inline-block;
     }
 
     a {
       color: $c-white;
       display: block;
-      padding: 10px 6px 7px;
+      padding: 10px 10px 7px;
 
       &:hover, &:focus, &:active {
         background: $c-white;
@@ -182,6 +185,7 @@
   .tickets-button {
     background: $c-white;
     padding: 10px 16px 7px;
+    white-space: nowrap;
 
     &, &:link, &:visited {
       color: $c-blue;
