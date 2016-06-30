@@ -31,36 +31,32 @@ section.main(role='region', aria-labelledby='sessions')
       if (session.break && config.phase == 3) || !session.break
         li.session-wrapper.sub-hr.js-session(id=idify(session.title), data-date1=dates[0] + ' ' + session.start, data-date2=dates[1] + ' ' + session.start)
           if session.break
-              header.break
-                h3.schedule-title(role='heading', aria-level='3')= session.title
-                div.session-time!=session.start + ' &mdash; ' + session.end
+            header.break
+              h3.schedule-title(role='heading', aria-level='3')= session.title
+              div.session-time!=session.start + ' &mdash; ' + session.end
           else
-            div.session-about-wrapper
-              header.session-header
-                h3.session-title(role='heading', aria-level='3')= session.title
-                if config.phase >= 3 && session.speaker.name
-                  div.session-speaker-name
-                    if session.speaker.twitter
-                      a(target='_blank', href='https://twitter.com/' + session.speaker.twitter)= session.speaker.name
-                    else
-                      span= session.speaker.name
-                if config.phase == 3
-                  div.session-time.session-speaker-time!=session.start + ' &mdash; ' + session.end
-                if config.phase == 4
-                  if session.slides || session.audio || session.video
-                    div.session-links
-                      if session.slides
-                        a(href=session.slides) Slides
-                      if session.audio
-                        a(href=session.audio) Audio
-                      if session.video
-                        a(href=session.video) Video
-              div.session-content
-                if session.description
-                  !=global.marked(session.description)
-                if config.phase >= 3 && session.bio
-                  div.session-bio
-                    !=global.marked(session.bio)
+            header.session-header
+              h3.session-title(role='heading', aria-level='3')= session.title
+              if config.phase >= 3 && session.speaker.name
+                div.session-speaker-name
+                  if session.speaker.twitter
+                    a(target='_blank', href='https://twitter.com/' + session.speaker.twitter)= session.speaker.name
+                  else
+                    span= session.speaker.name
+              if config.phase == 3
+                div.session-time.session-speaker-time!=session.start + ' &mdash; ' + session.end
+              if config.phase == 4
+                if session.slides || session.audio || session.video
+                  div.session-links
+                    if session.slides
+                      a(href=session.slides) Slides
+                    if session.audio
+                      a(href=session.audio) Audio
+                    if session.video
+                      a(href=session.video) Video
+            div.session-content
+              if session.description
+                !=global.marked(session.description)
 
     if totalSessions < 8
       li.session-wrapper.sub-hr.js-session(id='slugMoreToCome')
