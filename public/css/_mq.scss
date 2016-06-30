@@ -273,7 +273,13 @@
   }
   .workshop-header {
     height: 500px;
-    margin-bottom: 100px;
+
+    .workshop-full & {
+      margin-bottom: 100px;
+    }
+  }
+  .workshop-summary {
+    padding-bottom: 100px;
   }
 
   .workshop-content-wrapper {
