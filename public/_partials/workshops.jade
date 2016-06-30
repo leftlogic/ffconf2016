@@ -20,9 +20,7 @@ section.main(role='region', aria-labelledby='workshops')
                 else
                   a.button(href=workshop.ticket.url, target='_blank') Buy tickets
               else
-                //- span.button.button-disabled Tickets £#{workshop.ticket.price}
-                //-   small  + VAT
-                a.button(href=workshop.ticket.url, target='_blank') Buy tickets
+                span.button On sale soon
         div.workshop-header-image-wrapper
           div.workshop-header-image(style='background-image:url(/images/workshops/' + workshop.photo + ')')
       div.workshop-content-wrapper

@@ -8,8 +8,8 @@
 - text.date = 'November 10 & 11'
 
 - var line = 'Tickets @ £160+VAT will be sold on the 15th and 22nd July at 11am BST.'
-- var button = ''
-- var buy = true
+- var button = 'On sale soon'
+- var buy = false
 - var buttonLink = false
 
 if config.phase == 1
@@ -83,17 +83,17 @@ header#masthead.masthead(role='banner', class='phase-'+config.phase)
           text(x='50%', y='74.5%')= text.location2
           text(x='50%', y='86.5%')= text.tag
 
-  if config.phase >= 1
-    div.nav-main-wrapper
-      nav.nav-main(role='navigation')
-        div.tickets-wrapper
-          if button != ''
-            if buy
-              a.button.tickets-button(href=ticketUrl, target='_blank')!= button
-            else if buttonLink
-              a.button.tickets-button(href=buttonLink, target='_blank')!= button
-            else
-              span.button.tickets-button!= button
+  div.nav-main-wrapper
+    nav.nav-main(role='navigation')
+      div.tickets-wrapper
+        if button != ''
+          if buy
+            a.button.tickets-button(href=ticketUrl, target='_blank')!= button
+          else if buttonLink
+            a.button.tickets-button(href=buttonLink, target='_blank')!= button
+          else
+            span.button.tickets-button!= button
+      if config.phase >= 1
         ul.nav-list#nav-list
           each item in menu
             li
