@@ -22,7 +22,7 @@ section.main(role='region', aria-labelledby='workshops')
               else
                 span.button On sale soon
         div.workshop-header-image-wrapper
-          div.workshop-header-image(style='background-image:url(/images/workshops/' + workshop.photo + ')')
+          div.workshop-header-image(style='background-image:url(/images/workshops/' + workshop.photo + ')') &nbsp;
       div.workshop-content-wrapper
         div.workshop-content
           !=global.marked(workshop.description)

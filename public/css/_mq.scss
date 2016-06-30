@@ -6,7 +6,10 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+
   .session-links {
+    margin: 25px 0;
+
     a {
       display: inline;
 
@@ -23,21 +26,10 @@
       }
     }
   }
-  .sponsor-1st {
-    max-height: 180px;
-  }
-  .sponsor-2nd {
-    height: 120px;
-    max-width: 190px;
-  }
-  .sponsor-3rd {
-    height: 80px;
-    max-width: 127px;
-  }
+
   #left-logic {
-    height: 43px;
-    margin: 50px 0 0;
-    width: 190px;
+    height: 50px;
+    width: 222px;
   }
   .left-logic {
     // background-size: 100%;
@@ -50,18 +42,18 @@
   .main,
   .footer {
     width: calc(100% - 80px);
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
+  
   .button {
     font-size: 20px;
-    padding: 0 32px;
+    // padding: 0 32px;
   }
   .tickets-button {
-    padding: 10px 0;
+    // padding: 10px 0;
   }
-  .session-content {
-    
-  }
+
   .session-links {
     display: inline-block;
   }
@@ -70,14 +62,12 @@
   .session-time {
     display: inline;
   }
+  .session-speaker-name {
+    margin-right: 25px;
+  }
+
   .location-description {
     float: right;
-  }
-  .locations ul {
-    margin-bottom: 20px;
-  }
-  .location {
-    margin-bottom: 0;
   }
 
   .workshop-header {
@@ -96,17 +86,13 @@
   }
   .workshop-header-image-wrapper {
     display: block;
-    height: 100%;
     width: 50%;
   }
   .workshop-header-image {
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-  }
-  .workshop-details {
-    line-height: 1.667;
-    margin-bottom: 50px;
+    font-size: 0;
+    padding-top: 100%;
   }
 
   .quote {
