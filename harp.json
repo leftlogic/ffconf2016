@@ -22,7 +22,7 @@
       },
       "mode": "titles",
       "comments": {
-        "mode-options": "titles|speakers|schedule // just a comment",
+        "mode-options": "titles|speakers|schedule // just a comment // we are not using it this year",
         "phase-options": {
           "0": "before selling any ticket",
           "0.5": "release of topics before selling tickets",

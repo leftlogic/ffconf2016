@@ -1,18 +1,6 @@
 section.main(role='region', aria-labelledby='workshops')
   h2#workshops.section-title(role='heading', aria-level='2') Workshops
   each workshop in public._data.workshops
-    //- if config.phase < 4
-    //-   div.button-wrapper
-    //-     if config.phase >= 1
-    //-       if config.soldout[workshop.slug]
-    //-         span.button.button-disabled Sold Out
-    //-       else
-    //-         a.button(href=workshop.ticket.url, target='_blank') Tickets £#{workshop.ticket.price}
-    //-           small  + VAT
-    //-     else
-    //-       span.button.button-disabled Tickets £#{workshop.ticket.price}
-    //-         small  + VAT
-    //-     sub.button-sub Includes Conference Ticket
     section.workshop-wrapper.workshop-summary(id=workshop.slug)
       header.workshop-header
         div.workshop-header-content
@@ -22,4 +10,4 @@ section.main(role='region', aria-labelledby='workshops')
           div
             a.button(href='/workshops#' + workshop.slug) More Info
         div.workshop-header-image-wrapper
-          div.workshop-header-image(style='background-image:url(/images/workshops/' + workshop.photo + ')')
+          div.workshop-header-image(style='background-image:url(/images/workshops/' + workshop.photo + ')') &nbsp;
