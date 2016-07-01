@@ -206,7 +206,8 @@
     line-height: 1.667;
     padding: 10px 16px 7px;
     white-space: nowrap;
-
+  }
+  a.tickets-button {
     &, &:link, &:visited {
       color: $c-blue;
     }
