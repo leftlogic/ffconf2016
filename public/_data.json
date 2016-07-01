@@ -393,29 +393,34 @@
   ],
   "quotes": [
     {
-      "text": "1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam iure itaque praesentium perferendis incidunt accusantium? Expedita nostrum, veritatis quo.",
-      "photo": "remy.png",
-      "author": "Remy Sharp, FFConf 2015"
+      "text": "#ffconf was absolutely brilliant. Thanks all!",
+      "author": "Anna Shipman, 2015 Speaker & Lead Architect at GOV.UK",
+      "url": "https://twitter.com/annashipman/status/662689809450840064",
+      "photo": "anna-shipman.jpg"
     },
     {
-      "text": "2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus voluptatem dolores, labore reiciendis nostrum eveniet cum officiis dignissimos voluptates debitis.",
-      "photo": "remy2.png",
-      "author": "Remy Sharp, FFConf 2015"
+      "text": "Last Friday was my first #ffconf - was blown away by the quality and variety of talks. Fantastic achievement from the conf team",
+      "author": "James Da Costa, ffconf 2015 attendee",
+      "url": "https://twitter.com/jamesdacosta/status/663827059010101248",
+      "photo": "james-da-costa.jpg"
     },
     {
-      "text": "3",
-      "photo": "remy.png",
-      "author": "Remy Sharp, FFConf 2015"
+      "text": "As I head home, thank you, again to @rem, @julieanne and the volunteers for @ffconf. Incredible event and I felt incredibly taken care of.",
+      "author": "John K Paul, 2015 Speaker & CTO of inRhythm",
+      "url": "https://twitter.com/johnkpaul/status/663265398784180224",
+      "photo": "john-k-paul.jpg"
     },
     {
-      "text": "4",
-      "photo": "remy2.png",
-      "author": "Remy Sharp, FFConf 2015"
+      "text": "Back home & wondering where to start with all the inspiration I got whilst at #ffconf. Thank you @julieanne & @rem for an excellent day.",
+      "author": "Hannah Wolfe, 2014 Speaker and Ghost CTO & co-founder",
+      "url": "https://twitter.com/ErisDS/status/531102677976252416",
+      "photo": "hannah-wolfe.jpg"
     },
     {
-      "text": "5",
-      "photo": "remy.png",
-      "author": "Remy Sharp, FFConf 2015"
+      "text": "Fantastic set of speakers, interesting and exciting topics, great day @ffconf. Thanks and congratulations to @rem and @julieanne",
+      "author": "Phil Nash, developer evangelist for Twilio",
+      "url": "https://twitter.com/philnash/status/530777197607682048",
+      "photo": "phil-nash.jpg"
     }
   ]
 }

@@ -26,7 +26,7 @@ body {
 
 /* Reset */
 h1, h2, h3, h4,
-p, strong, em,
+p, strong, em, cite,
 ul, ol, li {
   font-size: inherit;
   font-style: normal;
@@ -453,6 +453,9 @@ a.button {
   color: $c-white;
 }
 .quote {
+  padding-bottom: 25px;
+  padding-top: 35px;
+
   p {
     &:before {
       content: '\201C';
@@ -462,9 +465,13 @@ a.button {
     }
   }
 
-  cite {
-    color: $c-text;
-    font-style: normal;
+  a {
+    &, &:link, &:visited {
+      color: $c-text;
+    }
+    &:hover, &:focus, &:active {
+      color: $c-green;
+    }
   }
 
   img {

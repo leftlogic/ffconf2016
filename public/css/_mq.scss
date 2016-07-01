@@ -104,7 +104,6 @@
   .quote {
     align-items: flex-start;
     display: flex;
-    padding: 5% 0;
 
     img {
       margin-right: 60px;
@@ -114,21 +113,11 @@
   }
   .quote-image-wrapper {
     margin-bottom: 0;
-    margin-top: 0.5em;
+    margin-top: 6px;
   }
   .quote-content-wrapper {
     width: 100%;
   }
-  // .quote-wrapper:nth-of-type(even) {
-  //   & .quote {
-  //     flex-direction: row-reverse;
-  //     text-align: right;
-  //   }
-  //   & img {
-  //     margin-left: 60px;
-  //     margin-right: 0;
-  //   }
-  // }
 }
 
 
@@ -376,8 +365,12 @@
   .quote-wrapper {
     line-height: 1.9;
   }
+  .quote-image-wrapper {
+    margin-top: 11px;
+  }
   .quote {
-    padding-bottom: 5%;
+    padding-bottom: 50px;
+    padding-top: 50px;
   }
 
   .diversity {

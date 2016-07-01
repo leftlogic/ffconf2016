@@ -9,4 +9,5 @@ mixin quote()
         div.quote-content-wrapper
           p= quote.text
           footer
-            cite= quote.author
+            cite
+              a(href=quote.url, target='_blank')= quote.author
