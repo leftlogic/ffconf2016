@@ -244,24 +244,25 @@ a.button {
   font-size: 36px;
   text-anchor: middle;
   text-transform: uppercase;
-
-  .no-svg & {
-    display: none;
-  }
 }
-.svg-desc-textfallback {
-  color: $c-white;
-  font-size: inherit;
-  text-transform: uppercase;
+.no-svg {
+  .circle2 {
+    margin-top: 0;
+  }
+  
+  .svg-desc-text {
+    color: $c-white;
+    font-size: 18px;
 
-  & span {
-    display: block;
+    & .t {
+      display: block;
+    }
   }
 }
 
 .logo {
   span {
-    background-image: url(../images/logo.png);
+    background-image: url(../images/no-svg-logo.png);
     background-repeat: no-repeat;
     display: block;
     height: 0;
@@ -440,9 +441,9 @@ a.button {
   overflow: hidden;
   display: block;
   text-indent: -200%;
-  height: 91px;
+  height: 44px;
   margin: 0 auto;
-  width: 414px;
+  width: 200px;
 }
 
 
@@ -454,7 +455,7 @@ a.button {
 }
 .quote {
   padding-bottom: 25px;
-  padding-top: 35px;
+  padding-top: 25px;
 
   p {
     &:before {
@@ -475,15 +476,7 @@ a.button {
   }
 }
 .quote-image-wrapper {
-  margin-bottom: 25px;
-  max-width: 65px;
-  width: 100%;
-}
-.quote-image {
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: none;
-  padding-top: 100%;
+  display: none;
 }
 
 

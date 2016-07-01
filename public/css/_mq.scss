@@ -31,9 +31,21 @@
     height: 50px;
     width: 222px;
   }
-  .left-logic {
-    // background-size: 100%;
-    // height: 46px;
+
+  .quote {
+    padding-top: 35px;
+  }
+  .quote-image-wrapper {
+    display: block;
+    margin-bottom: 25px;
+    max-width: 65px;
+    width: 100%;
+  }
+  .quote-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: none;
+    padding-top: 100%;
   }
 }
 
