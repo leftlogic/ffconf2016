@@ -87,14 +87,18 @@
   }
   .workshop-header-image-wrapper {
     display: block;
+    position: relative;
     width: 50%;
   }
   .workshop-header-image {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 0;
-    height: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   .quote {
