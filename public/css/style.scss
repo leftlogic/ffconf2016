@@ -473,15 +473,17 @@ a.button {
       color: $c-green;
     }
   }
-
-  img {
-    display: block;
-    max-width: 65px;
-    width: 100%;
-  }
 }
 .quote-image-wrapper {
   margin-bottom: 25px;
+  max-width: 65px;
+  width: 100%;
+}
+.quote-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: none;
+  padding-top: 100%;
 }
 
 

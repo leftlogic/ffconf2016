@@ -104,16 +104,16 @@
   .quote {
     align-items: flex-start;
     display: flex;
-
-    img {
-      margin-right: 60px;
-      max-width: none;
-      width: 130px
-    }
   }
   .quote-image-wrapper {
     margin-bottom: 0;
+    margin-right: 60px;
     margin-top: 6px;
+    max-width: none;
+    width: auto;
+  }
+  .quote-image {
+    width: 130px
   }
   .quote-content-wrapper {
     width: 100%;

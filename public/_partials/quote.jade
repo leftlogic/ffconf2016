@@ -5,7 +5,7 @@ mixin quote()
     div.quote-wrapper
       blockquote.main.quote
         div.quote-image-wrapper
-          img(src="/images/quotes/" + quote.photo, alt="")
+          div.quote-image(style='background-image: url(/images/quotes/' + quote.photo + ')')
         div.quote-content-wrapper
           p= quote.text
           footer
