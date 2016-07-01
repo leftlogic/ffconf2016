@@ -1,4 +1,4 @@
-/* global confDays, cache, insertFont, key */
+/* global confDays, fontCache, fontInsert, fontKey, fontUrl */
 (function() {
   var $ = function (s) {
     try {
@@ -18,19 +18,18 @@
   // fonts
   // http://crocodillon.com/blog/non-blocking-web-fonts-using-localstorage
   // POST-RENDER
-  if (!cache) {
-    var url = '/css/fonts.c8c5676ae28fd20f3ddd940e8060fb08.woff.json';
+  if (!fontCache) {
     // Fonts not in LocalStorage or md5 did not match
     window.addEventListener('load', function() {
       var request = new XMLHttpRequest(),
           response;
-      request.open('GET', url, true);
+      request.open('GET', fontUrl, true);
       request.onload = function() {
         if (this.status == 200) {
           try {
             response = JSON.parse(this.response);
-            insertFont(response.value);
-            window.localStorage.setItem(key, this.response);
+            fontInsert(response.value);
+            window.localStorage.setItem(fontKey, this.response);
           } catch(e) {
             // LocalStorage is probably full
           }

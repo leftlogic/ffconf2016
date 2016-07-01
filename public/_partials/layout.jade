@@ -51,25 +51,26 @@ html(id=id)
         document.documentElement.className += ' no-svg';
       }
 
-      var md5 = 'c8c5676ae28fd20f3ddd940e8060fb08';
-      var key = 'fonts';
-      var cache = null;
-      function insertFont(value) {
+      var fontUrl = '/css/fonts.c8c5676ae28fd20f3ddd940e8060fb08.woff.json';
+      var fontMd5 = 'c8c5676ae28fd20f3ddd940e8060fb08';
+      var fontKey = 'fonts';
+      var fontCache = null;
+      function fontInsert(value) {
         var style = document.createElement('style');
         style.innerHTML = value;
         document.head.appendChild(style);
       }
       // PRE-RENDER
       try {
-        cache = window.localStorage.getItem(key);
-        if (cache) {
-          cache = JSON.parse(cache);
-          if (cache.md5 == md5) {
-            insertFont(cache.value);
+        fontCache = window.localStorage.getItem(fontKey);
+        if (fontCache) {
+          fontCache = JSON.parse(fontCache);
+          if (fontCache.md5 == fontMd5) {
+            fontInsert(fontCache.value);
           } else {
             // Busting cache when md5 doesn't match
-            window.localStorage.removeItem(key);
-            cache = null;
+            window.localStorage.removeItem(fontKey);
+            fontCache = null;
           }
         }
       } catch(e) {
