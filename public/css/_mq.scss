@@ -116,7 +116,7 @@
     width: 130px
   }
   .quote-content-wrapper {
-    width: 100%;
+    width: calc(100% - 190px); // can't use just 100% because of Safari
   }
 }
 
