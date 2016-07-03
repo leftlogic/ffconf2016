@@ -301,9 +301,8 @@
   },
   "workshops": [
     {
-      "title": "Performance Matters",
-      "slug": "perfmatters",
-      "photo": "paul.png",
+      "title": "Advanced CSS Layout Training",
+      "slug": "css-layout",
       "ticket": {
         "url": "",
         "price": "425"
@@ -316,38 +315,39 @@
       },
 
       "speaker": {
-        "name": "Paul Lewis",
-        "twitter": "aerotwist"
+        "name": "Rachel Andrew",
+        "twitter": "rachelandrew",
+        "photo": "rachel.jpg"
       },
 
-      "description": "Performance is an integral part of any successful project. In fact, as the next billion people come online, performance will become increasingly important. Having a performant site isn't just about getting things to load quickly with concatentation, minification, and the critical rendering path, it's also about responding to the user's input quickly and efficiently; it's about smooth scrolling and timely animations. Ultimately it's about getting pixels onto the user's screen quickly and keeping things fast.",
-      "extendedDescription": "This workshop is going to take you on a deep dive through the pixel pipeline, from the initial page request through to pixels on the screen. We will stop at every point in the pipeline to focus on what tools we have our disposal, what the common bottlenecks are, and how we can go about fixing them.\n\nTowards the end of the day you'll have the opportunity to apply your knowledge to your own sites, and come away more confident of how to include performance and profiling in your day-to-day work.",
+      "description": "CSS Layout has been stuck somewhere around 2006 for several years. We have had to attempt complex layout using tools such as floats and positioning. These methods never designed for complex page and application layout. However things are changing and it’s a great time to take a look at the layout methods that are now part of modern CSS, and those coming in the very near future.",
+      "extendedDescription": "This workshop is designed for designers and developers who already have a good working knowledge of HTML and CSS. We will cover a range of CSS methods for achieving layout, from those you are safe to use right now even if you need to support older version of Internet Explorer through to things that while still classed as experimental, are likely to ship in browsers in the coming months. The aim is to teach you some tips that I’ve learned working on real projects, alongside sharing some of the exciting things that I’ve been experimenting with as I look into emerging specifications.\n\nThis will be a practical workshop, we will work through code examples together, and you’ll have those worked examples to take away to experiment with further or to share with your team.",
       "topics": [
         {
-          "title": "Choosing the right battles",
-        "description": "The performance landscape and learning what matters to your users."
+          "title": "Learning from the past",
+          "description": "What can we take from older layout methods that might help us build layouts that also work well in older browsers?"
         },
-
         {
-          "title": "The Critical Rendering Path",
-        "description": "Discover how the browser converts requests into pixels."
+          "title": "CSS Layout today",
+          "description": "Looking at some of the modules that have good support today - multiple column layout, flexbox and CSS Shapes"
         },
-
         {
-          "title": "JavaScript",
-        "description": "How to schedule your JavaScript properly, and assess its performance impact."
+          "title": "Just Landing",
+          "description": "CSS Grid Layout will bring us a fit-for-purpose layout method for the first time. We will find out how Grid works alongside Flexbox and the Box Alignment Module to create a new system of layout."
         },
-
         {
-          "title": "Styles, Layout, Paint and Composite",
-          "description": "Learn how to work with the browser to make visual updates as performant as possible."
+          "title": "Experimental",
+          "description": "What else is hiding in the CSS specifications? How can we encourage implementation of the things we would like to see land?"
+        },
+        {
+          "title": "Building the future",
+          "description": "Some thoughts and practical ideas on how we bring these techniques together to build modern layouts that don’t lock out the unfortunate users of old browsers"
         }
       ]
     },
     {
       "title": "Mastering browser devtools",
       "slug": "debug-and-tools",
-      "photo": "remy.png",
       "ticket": {
         "url": "",
         "price": "425"
@@ -362,7 +362,7 @@
       "speaker": {
         "name": "Remy Sharp",
         "twitter": "rem",
-        "photo": "remy-devtools.jpg"
+        "photo": "remy.jpg"
       },
 
       "topics" : [

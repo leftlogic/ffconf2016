@@ -17,7 +17,7 @@
         "day1": false,
         "day2": false,
         "workshops": false,
-        "perfmatters": true,
+        "css-layout": true,
         "debug-and-tools": true
       },
       "mode": "titles",

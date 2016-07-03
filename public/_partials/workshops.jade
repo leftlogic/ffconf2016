@@ -1,3 +1,16 @@
+style
+  each workshop in public._data.workshops
+    = '#' + workshop.slug + ' .workshop-header-image{'
+    = 'background-image:url(/images/workshops/1x-' + workshop.speaker.photo + ');'
+    = '}'
+
+  = '@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {'
+  each workshop in public._data.workshops
+    = '#' + workshop.slug + ' .workshop-header-image{'
+    = 'background-image:url(/images/workshops/2x-' + workshop.speaker.photo + ');'
+    = '}'
+  = '}'
+
 section.main(role='region', aria-labelledby='workshops')
   h2#workshops.section-title(role='heading', aria-level='2') Workshops
   each workshop, index in public._data.workshops
@@ -22,7 +35,7 @@ section.main(role='region', aria-labelledby='workshops')
               else
                 span.button On sale soon
         div.workshop-header-image-wrapper
-          div.workshop-header-image(style='background-image:url(/images/workshops/' + workshop.photo + ')')
+          div.workshop-header-image
       div.workshop-content-wrapper
         div.workshop-content
           !=global.marked(workshop.description)
