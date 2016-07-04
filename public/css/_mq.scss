@@ -344,16 +344,19 @@
   }
   .sponsors-wrapper {
     display: flex;
-    justify-content: space-between;
+    // justify-content: center;
   }
   .sponsor {
     margin: 0;
     max-width: none;
   }
+  .sponsor + .sponsor {
+    margin-left: 10px;
+  }
   .sponsor-1st {
     height: 250px;
     max-height: none;
-    width: calc(50% - 5px);
+    width: 50%;
 
     img {
       // max-width: 330px;
@@ -362,13 +365,18 @@
   .sponsor-2nd,
   .sponsor-3rd {
     height: 150px;
-    width: calc(25% - 5px);
+    width: 25%;
   }
 
   .sponsor-3rd {
     img {
       max-height: 60px;
     }
+  }
+
+  .sponsor-4th {
+    height: 100px;
+    width: 20%;
   }
 
   .footer {
