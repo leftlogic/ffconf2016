@@ -31,10 +31,12 @@
 
     event.preventDefault();
 
+    window.history.pushState(null, null, node.hash);
+
     var target = $(node.hash)[0];
     var coords = { x: 0, y: window.scrollY };
     var tween = new TWEEN.Tween(coords)
-      .to({ x: 0, y: target.getClientRects()[0].top }, 500)
+      .to({ x: 0, y: target.offsetTop }, 500)
       .easing(TWEEN.Easing.Quadratic.Out)
       .onUpdate(function () {
         window.scrollTo(this.x, this.y);
