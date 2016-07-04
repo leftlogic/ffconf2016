@@ -431,8 +431,9 @@ a.button {
   width: 65%;
 }
 .left-logic {
-  display: none;
+  // display: none;
 }
+// need the no-svg class otherwise browsers that support svg will anyhow donwload the png
 .no-svg .left-logic {
   background-image: url(../images/left-logic.png);
   background-position: top;
