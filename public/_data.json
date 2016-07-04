@@ -120,28 +120,28 @@
       },
       {
         "duration": 40,
-        "title": "JavaScript that doesn’t hurt your feelings",
+        "title": "Optimise your Web Development Workflow",
         "speaker": {
-          "name": "Robin Mehner",
-          "twitter": "rmehner",
-          "photo": "robin.jpg"
+          "name": "",
+          "twitter": "",
+          "photo": ""
         },
-        "description": "JavaScript just had its 20th birthday this year and it has come a long way. But many fail to recognise this and still code like it’s 1999. This talk will take you through my favourite features of recent JavaScript editions, shows you how to use them in your project today and will give you an outlook of even better things to come.",
+        "description": "Learn about new DevTools features which can greatly enhance your workflow. Also, native Node.js debugging straight from DevTools!",
         "bio": "",
-        "links": ["111", "222222"],
-        "slides": "aaa",
-        "audio": "bbb",
-        "video": "ccc"
+        "links": [],
+        "slides": "",
+        "audio": "",
+        "video": ""
       },
       {
         "duration": 40,
-        "title": "SVG in motion",
+        "title": "All Things Continuous",
         "speaker": {
-          "name": "Sara Soueidan",
-          "twitter": "sarasoueidan",
-          "photo": "sara.jpg"
+          "name": "",
+          "twitter": "",
+          "photo": ""
         },
-        "description": "Scalable Vector Graphics (SVG) are taking over a lot of our design tools by offering us more flexibility over those tools. In this talk, we will cover everything we need to know before attempting to animate SVGs, including animation gotchas, how-tos and pre-animation requisites such as optimization and embedding, among others, and how each of those affects the animation process.",
+        "description": "Continuous Deployment for everybody: from a one-person army to distributed teams. Ecosystem appraisal, time-saving tips, max velocity!",
         "bio": "",
         "links": [],
         "slides": "",
@@ -155,28 +155,13 @@
       },
       {
         "duration": 40,
-        "title": "Operations: a developer's guide",
+        "title": "Next Level CSS",
         "speaker": {
-          "name": "Anna Shipman",
-          "twitter": "annashipman",
-          "photo": "anna.jpg"
+          "name": "",
+          "twitter": "",
+          "photo": ""
         },
-        "description": "An introduction to the web ops skills that will help you be a better developer. What you need to know about virtualisation, containerisation and wrangling servers, and some tools we use that might make development easier. I spent two years on the infrastructure team so you don't have to!",
-        "bio": "",
-        "links": [],
-        "slides": false,
-        "audio": "",
-        "video": ""
-      },
-      {
-        "duration": 40,
-        "title": "The Web Audio Phenomenon that Shall Not Be Named",
-        "speaker": {
-          "name": "John K. Paul",
-          "twitter": "johnkpaul",
-          "photo": "john.jpg"
-        },
-        "description": "Natural languages have many nooks and crannies, but there's a particular rabbit hole that will obsess you from the start. In this talk, you'll learn about the oddest psychological phenomenon ever to be thrown at getUserMedia and the odd parallels between learning human, natural languages and learning programming languages.",
+        "description": "While we were all looking the other way browsers have been implementing CSS features that do things you might think you need JavaScript or at least a pre-processor to achieve. We’ll take a tour through what is landing in the CSS specifications and your browsers right now and in the very near future.",
         "bio": "",
         "links": [],
         "slides": false,
@@ -189,76 +174,10 @@
         "title": "Lunch break (90 mins)"
       },
       {
-        "duration": 40,
-        "title": "How to win at mobile accessibility",
-        "speaker": {
-          "name": "Marcy Sutton",
-          "twitter": "marcysutton",
-          "photo": "marcy.jpg"
-        },
-        "description": "The mobile web-vs-native debate rages on–who's winning? How can we create mobile experiences that are accessible and reliable to people with disabilities? In this talk, we'll dive head-first into the mobile debate and reemerge informed on how we can use our skills as web developers to create brilliant mobile apps.",
-        "bio": "",
-        "links": [],
-        "slides": false,
-        "audio": "",
-        "video": ""
-      },
-
-      {
-        "duration": 40,
-        "title": "You should use <insert library/framework>, it's the bestestest!",
-        "speaker": {
-          "name": "Paul Lewis",
-          "twitter": "aerotwist",
-          "photo": "paul.jpg"
-        },
-        "description": "\"You should use [insert library or framework here], it's the bestestest!\" is pretty standard modern web development chatter. But how do you separate the hype from the reality? Let's have a look at how we can gather data to assess the fit of code to your projects.",
-        "bio": "",
-        "links": [],
-        "slides": false,
-        "audio": "",
-        "video": ""
-      },
-
-
-      {
         "break": true,
         "duration": 30,
         "title": "Cake break (30 mins)"
       },
-
-      {
-        "duration": 40,
-        "title": "Code Calligrams",
-        "speaker": {
-          "name": "Martin Kleppe",
-          "twitter": "aemkei",
-          "photo": "martin.jpg"
-        },
-        "description": "Programming is art: It is like painting, but instead of drawing on a canvas we populate computer screens with colours. And rather than using brushes, we combine bits and bytes to trace an ever-changing flow of images.\n\nIn this talk, you'll be introduced to the art of \"Creative Coding\" and how to generate beautiful new worlds, using nothing else than the languages of the Web.",
-        "bio": "",
-        "links": [],
-        "slides": "",
-        "audio": "",
-        "video": ""
-      },
-
-      {
-        "duration": 40,
-        "title": "A Talk about Everything",
-        "speaker": {
-          "name": "Lena Reinhard",
-          "twitter": "lrnrd",
-          "photo": "lena.jpg"
-        },
-        "description": "Software influences the lives of billions of humans every day. As people working on it, we face a broad variety of challenges – and we have a responsibility towards each of these humans. Let's take a look at the status of software development today, and see what each of us can do to act according to this responsibility.",
-        "bio": "",
-        "links": [],
-        "slides": false,
-        "audio": "",
-        "video": ""
-      },
-
       {
         "break": true,
         "duration": 20,
