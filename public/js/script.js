@@ -1,5 +1,5 @@
-/* global confDays, fontCache, fontInsert, fontKey, fontUrl */
-(function() {
+/* global confDays, fontCache, fontInsert, fontKey, fontUrl, TWEEN */
+(function () {
   var $ = function (s) {
     try {
       return document.querySelectorAll(s);
@@ -14,6 +14,40 @@
       return [];
     }
   };
+
+  document.body.addEventListener('click', function (event) {
+    var node = event.target;
+    var location = window.location;
+
+    // ignore non-links
+    if (node.nodeName !== 'A') {
+      return;
+    }
+
+    // only hook local urls
+    if (node.origin !== location.origin || node.pathname !== location.pathname) {
+      return;
+    }
+
+    event.preventDefault();
+
+    var target = $(node.hash)[0];
+    var coords = { x: 0, y: window.scrollY };
+    var tween = new TWEEN.Tween(coords)
+      .to({ x: 0, y: target.getClientRects()[0].top }, 500)
+      .easing(TWEEN.Easing.Quadratic.Out)
+      .onUpdate(function () {
+        window.scrollTo(this.x, this.y);
+      })
+      .start();
+
+    requestAnimationFrame(animate);
+
+    function animate(time) {
+      requestAnimationFrame(animate);
+      TWEEN.update(time);
+    }
+  });
 
   // fonts
   // http://crocodillon.com/blog/non-blocking-web-fonts-using-localstorage
@@ -46,7 +80,7 @@
   var best;
   var isConfDay = false;
   var whichConfDay = 0;
-  
+
   confDays.forEach(function(confDay, index) {
     if ((today.getDate() === confDay.getDate()) &&
         (today.getMonth() === confDay.getMonth()) &&
