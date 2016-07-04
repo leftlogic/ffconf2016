@@ -43,14 +43,14 @@ html(id=id)
     script.
       var confDays = [new Date('#{dates[0]}'), new Date('#{dates[1]}')];
       document.documentElement.className += ' yes-js';
-      // SVG support
+      //=== SVG support
       function supportsSVG() {
         return !! document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
       }
       if (!supportsSVG()) {
         document.documentElement.className += ' no-svg';
       }
-
+      //=== Fonts
       var fontUrl = '/css/fonts.c8c5676ae28fd20f3ddd940e8060fb08.woff.json';
       var fontMd5 = 'c8c5676ae28fd20f3ddd940e8060fb08';
       var fontKey = 'fonts';
