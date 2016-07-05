@@ -108,6 +108,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     bottom: 0;
+    height: 100%; // some browsers need it
     left: 0;
     position: absolute;
     right: 0;
