@@ -190,16 +190,21 @@
     display: flex;
     flex-direction: row; // fix for Safari 8
     justify-content: space-between;
+    flex: 1; // fix for Safari
+
+    max-width: 570px;
+    width: 100%;
+    margin-right: 10px;
 
     li {
-      // display: inline-block;
+      flex: 1;
     }
 
     a {
       color: $c-white;
       display: block;
       line-height: 1.667;
-      padding: 10px 10px 7px;
+      padding: 10px 0 7px;
 
       &:hover, &:focus, &:active {
         background: rgba($c-white, .5);
@@ -208,6 +213,10 @@
     }
   }
 
+  .tickets-wrapper {
+    letter-spacing: -1px;
+    word-spacing: -5px;
+  }
   .tickets-button {
     background: $c-white;
     color: $c-blue;
