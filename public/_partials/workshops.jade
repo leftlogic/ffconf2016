@@ -13,6 +13,9 @@ style
 
 section.main(role='region', aria-labelledby='workshops')
   h2#workshops.section-title(role='heading', aria-level='2') Workshops
+
+  p.workshops-intro All workshops are run on 9 November and include a conference pass for the 10 November for £450+VAT. You can request to change the conference pass day, which will be granted based on availability.
+
   each workshop, index in public._data.workshops
     section.workshop-wrapper.workshop-full.sub-hr(id=workshop.slug)
       header.workshop-header
