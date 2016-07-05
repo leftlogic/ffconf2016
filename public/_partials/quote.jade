@@ -1,13 +1,15 @@
-mixin quote()
-  - var quote = public._data.quotes.shift();
+- var quotes = public._data.quotes;
+if quotes
+  each quote in quotes
+    script.quote-template(type='text/template')
+      div.quote-image-wrapper
+        div.quote-image(style='background-image: url(/images/quotes/' + quote.photo + ')')
+      div.quote-content-wrapper
+        p= quote.text
+        footer
+          cite
+            a(href=quote.url, target='_blank')= quote.author
 
-  if quote
-    div.quote-wrapper
-      blockquote.main.quote
-        div.quote-image-wrapper
-          div.quote-image(style='background-image: url(/images/quotes/' + quote.photo + ')')
-        div.quote-content-wrapper
-          p= quote.text
-          footer
-            cite
-              a(href=quote.url, target='_blank')= quote.author
+mixin quote()
+  div.quote-wrapper
+    blockquote.main.quote

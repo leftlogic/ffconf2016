@@ -133,6 +133,18 @@
   }
 
 
+//=== Quotes
+  // convert NodeList to Array https://davidwalsh.name/nodelist-array
+  var quotesWrapper = [].slice.call($('blockquote.quote'));
+  var quotesTemplate = [].slice.call($('script.quote-template'));
+  quotesWrapper.forEach(function(item) {
+    var len = quotesTemplate.length;
+    var rnd = Math.floor(Math.random() * len);
+    var q = quotesTemplate.splice(rnd, 1);
+    item.innerHTML = q[0].innerHTML;
+  });
+
+
 //=== Scroll to session
   var skipNav = false; // if we want to scroll down without showing the menu
   var $nav = $('.nav-main');
