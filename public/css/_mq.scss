@@ -152,6 +152,16 @@
 
 
 @include mq-min-check(768px) {
+  .main-wrapper {
+    background: $c-bg url(../images/pattern_nolines.png);
+    background-size: 320px 50px;
+
+    @include mq-min-check(0, 2) {
+      & {
+        background-image: url(../images/pattern_nolines2x.png);
+      }
+    }
+  }
   body {
     font-size: 20px;
     line-height: 30px;
