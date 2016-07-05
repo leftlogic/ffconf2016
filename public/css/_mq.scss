@@ -201,7 +201,7 @@
       padding: 10px 10px 7px;
 
       &:hover, &:focus, &:active {
-        background: $c-white;
+        background: rgba($c-white, .5);
         color: $c-blue;
       }
     }
