@@ -138,7 +138,7 @@
 @include mq-min-check(768px) {
   body {
     font-size: 20px;
-    line-height: 50px;
+    line-height: 30px;
   }
   .main,
   .footer {
@@ -148,7 +148,7 @@
   .section-title {
     font-size: 100px;
     line-height: 1;
-    padding: 66px 0 133px;
+    padding: 30px 0 50px;
     text-align: center;
   }
   .workshop-title,
@@ -160,6 +160,7 @@
     padding-bottom: 50px;
   }
   .button {
+    line-height: 50px;
     padding-bottom: 0;
     padding-top: 0;
   }
@@ -305,7 +306,7 @@
   }
   .workshop-list {
     h4 {
-      margin-top: 50px;
+      margin-top: 30px;
     }
   }
   .workshops-intro {
@@ -412,7 +413,7 @@
     padding-bottom: 100px;
 
     p {
-      padding-bottom: 50px;
+      padding-bottom: 25px;
       padding-top: 0;
     }
   }
