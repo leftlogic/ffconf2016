@@ -11,14 +11,14 @@
     "ticketUrl" : "https://leftlogic.stagehq.com/",
     "source": "https://github.com/leftlogic/ffconf2016",
     "config": {
-      "phase": 3,
+      "phase": 0.5,
       "soldout": {
         "conference": false,
         "day1": false,
         "day2": false,
         "workshops": false,
-        "css-layout": true,
-        "debug-and-tools": true
+        "css-layout": false,
+        "debug-and-tools": false
       },
       "mode": "titles",
       "comments": {
