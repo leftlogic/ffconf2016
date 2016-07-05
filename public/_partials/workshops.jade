@@ -29,7 +29,7 @@ section.main(role='region', aria-labelledby='workshops')
             div
               if config.phase >= 1
                 if config.soldout[workshop.slug]
-                  span.button.button-disabled Sold Out
+                  span.button.workshop-button-disabled Sold Out
                 else
                   a.button(href=workshop.ticket.url, target='_blank') Buy tickets
               else
