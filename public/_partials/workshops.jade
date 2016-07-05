@@ -20,7 +20,7 @@ section.main(role='region', aria-labelledby='workshops')
           h3.workshop-title(role='heading', aria-level='3')= workshop.title
           div.workshop-details
             a.workshop-speaker-name(target='_blank' href='https://twitter.com/#{workshop.speaker.twitter}')= workshop.speaker.name
-            div.workshop-date= workshop.details.date 
+            div.workshop-date= workshop.details.date
             div.workshop-time= workshop.details.time
           //- div
           //-   a.button(href=workshop.ticket.url) Buy tickets
@@ -37,13 +37,15 @@ section.main(role='region', aria-labelledby='workshops')
         div.workshop-header-image-wrapper
           div.workshop-header-image
       div.workshop-content-wrapper
-        div.workshop-content
-          !=global.marked(workshop.description)
-          !=global.marked(workshop.extendedDescription)
         if workshop.topics
+          h2 What you'll learn on the day
           ul.workshop-list
             each topic in workshop.topics
               li
                 h4(role='heading', aria-level='4')=topic.title
                 if topic.description
                   =topic.description
+        div.workshop-content
+          h2 Detailed description
+          !=global.marked(workshop.description)
+          !=global.marked(workshop.extendedDescription)
