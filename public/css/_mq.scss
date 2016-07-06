@@ -219,7 +219,7 @@
     display: flex;
     flex-direction: row; // fix for Safari 8
     justify-content: space-between;
-    flex: 1; // fix for Safari
+    -webkit-flex: 1; // fix for Safari, using prefix because otherwise it breaks IE11
 
     max-width: 570px;
     width: 100%;
