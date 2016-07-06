@@ -52,11 +52,13 @@
 
 @include mq-min-check(425px) {
   .workshop-list {
-    display: flex;
-    flex-wrap: wrap;
+    font-size: 0;
 
     li {
-      flex: 0 1 47.5%;
+      display: inline-block;
+      font-size: 1rem;
+      vertical-align: top;
+      width: 47.5%;
 
       &:nth-child(odd) {
         margin-right: 5%;
@@ -162,7 +164,7 @@
       }
     }
   }
-  body {
+  html {
     font-size: 20px;
     line-height: 30px;
   }

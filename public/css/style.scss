@@ -6,9 +6,11 @@
 *, *:after, *:before {
   @include box-sizing(border-box);
 }
-body {
+html {
   color: $c-text;
   font: 18px/25px $f-main;
+}
+body {
   margin: 0;
   padding: 0;
 }
