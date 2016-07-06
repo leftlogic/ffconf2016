@@ -18,6 +18,7 @@
         "day2": false,
         "workshops": false,
         "css-layout": false,
+        "angular-2": false,
         "debug-and-tools": false
       },
       "mode": "titles",

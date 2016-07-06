@@ -240,6 +240,59 @@
       ]
     },
     {
+      "title": "Angular 2",
+      "slug": "angular-2",
+      "ticket": {
+        "url": "",
+        "price": "425"
+      },
+
+      "details": {
+        "date": "November 9 2016",
+        "time": "09:00 — 17:00",
+        "venue": "Lighthouse, Brighton"
+      },
+
+      "speaker": {
+        "name": "Gerard Sans",
+        "twitter": "gerardsans",
+        "photo": "gerard.jpg"
+      },
+
+      "topics" : [
+        {
+          "title": "TypeScript",
+          "description": "ES6 and beyond."
+        },
+        {
+          "title": "Components",
+          "description": "Basic structure and best practices."
+        },
+        {
+          "title": "Dependency Injection",
+          "description": "How to make it work for you."
+        },
+        {
+          "title": "Data Architecture",
+          "description": "Covering XHR, JSONP, RxJS 5, EventEmitter and Async Pipes."
+        },
+        {
+          "title": "New Router",
+          "description": "How to setup, setting child routes and more."
+        },
+        {
+          "title": "Unit Testing",
+          "description": "How to unit test all pieces."
+        },
+        {
+          "title": "Migration",
+          "description": "How to prepare Today and migrate seamlessly step-by-step."
+        }
+      ],
+      "description": "Angular 2 is a revolutionary platform for creating applications using modern web standards and powered by the Open Source Community following the success of AngularJS.",
+      "extendedDescription": "In this workshop you will learn the major improvements in Angular 2 so you can start creating your own projects and enjoy its full benefits today!"
+    },
+    {
       "title": "Mastering browser devtools",
       "slug": "debug-and-tools",
       "ticket": {
