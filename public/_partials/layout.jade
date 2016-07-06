@@ -50,6 +50,10 @@ html(id=id)
       if (!supportsSVG()) {
         document.documentElement.className += ' no-svg';
       }
+      //=== Safari 8
+      if (/constructor/i.test(window.HTMLElement) && !('flexWrap' in document.documentElement.style)) {
+        document.documentElement.className += ' i-hate-safari';
+      }
       //=== Fonts
       var fontUrl = '/css/fonts.c8c5676ae28fd20f3ddd940e8060fb08.woff.json';
       var fontMd5 = 'c8c5676ae28fd20f3ddd940e8060fb08';

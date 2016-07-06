@@ -295,6 +295,17 @@ a.button {
     padding: 0;
     width: 100%;
   }
+
+  .i-hate-safari {
+    .masthead {
+      display: block;
+      height: auto !important; // to win over the javascript
+    }
+    .logo-wrapper {
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+  }
 }
 
 
