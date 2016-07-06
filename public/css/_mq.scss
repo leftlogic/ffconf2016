@@ -228,6 +228,7 @@
     margin-right: 10px;
 
     li {
+      display: inline-block; // flexbox fallback
       flex: 1;
     }
 
