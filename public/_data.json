@@ -184,6 +184,21 @@
         "video": ""
       },
       {
+        "duration": 40,
+        "title": "Power of Emoji",
+        "speaker": {
+          "name": "",
+          "twitter": "",
+          "photo": ""
+        },
+        "description": "From improving performance 📈 of mobile web in 1999 to reacting with 👍 and 🎉 on our Pull Request in 2016, Emoji has become part of our daily communication. Emoji is fun and ambiguous, let's look at how it became part of our daily communication & how we can invent new use as creators of the web! ❤️ 💯 💁",
+        "bio": "",
+        "links": [],
+        "slides": "",
+        "audio": "",
+        "video": ""
+      },
+      {
         "break": true,
         "duration": 90,
         "title": "Lunch break (90 mins)"
