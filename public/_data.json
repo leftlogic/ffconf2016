@@ -219,23 +219,23 @@
       "topics": [
         {
           "title": "Learning from the past",
-          "description": "What can we take from older layout methods that might help us build layouts that also work well in older browsers?"
+          "description": "What can we take from older layout methods that will still be helpful in the future?"
         },
         {
           "title": "CSS Layout today",
-          "description": "Looking at some of the modules that have good support today - multiple column layout, flexbox and CSS Shapes"
+          "description": "Multiple column layout, flexbox and CSS Shapes"
         },
         {
           "title": "Just Landing",
-          "description": "CSS Grid Layout will bring us a fit-for-purpose layout method for the first time. We will find out how Grid works alongside Flexbox and the Box Alignment Module to create a new system of layout."
+          "description": "Find out about CSS Grid Layout, how it works with Flexbox and Box Alignment as a new layout system"
         },
         {
           "title": "Experimental",
-          "description": "What else is hiding in the CSS specifications? How can we encourage implementation of the things we would like to see land?"
+          "description": "What else is hiding in the CSS specifications? How can we encourage browser implementations?"
         },
         {
           "title": "Building the future",
-          "description": "Some thoughts and practical ideas on how we bring these techniques together to build modern layouts that don’t lock out the unfortunate users of old browsers"
+          "description": "Practical suggestions for using these techniques without locking out users of old browsers"
         }
       ]
     },
