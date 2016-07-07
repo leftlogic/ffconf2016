@@ -155,6 +155,21 @@
       },
       {
         "duration": 40,
+        "title": "Technologic (Human After All): Accessibility remix",
+        "speaker": {
+          "name": "",
+          "twitter": "",
+          "photo": ""
+        },
+        "description": "With a little help from Daft Punk, Léonie will explain accessibility mechanics in the browser, why CSS isn't just about looking good, and what tools you can use to get ahead of the game.",
+        "bio": "",
+        "links": [],
+        "slides": "",
+        "audio": "",
+        "video": ""
+      },
+      {
+        "duration": 40,
         "title": "Optimise your Web Development Workflow",
         "speaker": {
           "name": "",
