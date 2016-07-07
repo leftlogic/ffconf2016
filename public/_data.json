@@ -120,21 +120,6 @@
       },
       {
         "duration": 40,
-        "title": "Optimise your Web Development Workflow",
-        "speaker": {
-          "name": "",
-          "twitter": "",
-          "photo": ""
-        },
-        "description": "Learn about new DevTools features which can greatly enhance your workflow. Also, native Node.js debugging straight from DevTools!",
-        "bio": "",
-        "links": [],
-        "slides": "",
-        "audio": "",
-        "video": ""
-      },
-      {
-        "duration": 40,
         "title": "All Things Continuous",
         "speaker": {
           "name": "",
@@ -165,6 +150,21 @@
         "bio": "",
         "links": [],
         "slides": false,
+        "audio": "",
+        "video": ""
+      },
+      {
+        "duration": 40,
+        "title": "Optimise your Web Development Workflow",
+        "speaker": {
+          "name": "",
+          "twitter": "",
+          "photo": ""
+        },
+        "description": "Learn about new DevTools features which can greatly enhance your workflow. Also, native Node.js debugging straight from DevTools!",
+        "bio": "",
+        "links": [],
+        "slides": "",
         "audio": "",
         "video": ""
       },

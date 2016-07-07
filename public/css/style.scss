@@ -15,6 +15,10 @@ body {
   padding: 0;
 }
 
+abbr {
+  border-bottom: 1px dashed black;
+}
+
 .main-wrapper {
   background: $c-bg url(../images/pattern.png);
   background-size: 320px 50px;
