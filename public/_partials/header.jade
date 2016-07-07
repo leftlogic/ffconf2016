@@ -88,6 +88,7 @@ header#masthead.masthead(role='banner', class='phase-'+config.phase)
       if config.phase >= 0.5
         ul.nav-list#nav-list
           each item in menu
+            != ' '
             li
               a(href=item.url)=item.title
 
