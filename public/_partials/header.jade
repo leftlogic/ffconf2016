@@ -1,4 +1,4 @@
-- var menu = [{ 'title': 'sessions', 'url': '/#sessions' }, { 'title': 'workshops', 'url': '/workshops' }, { 'title': 'locations', 'url': '/#locations' }, { 'title': 'diversity', 'url': '/#diversity' }, { 'title': 'sponsors', 'url': '/#sponsors' }]
+- var menu = [{ 'title': 'sessions', 'url': '/#sessions' }, { 'title': 'workshops', 'url': '#workshops' }, { 'title': 'locations', 'url': '/#locations' }, { 'title': 'diversity', 'url': '/#diversity' }, { 'title': 'sponsors', 'url': '/#sponsors' }]
 - var text = {}
 - text.intro1 = '1 day conference'
 - text.intro2 = 'run twice'
@@ -85,7 +85,7 @@ header#masthead.masthead(role='banner', class='phase-'+config.phase)
             a.button.tickets-button(href=buttonLink, target='_blank')!= button
           else
             span.button.tickets-button!= button
-      if config.phase >= 1
+      if config.phase >= 0.5
         ul.nav-list#nav-list
           each item in menu
             li

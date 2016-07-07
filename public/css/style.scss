@@ -6,9 +6,11 @@
 *, *:after, *:before {
   @include box-sizing(border-box);
 }
-body {
+html {
   color: $c-text;
   font: 18px/25px $f-main;
+}
+body {
   margin: 0;
   padding: 0;
 }
@@ -97,6 +99,10 @@ h3, h4,
     margin: 25px 0 0;
   }
 }
+.workshop-full h2 {
+  font-size: 25px;
+  margin: 40px 0 0;
+}
 
 .button {
   background: $c-blue;
@@ -113,6 +119,10 @@ a.button {
     background: $c-green;
     color: $c-white;
   }
+}
+.workshop-button-disabled {
+  background: $c-text;
+  color: $c-white;
 }
 
 
@@ -201,6 +211,7 @@ a.button {
 
   svg {
     display: block;
+    margin: 0 auto;
   }
 }
 .circle {
@@ -283,6 +294,17 @@ a.button {
   .logo-wrapper {
     padding: 0;
     width: 100%;
+  }
+
+  .i-hate-safari {
+    .masthead {
+      display: block;
+      height: auto !important; // to win over the javascript
+    }
+    .logo-wrapper {
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
   }
 }
 
@@ -429,6 +451,10 @@ a.button {
 #left-logic {
   margin: 25px 0;
   width: 65%;
+
+  object {
+    height: 100%;
+  }
 }
 .left-logic {
   // display: none;

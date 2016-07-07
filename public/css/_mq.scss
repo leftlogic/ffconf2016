@@ -3,8 +3,8 @@
 @include mq-min-check(320px) {
   .main,
   .footer {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .session-links {
@@ -46,6 +46,24 @@
     background-size: cover;
     max-width: none;
     padding-top: 100%;
+  }
+}
+
+
+@include mq-min-check(425px) {
+  .workshop-list {
+    font-size: 0;
+
+    li {
+      display: inline-block;
+      font-size: 1rem;
+      vertical-align: top;
+      width: 47.5%;
+
+      &:nth-child(odd) {
+        margin-right: 5%;
+      }
+    }
   }
 }
 
@@ -108,6 +126,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     bottom: 0;
+    height: 100%; // some browsers need it
     left: 0;
     position: absolute;
     right: 0;
@@ -126,7 +145,9 @@
     width: auto;
   }
   .quote-image {
-    width: 130px
+    height: 130px;
+    padding-top: 0;
+    width: 130px;
   }
   .quote-content-wrapper {
     width: calc(100% - 190px); // can't use just 100% because of Safari
@@ -135,9 +156,19 @@
 
 
 @include mq-min-check(768px) {
-  body {
+  .main-wrapper {
+    background: $c-bg url(../images/pattern_nolines.png);
+    background-size: 320px 50px;
+
+    @include mq-min-check(0, 2) {
+      & {
+        background-image: url(../images/pattern_nolines2x.png);
+      }
+    }
+  }
+  html {
     font-size: 20px;
-    line-height: 50px;
+    line-height: 30px;
   }
   .main,
   .footer {
@@ -147,7 +178,7 @@
   .section-title {
     font-size: 100px;
     line-height: 1;
-    padding: 66px 0 133px;
+    padding: 30px 0 50px;
     text-align: center;
   }
   .workshop-title,
@@ -159,6 +190,7 @@
     padding-bottom: 50px;
   }
   .button {
+    line-height: 50px;
     padding-bottom: 0;
     padding-top: 0;
   }
@@ -189,24 +221,34 @@
     display: flex;
     flex-direction: row; // fix for Safari 8
     justify-content: space-between;
+    -webkit-flex: 1; // fix for Safari, using prefix because otherwise it breaks IE11
+
+    max-width: 570px;
+    width: 100%;
+    margin-right: 10px;
 
     li {
-      // display: inline-block;
+      display: inline-block; // flexbox fallback
+      flex: 1;
     }
 
     a {
       color: $c-white;
       display: block;
       line-height: 1.667;
-      padding: 10px 10px 7px;
+      padding: 10px 0 7px;
 
       &:hover, &:focus, &:active {
-        background: $c-white;
+        background: rgba($c-white, .5);
         color: $c-blue;
       }
     }
   }
 
+  .tickets-wrapper {
+    letter-spacing: -1px;
+    word-spacing: -5px;
+  }
   .tickets-button {
     background: $c-white;
     color: $c-blue;
@@ -295,8 +337,11 @@
   }
   .workshop-list {
     h4 {
-      margin-top: 50px;
+      margin-top: 30px;
     }
+  }
+  .workshops-intro {
+    padding-bottom: 100px;
   }
 
   .locations {
@@ -399,7 +444,7 @@
     padding-bottom: 100px;
 
     p {
-      padding-bottom: 50px;
+      padding-bottom: 25px;
       padding-top: 0;
     }
   }

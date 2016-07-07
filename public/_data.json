@@ -100,7 +100,7 @@
         },
         {
           "name": "Snyk",
-          "url": "https://twitter.com/snyksec/",
+          "url": "https://snyk.io/",
           "img": "snyk.svg"
         }
       ]
@@ -240,6 +240,59 @@
       ]
     },
     {
+      "title": "Angular 2",
+      "slug": "angular-2",
+      "ticket": {
+        "url": "",
+        "price": "425"
+      },
+
+      "details": {
+        "date": "November 9 2016",
+        "time": "09:00 — 17:00",
+        "venue": "Lighthouse, Brighton"
+      },
+
+      "speaker": {
+        "name": "Gerard Sans",
+        "twitter": "gerardsans",
+        "photo": "gerard.jpg"
+      },
+
+      "topics" : [
+        {
+          "title": "TypeScript",
+          "description": "ES6 and beyond."
+        },
+        {
+          "title": "Components",
+          "description": "Basic structure and best practices."
+        },
+        {
+          "title": "Dependency Injection",
+          "description": "How to make it work for you."
+        },
+        {
+          "title": "Data Architecture",
+          "description": "Covering XHR, JSONP, RxJS 5, EventEmitter and Async Pipes."
+        },
+        {
+          "title": "New Router",
+          "description": "How to setup, setting child routes and more."
+        },
+        {
+          "title": "Unit Testing",
+          "description": "How to unit test all pieces."
+        },
+        {
+          "title": "Migration",
+          "description": "How to prepare Today and migrate seamlessly step-by-step."
+        }
+      ],
+      "description": "Angular 2 is a revolutionary platform for creating applications using modern web standards and powered by the Open Source Community following the success of AngularJS.",
+      "extendedDescription": "In this workshop you will learn the major improvements in Angular 2 so you can start creating your own projects and enjoy its full benefits today!"
+    },
+    {
       "title": "Mastering browser devtools",
       "slug": "debug-and-tools",
       "ticket": {
@@ -315,6 +368,24 @@
       "author": "Phil Nash, developer evangelist for Twilio",
       "url": "https://twitter.com/philnash/status/530777197607682048",
       "photo": "phil-nash.jpg"
+    },
+    {
+      "text": "#ffconf is a wrap: what a truly inspirational event with so many interesting topics. Glad that I finally was able to attend.",
+      "author": "Robin Mehner, 2015 speaker",
+      "url": "https://twitter.com/rmehner/status/662700722107084800",
+      "photo": "robin-mehner.jpg"
+    },
+    {
+      "text": "Yes! #ffconf was amazing. Had an inspiring day listening to awesome people, talking about super interesting stuff. Almost too good.",
+      "author": "David McGeorge, five time attendee",
+      "url": "https://twitter.com/davymacca/status/530785298167656449",
+      "photo": "david-mcgeorge.jpg"
+    },
+    {
+      "text": "Must be the most comfy seats of any conference I attended - so glad I finally made it - #ffconf",
+      "author": "Prisca Schmarsow, 2013 attendee",
+      "url": "https://twitter.com/prisca_eyedea/status/398744015539273728",
+      "photo": "prisca-schmarsow.jpg"
     }
   ]
 }
