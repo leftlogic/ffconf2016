@@ -314,23 +314,27 @@
 
       "topics" : [
         {
+          "title": "Workflow",
+          "description": "How to make DevTools your development IDE"
+        },
+        {
           "title": "Console",
-          "description": "Power features beyond console.log"
+          "description": "Going way beyond console.log"
+        },
+        {
+          "title": "Memory leaks",
+          "description": "Identify and remediate"
         },
         {
           "title": "Network",
           "description": "What's slow, why and the detail behind a request"
         },
         {
-          "title": "Source",
-          "description": "How to make DevTools your development IDE"
-        },
-        {
           "title": "Performance",
           "description": "How to read and investigate rendering issues"
         },
         {
-          "title": "Mobile",
+          "title": "Mobile & responsive",
           "description": "Using the tools you know to debug tiny machines"
         }
       ],
