@@ -7,7 +7,7 @@ section#sponsors.main.main-sponsors(role='region', aria-labelledby='sponsors')
         h3.sponsor-title(role='heading', aria-level='3')= capitalize(cat.title) + ' Sponsors'
         div.sponsors-wrapper
           each sponsor in cat.list
-            section.sponsor(class='sponsor-' + key)
+            figure.sponsor(class='sponsor-' + key)
               a(href=sponsor.url, target="_blank", title=sponsor.name)
                 img(src='/images/sponsors/' + sponsor.img, alt=sponsor.name)
   

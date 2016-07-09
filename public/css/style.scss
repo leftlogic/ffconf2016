@@ -419,6 +419,7 @@ a.button {
     display: block;
     height: 100%;
     padding: 25px;
+    position: relative;
     text-align: center;
     width: 100%;
 
@@ -434,7 +435,21 @@ a.button {
     border: 0 none; // IE fix
     max-height: 100%;
     max-width: 100%;
+    text-transform: uppercase;
     vertical-align: middle;
+
+    &::after {
+      align-items: center;
+      background: $c-white;
+      bottom: 0;
+      content: attr(alt);
+      display: flex;
+      justify-content: center;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
   }
 }
 .small-monty a {
