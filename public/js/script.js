@@ -48,8 +48,12 @@
     var target = $(node.hash)[0];
     var id = target.id;
     delete target.id;
-    var coords = { x: 0, y: window.scrollY };
-    var y = target.offsetTop - 100;
+    var fromY = window.scrollY;
+    var coords = { x: 0, y: fromY };
+    var y = target.offsetTop;
+    if (fromY < y) {
+      y -= 100;
+    }
     var tween = new TWEEN.Tween(coords)
       .to({ x: 0, y: y }, 500)
       .easing(TWEEN.Easing.Quadratic.Out)
@@ -57,6 +61,7 @@
         window.scrollTo(this.x, this.y);
         if (this.y === y) {
           target.id = id;
+          window.location = node.hash;
         }
       })
       .start();
