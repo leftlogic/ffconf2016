@@ -41,17 +41,23 @@
       return;
     }
 
-    event.preventDefault();
+    // event.preventDefault();
 
-    window.history.pushState(null, null, node.hash);
+    // window.history.pushState(null, null, node.hash);
 
     var target = $(node.hash)[0];
+    var id = target.id;
+    delete target.id;
     var coords = { x: 0, y: window.scrollY };
+    var y = target.offsetTop - 100;
     var tween = new TWEEN.Tween(coords)
-      .to({ x: 0, y: target.offsetTop }, 500)
+      .to({ x: 0, y: y }, 500)
       .easing(TWEEN.Easing.Quadratic.Out)
       .onUpdate(function () {
         window.scrollTo(this.x, this.y);
+        if (this.y === y) {
+          target.id = id;
+        }
       })
       .start();
 
