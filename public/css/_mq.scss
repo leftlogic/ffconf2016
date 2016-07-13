@@ -465,8 +465,8 @@
     body.sticky {
       padding-top: 100px;
 
-
-      header {
+      .masthead {
+        z-index: 1;
       }
 
       .masthead-bg {
