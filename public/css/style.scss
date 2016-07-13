@@ -528,22 +528,3 @@ a.button {
 
 
 @import "mq";
-
-
-@media all and (min-width: 56em) and (min-height: 40em) {
-    // body {
-    //   padding-top: 100px;
-    // }
-    :target:before {
-      content: ' ';
-      display: block;
-      height: 100px;
-      // margin: -100px 0 0;
-    }
-    #sticky-header {
-      z-index: 2;
-      will-change: transform;
-      position: fixed;
-      top: 0;
-    }
-}

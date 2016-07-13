@@ -75,7 +75,7 @@
   });
 
 
-//=== 100% height header
+  //=== 100% height header
   var $masthead = document.querySelector('#masthead');
   var $svgLogo = document.querySelector('#svg-logo');
   var $svgDesc = document.querySelector('#svg-desc');
@@ -95,6 +95,30 @@
     }
   }
   t();
+
+  var stickyHeader = $('#sticky-header')[0];
+  var stickyHeaderRef = $('#masthead picture img')[0];
+  var beforeScroll = 0;
+  window.onscroll = function (event) {
+    requestAnimationFrame(checkSticky);
+  };
+
+  function checkSticky() {
+    var y = window.scrollY;
+    var boundery = stickyHeaderRef.height;
+    var isSticky = document.body.classList.contains('sticky');
+    if (y > boundery) {
+      if (!isSticky) {
+        console.log('add sticky');
+        document.body.classList.add('sticky');
+      }
+    } else if (isSticky) {
+      console.log('remove sticky');
+      document.body.classList.remove('sticky');
+    }
+  }
+
+
   // Resize
   // https://developer.mozilla.org/en-US/docs/Web/Events/resize#requestAnimationFrame
   var optimizedResize = (function() {
