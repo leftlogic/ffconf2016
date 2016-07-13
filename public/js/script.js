@@ -54,6 +54,7 @@
     if (fromY < y) {
       y -= 100;
     }
+    var running = true;
     var tween = new TWEEN.Tween(coords)
       .to({ x: 0, y: y }, 500)
       .easing(TWEEN.Easing.Quadratic.Out)
@@ -62,6 +63,7 @@
         if (this.y === y) {
           target.id = id;
           window.location = node.hash;
+          running = false;
         }
       })
       .start();
@@ -69,8 +71,10 @@
     requestAnimationFrame(animate);
 
     function animate(time) {
-      requestAnimationFrame(animate);
-      TWEEN.update(time);
+      if (running) {
+        requestAnimationFrame(animate);
+        TWEEN.update(time);
+      }
     }
   });
 
@@ -79,6 +83,7 @@
   var $masthead = document.querySelector('#masthead');
   var $svgLogo = document.querySelector('#svg-logo');
   var $svgDesc = document.querySelector('#svg-desc');
+  var stickyHeaderRef = $('#masthead picture img')[0];
   function t() {
     var h = window.innerHeight;
     var w = window.innerWidth;
@@ -97,14 +102,13 @@
   t();
 
   var stickyHeader = $('#sticky-header')[0];
-  var stickyHeaderRef = $('#masthead picture img')[0];
   var beforeScroll = 0;
   window.onscroll = function (event) {
     requestAnimationFrame(checkSticky);
   };
 
   function checkSticky() {
-    var y = window.scrollY;
+    var y = window.scrollY + 10;
     var boundery = stickyHeaderRef.height;
     var isSticky = document.body.classList.contains('sticky');
     if (y > boundery) {
