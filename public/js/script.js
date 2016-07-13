@@ -83,7 +83,7 @@
   var $masthead = document.querySelector('#masthead');
   var $svgLogo = document.querySelector('#svg-logo');
   var $svgDesc = document.querySelector('#svg-desc');
-  var stickyHeaderRef = $('#masthead picture img')[0];
+  var stickyHeaderRef = $('#masthead picture')[0];
   function t() {
     var h = window.innerHeight;
     var w = window.innerWidth;
@@ -98,10 +98,13 @@
       $svgLogo.style.maxHeight = '';
       $svgDesc.style.maxHeight = '';
     }
+
+    boundery = stickyHeaderRef.offsetHeight;
   }
   t();
 
   var stickyHeader = $('#sticky-header')[0];
+  var boundery = stickyHeaderRef.offsetHeight;
   var beforeScroll = 0;
   window.onscroll = function (event) {
     requestAnimationFrame(checkSticky);
@@ -109,7 +112,6 @@
 
   function checkSticky() {
     var y = window.scrollY + 10;
-    var boundery = stickyHeaderRef.height;
     var isSticky = document.body.classList.contains('sticky');
     if (y > boundery) {
       if (!isSticky) {
