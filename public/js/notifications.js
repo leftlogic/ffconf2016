@@ -283,3 +283,20 @@ window.Notifications = function(ui, s) {
     }
   };
 };
+
+var remoteUrl = 'https://ffconf2016-push.herokuapp.com';
+var ui = new window.UI();
+var subscription = new window.Subscription(remoteUrl);
+var notifications = new window.Notifications(ui, subscription);
+// Are service workers supported?
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    ui.action(notifications.toggle);
+  });
+  
+  navigator.serviceWorker.register('/sw.js')
+  .then(notifications.init)
+  .catch(function(err) {
+    console.log(err);
+  });
+}

@@ -3,7 +3,7 @@
 var TITLE = 'Notification from ffconf 2016';
 var OPEN_URL = 'https://2016.ffconf.org/';
 var BODY = 'Default push message';
-var ICON = 'images/logo.png';
+var ICON = 'images/favicons/notifications.png';
 
 self.addEventListener('install', function(event) {
   self.skipWaiting();
