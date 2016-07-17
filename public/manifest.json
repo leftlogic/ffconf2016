@@ -13,6 +13,7 @@
       "type": "image/png"
     }
   ],
+  "gcm_sender_id": "233025244616",
   "start_url": "/",
   "display": "browser",
   "orientation": "portrait",
