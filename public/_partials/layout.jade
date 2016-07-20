@@ -90,13 +90,6 @@ html(id=id)
 
     include /_partials/header
 
-    div#subscribe-wrapper(style='display: none;')
-      input#subscribe(type='checkbox' disabled)
-      label(for='subscribe')
-        span(id='subscribe-label') Enable
-        span  Push notifications
-    div#not-supported Service Workers not supported
-
     block content
 
     div.main-wrapper
@@ -109,5 +102,4 @@ html(id=id)
     script(src='/js/raf.js')
     script(src='/js/picturefill.min.js')
     script(src='/js/script.js')
-    script(src='/js/notifications.js')
     <!--<![endif]-->
