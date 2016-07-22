@@ -78,6 +78,11 @@
     "2nd": {
       "title": "gold",
       "list": [
+        {
+          "name": "Mozilla",
+          "url": "http://mozilla.com",
+          "img": "mozilla.png"
+        }
       ]
     },
     "3rd": {
