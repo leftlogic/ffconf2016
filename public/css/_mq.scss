@@ -451,14 +451,14 @@
 }
 
 @media all and (min-width: 768px) and (min-height: 40em) {
-    :target:before {
-      content: ' ';
-      display: block;
-      height: 100px;
-    }
+    // :target:before {
+    //   content: ' ';
+    //   display: block;
+    //   height: 100px;
+    // }
     #sticky-header {
       z-index: 2;
-      will-change: transform;
+      // will-change: transform;
       top: 0;
     }
 
