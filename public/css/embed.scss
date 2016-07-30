@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@import "var";
+@import "mixin";
+
+*, *:after, *:before {
+  @include box-sizing(border-box);
+}
+html {
+  overflow: hidden;
+  background:white;
+  color: $c-text;
+  font: 18px/25px $f-main;
+  height: 100%;
+}
+.workshop-header-content {
+  // transform: scale(0.5);
+}
+body {
+  height: 100%;
+  margin: 0;
+}
+
+@import "typeography";
+
+
+.workshop-wrapper {
+  padding: 0;
+  height: 100%;
+}
+
+.workshop-header {
+  height: 100%;
+  display: flex;
+}
+
+.workshop-summary .workshop-speaker-name {
+  color: $c-green;
+
+  &:hover, &:focus, &:active {
+    color: $c-blue;
+  }
+}
+
+.workshop-details {
+  text-align: center;
+}
+
+.workshop-header-content {
+  align-self: center;
+  padding: 20px;
+
+  .workshop-title {
+    margin: 0;
+    font-size: 90%;
+    line-height: 1rem;
+
+    span {
+      display: block;
+      color: $c-green;
+      font-size: 70%;
+    }
+  }
+}
+.workshop-header-image-wrapper {
+  display: block;
+  position: relative;
+}
+.workshop-header-image {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  height: 100%; // some browsers need it
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-position: 0 20%;
+}
+
+.button {
+  font-size: 90%;
+  padding: 4px 10px;
+}
+
+.workshop-list {
+  font-size: 12px;
+  line-height: 14px;
+  margin: 6px 0px;
+}
+
+.workshop-header-content {
+  width: 100%;
+}
+
+.workshop-header-image-wrapper {
+  display: none;
+}
+
+
+@include mq-min-check(398px) {
+  .workshop-header-content {
+    width: 60%;
+  }
+
+  .workshop-header-image-wrapper {
+    display: block;
+    width: 40%;
+  }
+}
+
+@include mq-min-check(450px) {
+  .workshop-header-content {
+    width: 55%;
+  }
+
+  .workshop-header-image-wrapper {
+    width: 45%;
+  }
+}
+
+#angular-2,
+#debug-and-tools {
+  .workshop-title span {
+    display: inline-block;
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,23 @@
+style
+  = '#' + workshop.slug + ' .workshop-header-image{'
+  = 'background-image:url(/images/workshops/1x-' + workshop.speaker.photo + ');'
+  = '}'
+
+  = '@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {'
+  = '#' + workshop.slug + ' .workshop-header-image{'
+  = 'background-image:url(/images/workshops/2x-' + workshop.speaker.photo + ');'
+  = '}'
+  = '}'
+
+section.workshop-wrapper.workshop-summary(id=workshop.slug)
+  header.workshop-header
+    div.workshop-header-content
+      h3.workshop-title(role='heading', aria-level='3')= workshop.title
+        span With #{workshop.speaker.name}
+      ul.workshop-list
+        each topic in workshop.topics
+          li=topic.title
+      div.workshop-details
+        a.button(target=_top href='/workshops#' + workshop.slug) Book today
+    div.workshop-header-image-wrapper
+      div.workshop-header-image

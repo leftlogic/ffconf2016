@@ -1,0 +1,35 @@
+section.workshop-wrapper.workshop-full.sub-hr(id=workshop.slug)
+  header.workshop-header
+    div.workshop-header-content
+      h3.workshop-title(role='heading', aria-level='3')= workshop.title
+      div.workshop-details
+        a.workshop-speaker-name(target='_blank' href='https://twitter.com/#{workshop.speaker.twitter}')= workshop.speaker.name
+        div.workshop-date= workshop.details.date
+        div.workshop-time= workshop.details.time
+      //- div
+      //-   a.button(href=workshop.ticket.url) Buy tickets
+
+      if config.phase < 4
+        div
+          if config.phase >= 1
+            if config.soldout[workshop.slug]
+              span.button.workshop-button-disabled Sold Out
+            else
+              a.button(href=workshop.ticket.url, target='_blank') Buy tickets
+          else
+            span.button On sale 13 July
+    div.workshop-header-image-wrapper
+      div.workshop-header-image
+  div.workshop-content-wrapper
+    if workshop.topics
+      h2 What you'll learn on the day
+      ul.workshop-list
+        each topic in workshop.topics
+          li
+            h4(role='heading', aria-level='4')=topic.title
+            if topic.description
+              =topic.description
+    div.workshop-content
+      h2 Detailed description
+      !=global.marked(workshop.description)
+      !=global.marked(workshop.extendedDescription)
