@@ -1,9 +1,0 @@
-extends _partials/test
-
-block content
-  include _partials/quote
-
-  if config.phase >= 0.5
-    div.main-wrapper
-      include _partials/workshops
-    +quote()
