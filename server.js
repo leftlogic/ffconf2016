@@ -38,6 +38,11 @@ if (process.env.NODE_ENV !== 'production') {
   }
 
 } else {
+  app.use(express.static(__dirname + '/www', { extensions: ['html'] }));
+  if (module.parent) {
+    module.exports = app;
+  }
+
   harp.compile(__dirname + '/public', outputPath, (errors) => {
     if (errors) {
       console.log(JSON.stringify(errors, null, 2));
@@ -45,16 +50,11 @@ if (process.env.NODE_ENV !== 'production') {
     }
 
     // server(outputPath, port);
-    app.use(express.static(__dirname + '/www', { extensions: ['html'] }));
-    if (module.parent) {
-      module.exports = app;
-    } else {
+    if (!module.parent) {
       console.log('Running harp-static on ' + port);
       var server = app.listen(port, function(){
         console.log('Listening at http://%s:%s', server.address().address, server.address().port);
       });
     }
-
-
   });
 }
