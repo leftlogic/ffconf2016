@@ -13,6 +13,13 @@ global.idify = s => {
           .toLowerCase();
 };
 
+app.disable('x-powered-by');
+
+app.use((req, res, next) => {
+  res.setHeader('x-powered-by', 'ffconf');
+  next();
+});
+
 // this line, although dirty, ensures that Harp templates
 // have access to moment - which given the whole partial
 // import hack doesn't work consistently across dynamic vs
