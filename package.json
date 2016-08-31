@@ -1,11 +1,11 @@
 {
-  "name": "ffconf2016",
-  "private": true,
+  "name": "@remy/ffconf2016",
   "version": "1.0.2",
   "description": "ffconf2016",
   "main": "server.js",
   "scripts": {
-    "start": "node ."
+    "start": "node server.js",
+    "env": "env"
   },
   "engines": {
     "node": "5"

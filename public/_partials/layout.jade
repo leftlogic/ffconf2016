@@ -85,17 +85,17 @@ html(id=id)
 
   body
 
-    include /js/formatting
-    include /js/markdown
+    include ../js/formatting
+    include ../js/markdown
 
-    include /_partials/header
+    include ../_partials/header
 
     block content
 
     div.main-wrapper
-      include /_partials/sponsors
+      include ../_partials/sponsors
 
-      include /_partials/footer
+      include ../_partials/footer
 
     <!--[if gt IE 8]><!-->
     script(src='/js/sticky-pagination-fixer.js')
