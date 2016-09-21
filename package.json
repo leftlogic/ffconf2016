@@ -5,13 +5,10 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "node server.js compile",
-    "preinstall": "npm run build",
-    "heroku-postbuild": "npm run build",
     "env": "env"
   },
   "engines": {
-    "node": "5.x.x"
+    "node": "5"
   },
   "author": "Remy Sharp",
   "license": "MIT",
