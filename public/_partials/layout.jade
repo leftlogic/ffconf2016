@@ -46,6 +46,15 @@ html(id=id)
         e.src='https://www.google-analytics.com/analytics.js';
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','#{analytics}','auto');ga('send','pageview');
+      // Twitter universal website tag code
+      script.
+        !function(e,n,u,a){e.twq||(a=e.twq=function(){a.exe?a.exe.apply(a,arguments):
+        a.queue.push(arguments);},a.version='1',a.queue=[],t=n.createElement(u),
+        t.async=!0,t.src='//static.ads-twitter.com/uwt.js',s=n.getElementsByTagName(u)[0],
+        s.parentNode.insertBefore(t,s))}(window,document,'script');
+        // Insert Twitter Pixel ID and Standard Event data below
+        twq('init','nvhge');
+        twq('track','PageView');
 
     script.
       var confDays = [new Date('#{dates[0]}'), new Date('#{dates[1]}')];
