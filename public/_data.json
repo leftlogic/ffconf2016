@@ -82,6 +82,11 @@
           "name": "Mozilla",
           "url": "http://mozilla.com",
           "img": "mozilla.png"
+        },
+        {
+          "name": "Amex",
+          "url": "https://careers.americanexpress.com/tech/?utm_source=ffconf_website&utm_medium=ffconf%20sponsors%20banner&utm_campaign=ffconf%20Sponsorship%20Web",
+          "img": "amex.png"
         }
       ]
     },
