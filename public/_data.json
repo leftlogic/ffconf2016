@@ -97,6 +97,11 @@
           "name": "JS Bin",
           "url": "http://jsbin.com/?utm_source=ff2016-site&utm_medium=sponsor&utm_campaign=ff2016-site",
           "img": "jsbin.png"
+        },
+        {
+          "name": "Snyk",
+          "url": "https://snyk.io/",
+          "img": "snyk.svg"
         }
       ]
     },
@@ -107,11 +112,6 @@
           "name": "Brandwatch",
           "url": "https://www.brandwatch.com/careers",
           "img": "brandwatch.png"
-        },
-        {
-          "name": "Snyk",
-          "url": "https://snyk.io/",
-          "img": "snyk.svg"
         }
       ]
     }
