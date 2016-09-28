@@ -112,6 +112,11 @@
           "name": "Brandwatch",
           "url": "https://www.brandwatch.com/careers",
           "img": "brandwatch.png"
+        },
+        {
+          "name": "Opbeat",
+          "url": "https://opbeat.com",
+          "img": "opbeat.svg"
         }
       ]
     }
