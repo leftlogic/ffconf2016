@@ -244,6 +244,21 @@
         "video": ""
       },
       {
+        "duration": 40,
+        "title": "A brief history and mishistory of modularity",
+        "description": "\"MAKE IT MODULAR,\" they said. \"IT WILL BE BETTER,\" they said. Modularity is a term so common in today's software industry, that it's easy to uncritically accept it as a fundamental software development principle. but what does \"modularity\" *actually* mean? Where does this idea come from? Where is it going? This talk will walk us through the technical etymology of \"modularity\", stepping through the intellectual breakthroughs alongside the fast spread misconceptions. We'll conclude by exploring the implications of modularity's ill-examined history on both its current use today, and where it's heading in the future.",
+        "speaker": {
+          "name": "",
+          "twitter": "",
+          "photo": ""
+        },
+        "bio": "",
+        "links": [],
+        "slides": "",
+        "audio": "",
+        "video": ""
+      },
+      {
         "break": true,
         "duration": 90,
         "title": "Lunch break (90 mins)"
@@ -418,6 +433,18 @@
     }
   ],
   "posts": [
+    {
+      "title": "Why attend ffconf #6: PWA - 4-Oct 2016",
+      "url": "https://remysharp.com/2016/10/04/why-attend-ffconf-6"
+    },
+    {
+      "title": "Why attend ffconf #5: Emoji - 3-Oct 2016",
+      "url": "https://remysharp.com/2016/10/03/why-attend-ffconf-5"
+    },
+    {
+      "title": "Why attend ffconf #4: a11y - 27-Sep 2016",
+      "url": "https://remysharp.com/2016/09/27/why-attend-ffconf-4"
+    },
     {
       "title": "Why attend ffconf #3: devtools - 21-Sep 2016",
       "url": "https://remysharp.com/2016/09/21/why-attend-ffconf-3"
