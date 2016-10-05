@@ -298,6 +298,27 @@
     }
   }
 
+  .session-speaker-img {
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 250px;
+    margin: 10px 40px 20px 0;
+    // width: 127px;
+    width: 180px;
+  }
+
+
+  .session-speaker-img-wrapper,
+  .session-about-wrapper {
+    display: table-cell;
+    vertical-align: top;
+    width: 100%
+  }
+  .session-speaker-img-wrapper {
+    width: 167px;
+  }
+
+
   .workshop-wrapper {
     padding-top: 0;
 

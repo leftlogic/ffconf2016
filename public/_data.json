@@ -135,31 +135,11 @@
       },
       {
         "duration": 40,
-        "title": "All Things Continuous",
-        "speaker": {
-          "name": "",
-          "twitter": "",
-          "photo": ""
-        },
-        "description": "Continuous Deployment for everybody: from a one-person army to distributed teams. Ecosystem appraisal, time-saving tips, max velocity!",
-        "bio": "",
-        "links": [],
-        "slides": "",
-        "audio": "",
-        "video": ""
-      },
-      {
-        "break": true,
-        "title": "Coffee break (30 mins)",
-        "duration": 30
-      },
-      {
-        "duration": 40,
         "title": "Next Level CSS",
         "speaker": {
-          "name": "",
-          "twitter": "",
-          "photo": ""
+          "name": "Rachel Andrew",
+          "twitter": "rachelandrew",
+          "photo": "rachel.jpg"
         },
         "description": "While we were all looking the other way browsers have been implementing CSS features that do things you might think you need JavaScript or at least a pre-processor to achieve. We’ll take a tour through what is landing in the CSS specifications and your browsers right now and in the very near future.",
         "bio": "",
@@ -173,24 +153,29 @@
         "title": "Progressive Web",
         "description": "With new web technologies enabling a new generation of install-able app-like websites it is important to ensure the web carry's on working for everyone. This talk will discuss the P in PWA, progressive web apps should work for everyone and should not let their app-like approach divorce them from the web.",
         "speaker": {
-          "name": "",
-          "twitter": "",
-          "photo": ""
+          "name": "Ada Rose",
+          "twitter": "Lady_Ada_King",
+          "photo": "ada.jpg"
         },
         "bio": "",
         "links": [],
         "slides": "",
         "audio": "",
         "video": ""
+      },
+      {
+        "break": true,
+        "title": "Coffee break (30 mins)",
+        "duration": 30
       },
       {
         "duration": 40,
         "title": "Technologic (Human After All): Accessibility remix",
         "description": "With a little help from Daft Punk, we will explain accessibility mechanics in the browser, why CSS isn't just about looking good, and what tools you can use to get ahead of the game.",
         "speaker": {
-          "name": "",
-          "twitter": "",
-          "photo": ""
+          "name": "Léonie Watson",
+          "twitter": "LeonieWatson",
+          "photo": "leonie.jpg"
         },
         "bio": "",
         "links": [],
@@ -200,58 +185,13 @@
       },
       {
         "duration": 40,
-        "title": "Optimise your Web Development Workflow",
+        "title": "All Things Continuous",
         "speaker": {
-          "name": "",
-          "twitter": "",
-          "photo": ""
+          "name": "Andrew Martin",
+          "twitter": "sublimino",
+          "photo": "andrew.jpg"
         },
-        "description": "Learn about new DevTools features which can greatly enhance your workflow. Also, native Node.js debugging straight from DevTools!",
-        "bio": "",
-        "links": [],
-        "slides": "",
-        "audio": "",
-        "video": ""
-      },
-      {
-        "duration": 40,
-        "title": "Power of Emoji",
-        "speaker": {
-          "name": "",
-          "twitter": "",
-          "photo": ""
-        },
-        "description": "From improving performance 📈 of mobile web in 1999 to reacting with 👍 and 🎉 on our Pull Request in 2016, Emoji has become part of our daily communication. Emoji is fun and ambiguous, let's look at how it became part of our daily communication & how we can invent new use as creators of the web! ❤️ 💯 💁",
-        "bio": "",
-        "links": [],
-        "slides": "",
-        "audio": "",
-        "video": ""
-      },
-      {
-        "duration": 40,
-        "title": "Art.js",
-        "description": "What is creative coding, especially with realtime animations and data visualisation. Looking at the animation loop, some gotchas & tricks (e.g. cheap motion blur or glow), sound synthesis, and more. Then we'll do a live coding session to put in this practice, have fun and create something cool together!",
-        "speaker": {
-          "name": "",
-          "twitter": "",
-          "photo": ""
-        },
-        "bio": "",
-        "links": [],
-        "slides": "",
-        "audio": "",
-        "video": ""
-      },
-      {
-        "duration": 40,
-        "title": "A brief history and mishistory of modularity",
-        "description": "\"MAKE IT MODULAR,\" they said. \"IT WILL BE BETTER,\" they said. Modularity is a term so common in today's software industry, that it's easy to uncritically accept it as a fundamental software development principle. but what does \"modularity\" *actually* mean? Where does this idea come from? Where is it going? This talk will walk us through the technical etymology of \"modularity\", stepping through the intellectual breakthroughs alongside the fast spread misconceptions. We'll conclude by exploring the implications of modularity's ill-examined history on both its current use today, and where it's heading in the future.",
-        "speaker": {
-          "name": "",
-          "twitter": "",
-          "photo": ""
-        },
+        "description": "Continuous Deployment for everybody: from a one-person army to distributed teams. Ecosystem appraisal, time-saving tips, max velocity!",
         "bio": "",
         "links": [],
         "slides": "",
@@ -264,9 +204,69 @@
         "title": "Lunch break (90 mins)"
       },
       {
+        "duration": 40,
+        "title": "Power of Emoji",
+        "speaker": {
+          "name": "Mariko Kosaka",
+          "twitter": "kosamari",
+          "photo": "mariko.jpg"
+        },
+        "description": "From improving performance 📈 of mobile web in 1999 to reacting with 👍 and 🎉 on our Pull Request in 2016, Emoji has become part of our daily communication. Emoji is fun and ambiguous, let's look at how it became part of our daily communication & how we can invent new use as creators of the web! ❤️ 💯 💁",
+        "bio": "",
+        "links": [],
+        "slides": "",
+        "audio": "",
+        "video": ""
+      },
+      {
+        "duration": 40,
+        "title": "Optimise your Web Development Workflow",
+        "speaker": {
+          "name": "Umar Hansa",
+          "twitter": "umaar",
+          "photo": "umar.jpg"
+        },
+        "description": "Learn about new DevTools features which can greatly enhance your workflow. Also, native Node.js debugging straight from DevTools!",
+        "bio": "",
+        "links": [],
+        "slides": "",
+        "audio": "",
+        "video": ""
+      },
+      {
         "break": true,
         "duration": 30,
         "title": "Cake break (30 mins)"
+      },
+      {
+        "duration": 40,
+        "title": "A brief history and mishistory of modularity",
+        "description": "\"MAKE IT MODULAR,\" they said. \"IT WILL BE BETTER,\" they said. Modularity is a term so common in today, that it's easy to uncritically accept it as a fundamental development principle. What does \"modularity\" *actually* mean? We will talk through the technical etymology of \"modularity\" and examine history on both its current use today, and where it's heading in the future.",
+        "speaker": {
+          "name": "Ashley Williams",
+          "twitter": "ag_dubs",
+          "photo": "ashley.jpg"
+        },
+        "bio": "",
+        "links": [],
+        "slides": "",
+        "audio": "",
+        "video": ""
+      },
+      {
+        "duration": 40,
+        "title": "Art.js",
+        "description": "What is creative coding, especially with realtime animations and data visualisation. Looking at the animation loop, some gotchas & tricks (e.g. cheap motion blur or glow), sound synthesis, and more. Then we'll do a live coding session to put in this practice, have fun and create something cool together!",
+        "speaker": {
+          "name": "Mathieu 'p01' Henri",
+          "twitter": "p01",
+          "photo": "mathieu.jpg"
+        },
+        "bio": "",
+        "links": [],
+        "slides": "",
+        "audio": "",
+        "video": ""
       },
       {
         "break": true,

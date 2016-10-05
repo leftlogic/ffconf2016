@@ -11,7 +11,7 @@
     "ticketUrl" : "https://www.tickettailor.com/checkout/view-event/id/59241/chk/c851/",
     "source": "https://github.com/leftlogic/ffconf2016",
     "config": {
-      "phase": 1,
+      "phase": 3,
       "soldout": {
         "conference": false,
         "day1": false,
@@ -21,7 +21,7 @@
         "angular-2": false,
         "debug-and-tools": false
       },
-      "mode": "titles",
+      "mode": "schedule",
       "comments": {
         "mode-options": "titles|speakers|schedule // just a comment // we are not using it this year",
         "phase-options": {
