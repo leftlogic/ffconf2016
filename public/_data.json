@@ -139,7 +139,7 @@
         "speaker": {
           "name": "Rachel Andrew",
           "twitter": "rachelandrew",
-          "photo": "rachel.jpg"
+          "photo": "one.jpg"
         },
         "description": "While we were all looking the other way browsers have been implementing CSS features that do things you might think you need JavaScript or at least a pre-processor to achieve. We’ll take a tour through what is landing in the CSS specifications and your browsers right now and in the very near future.",
         "bio": "",
@@ -155,7 +155,7 @@
         "speaker": {
           "name": "Ada Rose",
           "twitter": "Lady_Ada_King",
-          "photo": "ada.jpg"
+          "photo": "two.jpg"
         },
         "bio": "",
         "links": [],
@@ -175,7 +175,7 @@
         "speaker": {
           "name": "Léonie Watson",
           "twitter": "LeonieWatson",
-          "photo": "leonie.jpg"
+          "photo": "three.jpg"
         },
         "bio": "",
         "links": [],
@@ -189,7 +189,7 @@
         "speaker": {
           "name": "Andrew Martin",
           "twitter": "sublimino",
-          "photo": "andrew.jpg"
+          "photo": "four.jpg"
         },
         "description": "Continuous Deployment for everybody: from a one-person army to distributed teams. Ecosystem appraisal, time-saving tips, max velocity!",
         "bio": "",
@@ -209,7 +209,7 @@
         "speaker": {
           "name": "Mariko Kosaka",
           "twitter": "kosamari",
-          "photo": "mariko.jpg"
+          "photo": "five.jpg"
         },
         "description": "From improving performance 📈 of mobile web in 1999 to reacting with 👍 and 🎉 on our Pull Request in 2016, Emoji has become part of our daily communication. Emoji is fun and ambiguous, let's look at how it became part of our daily communication & how we can invent new use as creators of the web! ❤️ 💯 💁",
         "bio": "",
@@ -224,7 +224,7 @@
         "speaker": {
           "name": "Umar Hansa",
           "twitter": "umaar",
-          "photo": "umar.jpg"
+          "photo": "six.jpg"
         },
         "description": "Learn about new DevTools features which can greatly enhance your workflow. Also, native Node.js debugging straight from DevTools!",
         "bio": "",
@@ -245,7 +245,7 @@
         "speaker": {
           "name": "Ashley Williams",
           "twitter": "ag_dubs",
-          "photo": "ashley.jpg"
+          "photo": "seven.jpg"
         },
         "bio": "",
         "links": [],
@@ -260,7 +260,7 @@
         "speaker": {
           "name": "Mathieu 'p01' Henri",
           "twitter": "p01",
-          "photo": "mathieu.jpg"
+          "photo": "eight.jpg"
         },
         "bio": "",
         "links": [],

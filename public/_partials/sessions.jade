@@ -37,16 +37,16 @@ section.main(role='region', aria-labelledby='sessions')
           else
             if config.phase >= 3 && session.speaker.photo
               div.session-speaker-img-wrapper
-                div.session-speaker-img(style='background-image:url(/images/speakers/' + session.speaker.photo + ')')
+                div.session-speaker-img(style='background-image:url(/images/speakers/' + session.speaker.photo + ')' title="Blurry picture? Speaker revealed soon!")
             .session-about-wrapper
               header.session-header
                 h3.session-title(role='heading', aria-level='3')= session.title
                 if config.phase >= 3 && session.speaker.name
                   div.session-speaker-name
-                    if session.speaker.twitter
+                    if false && session.speaker.twitter
                       a(target='_blank', href='https://twitter.com/' + session.speaker.twitter)= session.speaker.name
                     else
-                      span= session.speaker.name
+                      span= session.speaker.name.replace(/./g, '_')
                 if config.phase == 3
                   div.session-time.session-speaker-time!=session.start + ' &mdash; ' + session.end
                 if config.phase == 4
