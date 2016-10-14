@@ -102,6 +102,11 @@
           "name": "Snyk",
           "url": "https://snyk.io/",
           "img": "snyk.svg"
+        },
+        {
+          "name": "Samsung",
+          "url": "http://developer.samsung.com/internet",
+          "img": "samsung.png"
         }
       ]
     },
