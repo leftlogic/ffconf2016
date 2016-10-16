@@ -122,6 +122,11 @@
           "name": "Opbeat",
           "url": "https://opbeat.com",
           "img": "opbeat.svg"
+        },
+        {
+          "name": "Microsoft Edge",
+          "url": "https://dev.microsoftedge.com/",
+          "img": "ms-edge.png"
         }
       ]
     }
@@ -156,7 +161,7 @@
       {
         "duration": 40,
         "title": "Progressive Web",
-        "description": "With new web technologies enabling a new generation of install-able app-like websites it is important to ensure the web carry's on working for everyone. This talk will discuss the P in PWA, progressive web apps should work for everyone and should not let their app-like approach divorce them from the web.",
+        "description": "With new web technologies enabling a new generation of install-able app-like websites it is important to ensure the web carries on working for everyone. This talk will discuss the P in PWA, progressive web apps should work for everyone and should not let their app-like approach divorce them from the web.",
         "speaker": {
           "name": "Ada Rose",
           "twitter": "Lady_Ada_King",
@@ -438,6 +443,14 @@
     }
   ],
   "posts": [
+    {
+      "title": "devtools: $$ > $",
+      "url": "https://remysharp.com/2016/10/10/one-devtools-trick"
+    },
+    {
+      "title": "Why Attend ffconf #7: Art",
+      "url": "https://remysharp.com/2016/10/05/why-attend-ffconf-7"
+    },
     {
       "title": "Why attend ffconf #6: PWA - 4-Oct 2016",
       "url": "https://remysharp.com/2016/10/04/why-attend-ffconf-6"
