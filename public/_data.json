@@ -72,6 +72,11 @@
           "name": "Google Chrome",
           "url": "https://developers.google.com/live/chrome/",
           "img": "chrome.png"
+        },
+        {
+          "name": "Samsung",
+          "url": "http://developer.samsung.com/internet",
+          "img": "samsung.png"
         }
       ]
     },
@@ -102,11 +107,6 @@
           "name": "Snyk",
           "url": "https://snyk.io/",
           "img": "snyk.svg"
-        },
-        {
-          "name": "Samsung",
-          "url": "http://developer.samsung.com/internet",
-          "img": "samsung.png"
         }
       ]
     },
