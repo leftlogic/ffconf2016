@@ -83,6 +83,16 @@ ul, ol, li {
     display: inline-block;
     vertical-align: middle;
     width: 100%;
+
+    &:after {
+      background: $c-grey-subtitle;
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
   }
 
   @supports (object-fit: cover) {
@@ -442,3 +452,4 @@ ul, ol, li {
 
 
 @import "mq";
+@import "sw";
