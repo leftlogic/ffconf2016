@@ -1,0 +1,111 @@
+/* Service Worker
+   ========================================================================== */
+$c-bubble: #000;
+$bubble-size: 30px;
+
+.service-worker-wrapper {
+  background: rgba(0, 0, 0, .75);
+  bottom: 0;
+  position: fixed;
+  padding: 10px 0 0;
+  transform: translate3d(0, 100%, 0);
+  transition: transform ease-in-out 0.5s;
+  width: 100%;
+
+  & img {
+    display: block;
+    max-width: 320px;
+    width: 100%
+  }
+}
+.service-worker-bubble {
+  align-items: center;
+  background: $c-white;
+  border: 2px solid $c-bubble;
+  border-radius: 100%;
+  color: $c-bubble;
+  display: flex;
+  font-size: 12px;
+  height: 120px;
+  justify-content: center;
+  line-height: 1.4;
+  margin: 5px 5px 0 0;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 40%;
+
+  @include mq-min-check(360px) {
+    & {
+      font-size: inherit;
+      line-height: inherit;
+      width: 170px;
+    }
+  }
+  @include mq-min-check(400px) {
+    & {
+      left: 200px
+    }
+  }
+  @include mq-min-check(768px) {
+    & {
+      height: 150px;
+      width: 200px;
+    }
+  }
+}
+.service-worker-bubble:before,
+.service-worker-bubble:after {
+  border-color: transparent $c-bubble;
+  border-style: solid;
+  border-width: ($bubble-size / 2) $bubble-size ($bubble-size / 2) 0;
+  content: '';
+  height: $bubble-size;
+  left: -26px;
+  position: absolute;
+  top: calc(67% - 15px);
+  transform: rotate(-20deg);
+  width: $bubble-size;
+}
+.service-worker-bubble:after {
+  border-color: transparent $c-white;
+  left: -22px;
+  top: calc(67% - 16px);
+}
+.service-worker-wrapper--show {
+  transform: translate3d(0, 0, 0);
+}
+.service-worker-dismiss {
+  background: $c-blue;
+  border: 0 none;
+  color: $c-white;
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  -webkit-appearance: none;
+
+  &:hover, &:focus {
+    background: $c-green;
+    outline: 0 none;
+  }
+
+  & svg {
+    display: block;
+    fill: currentColor;
+    height: 100%;
+    width: 100%;
+  }
+
+  @include mq-min-check(400px) {
+    & {
+      left: auto;
+      right: 0;
+    }
+  }
+}

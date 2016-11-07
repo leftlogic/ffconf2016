@@ -117,20 +117,12 @@ html(id=id)
 
       include ../_partials/footer
 
+    include ../_partials/sw
+
     <!--[if gt IE 8]><!-->
     script(src='/js/sticky-pagination-fixer.js')
     script(src='/js/raf.js')
     script(src='/js/picturefill.min.js')
     script(src='/js/smooth-scroll.min.js')
     script(src='/js/script.js')
-    script.
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js').then(function(registration) {
-          // Registration was successful
-          console.log('ServiceWorker registration successful with scope: ',    registration.scope);
-        }).catch(function(err) {
-          // registration failed :(
-          console.log('ServiceWorker registration failed: ', err);
-        });
-      }
     <!--<![endif]-->

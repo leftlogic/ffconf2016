@@ -1,5 +1,7 @@
 /* jshint esnext: true */
-var CACHE_NAME = 'v1';
+var CACHE_NAME = 'ffconf-v1.2.6';
+
+// TODO: decide which files
 var urlsToCache = [
   '/',
   '/workshops',
@@ -8,16 +10,20 @@ var urlsToCache = [
   '/images/left-logic.svg'
 ];
 
+
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(function(cache) {
-        console.log('Opened cache');
         return cache.addAll(urlsToCache);
+      })
+      .then(function() {
+        return self.skipWaiting();
       })
   );
 });
+
 
 self.addEventListener('fetch', function(event) {
   event.respondWith(
@@ -57,4 +63,18 @@ self.addEventListener('fetch', function(event) {
         );
       })
     );
+});
+
+
+self.addEventListener('activate', function(event) {
+  event.waitUntil(
+    caches.keys()
+    .then(function(keyList) {
+      return Promise.all(keyList.map(function(key) {
+        if (key !== CACHE_NAME) {
+          return caches.delete(key);
+        }
+      }));
+    })
+  );
 });

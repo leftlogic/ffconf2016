@@ -1,0 +1,76 @@
+script#service-worker-template(type='text/x-template')
+  |<button title="Dismiss" onclick="swToggle(false)" class="service-worker-dismiss">
+  |  <svg viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  |    <path d="M21 8l-5 5-5-5-3 3 5 5-5 5 3 3 5-5 5 5 3-3-5-5 5-5z"></path>
+  |  </svg>
+  |</button><img src="/images/sw.png">
+  |<div class="service-worker-bubble">
+  |  <p id="service-worker-message"></p>
+  |</div>
+
+
+div#service-worker.service-worker-wrapper
+
+
+script.
+  if ('serviceWorker' in navigator) {
+    function swExists() {
+      document.querySelector('#service-worker').innerHTML = document.querySelector('#service-worker-template').innerHTML;
+    }
+    function swToggle(status) {
+      document.querySelector('#service-worker').classList.toggle('service-worker-wrapper--show', status);
+    }
+    function swMsg(msg) {
+      document.querySelector('#service-worker-message').innerHTML = msg;
+      swToggle(true);
+    }
+    swExists();
+    
+    // Very fist activation
+    function onFirstLoad() {
+      var msg = 'Service Worker magic activated!';
+      console.log(msg);
+      swMsg(msg);
+    }
+
+    function onNewUpdate() {
+      var msg = 'New update available. Refresh!';
+      console.log(msg);
+      swMsg(msg);
+    }
+
+    function onInstalled() {
+      console.log('sw installed');
+    }
+
+    function onStateChange(newWorker) {
+      if (newWorker.state === 'activated') {
+        if (navigator.serviceWorker.controller) {
+          onNewUpdate();
+        }
+        else {
+          onFirstLoad();
+        }
+      }
+      else if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+        onInstalled();
+      }
+    }
+
+    function onUpdateFound(registration) {
+      var newWorker = registration.installing;
+
+      registration.installing.addEventListener('statechange',
+        () => onStateChange(newWorker));
+    }
+    
+    navigator.serviceWorker.register('/sw.js')
+    .then(function(registration) {
+      // Registration was successful
+      registration.addEventListener('updatefound', () => onUpdateFound(registration));
+    })
+    .catch(function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  }
