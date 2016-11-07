@@ -127,6 +127,11 @@
           "name": "Microsoft Edge",
           "url": "https://dev.microsoftedge.com/",
           "img": "ms-edge.png"
+        },
+        {
+          "name": "Headforwards",
+          "url": "https://www.headforwards.com/careers/",
+          "img": "headforwards.svg"
         }
       ]
     }
