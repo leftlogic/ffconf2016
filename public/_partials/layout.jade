@@ -123,4 +123,9 @@ html(id=id)
     script(src='/js/picturefill.min.js')
     script(src='/js/smooth-scroll.min.js')
     script(src='/js/script.js')
+    script.
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' });
+      }
+
     <!--<![endif]-->
