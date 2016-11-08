@@ -154,7 +154,7 @@
         "speaker": {
           "name": "Rachel Andrew",
           "twitter": "rachelandrew",
-          "photo": "one.jpg"
+          "photo": "rachel.jpg"
         },
         "description": "While we were all looking the other way browsers have been implementing CSS features that do things you might think you need JavaScript or at least a pre-processor to achieve. We’ll take a tour through what is landing in the CSS specifications and your browsers right now and in the very near future.",
         "bio": "",
@@ -168,9 +168,9 @@
         "title": "Progressive Web",
         "description": "With new web technologies enabling a new generation of install-able app-like websites it is important to ensure the web carries on working for everyone. This talk will discuss the P in PWA, progressive web apps should work for everyone and should not let their app-like approach divorce them from the web.",
         "speaker": {
-          "name": "Ada Rose",
+          "name": "Ada Rose Edwards",
           "twitter": "Lady_Ada_King",
-          "photo": "two.jpg"
+          "photo": "ada.jpg"
         },
         "bio": "",
         "links": [],
@@ -190,7 +190,7 @@
         "speaker": {
           "name": "Léonie Watson",
           "twitter": "LeonieWatson",
-          "photo": "three.jpg"
+          "photo": "leonie.jpg"
         },
         "bio": "",
         "links": [],
@@ -204,7 +204,7 @@
         "speaker": {
           "name": "Andrew Martin",
           "twitter": "sublimino",
-          "photo": "four.jpg"
+          "photo": "andrew.jpg"
         },
         "description": "Continuous Deployment for everybody: from a one-person army to distributed teams. Ecosystem appraisal, time-saving tips, max velocity!",
         "bio": "",
@@ -224,7 +224,7 @@
         "speaker": {
           "name": "Mariko Kosaka",
           "twitter": "kosamari",
-          "photo": "five.jpg"
+          "photo": "mariko.jpg"
         },
         "description": "From improving performance 📈 of mobile web in 1999 to reacting with 👍 and 🎉 on our Pull Request in 2016, Emoji has become part of our daily communication. Emoji is fun and ambiguous, let's look at how it became part of our daily communication & how we can invent new use as creators of the web! ❤️ 💯 💁",
         "bio": "",
@@ -239,7 +239,7 @@
         "speaker": {
           "name": "Umar Hansa",
           "twitter": "umaar",
-          "photo": "six.jpg"
+          "photo": "umar.jpg"
         },
         "description": "Learn about new DevTools features which can greatly enhance your workflow. Also, native Node.js debugging straight from DevTools!",
         "bio": "",
@@ -260,7 +260,7 @@
         "speaker": {
           "name": "Ashley Williams",
           "twitter": "ag_dubs",
-          "photo": "seven.jpg"
+          "photo": "ashley.jpg"
         },
         "bio": "",
         "links": [],
@@ -275,7 +275,7 @@
         "speaker": {
           "name": "Mathieu 'p01' Henri",
           "twitter": "p01",
-          "photo": "eight.jpg"
+          "photo": "mathieu.jpg"
         },
         "bio": "",
         "links": [],

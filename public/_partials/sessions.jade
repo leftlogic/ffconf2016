@@ -46,7 +46,7 @@ section.main(role='region', aria-labelledby='sessions')
                     if false && session.speaker.twitter
                       a(target='_blank', href='https://twitter.com/' + session.speaker.twitter)= session.speaker.name
                     else
-                      span= session.speaker.name.replace(/./g, '_')
+                      span= session.speaker.name
                 if config.phase == 3
                   div.session-time.session-speaker-time!=session.start + ' &mdash; ' + session.end
                 if config.phase == 4
