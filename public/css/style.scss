@@ -304,11 +304,21 @@ ul, ol, li {
 
 /* Diversity
    ========================================================================== */
-.diversity p {
-  padding-top: 25px;
+.diversity {
+  p {
+    padding-top: 25px;
 
-  &:last-child {
-    padding-bottom: 25px;
+    &:last-child {
+      padding-bottom: 25px;
+    }
+  }
+
+  h2 {
+    margin: 12px auto;
+  }
+
+  li {
+    list-style: inside;
   }
 }
 
