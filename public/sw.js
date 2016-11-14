@@ -1,5 +1,5 @@
 /* global self, caches, fetch, URL */
-const version = '1.3.5';
+const version = '1.3.6';
 const staticCacheName = `v${version}::static`;
 
 const urls = `
@@ -21,6 +21,7 @@ const urls = `
 /images/sponsors/amex.png
 /images/sponsors/jsbin.png
 /images/sponsors/snyk.svg
+/images/sponsors/prodpad.png
 /images/quotes/robin-mehner.jpg
 /images/sponsors/brandwatch.png
 /images/sponsors/opbeat.svg
