@@ -1,5 +1,5 @@
 /* global self, caches, fetch, URL */
-const version = '1.3.6';
+const version = '1.4.1';
 const staticCacheName = `v${version}::static`;
 
 const urls = `
