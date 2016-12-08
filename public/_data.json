@@ -164,9 +164,9 @@
         "description": "While we were all looking the other way browsers have been implementing CSS features that do things you might think you need JavaScript or at least a pre-processor to achieve. We’ll take a tour through what is landing in the CSS specifications and your browsers right now and in the very near future.",
         "bio": "",
         "links": [],
-        "slides": false,
+        "slides": "http://www.slideshare.net/rachelandrew/nextlevel-css",
         "audio": "",
-        "video": ""
+        "video": "https://www.youtube.com/watch?v=uXYZbLT0j9c&list=PLXmT1r4krsTpDoGcdh1baZPIV6DtX9_rX"
       },
       {
         "duration": 40,
@@ -181,7 +181,7 @@
         "links": [],
         "slides": "",
         "audio": "",
-        "video": ""
+        "video": "https://www.youtube.com/watch?v=5ylZbXelPMA&list=PLXmT1r4krsTpDoGcdh1baZPIV6DtX9_rX"
       },
       {
         "break": true,
@@ -199,9 +199,9 @@
         },
         "bio": "",
         "links": [],
-        "slides": "",
+        "slides": "http://ljwatson.github.io/decks/2016/ffconf/index.html",
         "audio": "",
-        "video": ""
+        "video": "https://www.youtube.com/watch?v=spxT2CmHoPk&list=PLXmT1r4krsTpDoGcdh1baZPIV6DtX9_rX"
       },
       {
         "duration": 40,
@@ -214,9 +214,9 @@
         "description": "Continuous Deployment for everybody: from a one-person army to distributed teams. Ecosystem appraisal, time-saving tips, max velocity!",
         "bio": "",
         "links": [],
-        "slides": "",
+        "slides": "https://www.binarysludge.com/2016/11/11/talk-all-things-continuous-at-ffconf/",
         "audio": "",
-        "video": ""
+        "video": "https://www.youtube.com/watch?list=PLXmT1r4krsTpDoGcdh1baZPIV6DtX9_rX&v=7NU2v4hYXrY"
       },
       {
         "break": true,
@@ -236,7 +236,7 @@
         "links": [],
         "slides": "",
         "audio": "",
-        "video": ""
+        "video": "https://www.youtube.com/watch?v=9BaLTBTqHmw&list=PLXmT1r4krsTpDoGcdh1baZPIV6DtX9_rX"
       },
       {
         "duration": 40,
@@ -251,7 +251,7 @@
         "links": [],
         "slides": "",
         "audio": "",
-        "video": ""
+        "video": "https://www.youtube.com/watch?v=N33lYfsAsoU&list=PLXmT1r4krsTpDoGcdh1baZPIV6DtX9_rX"
       },
       {
         "break": true,
@@ -269,9 +269,9 @@
         },
         "bio": "",
         "links": [],
-        "slides": "",
+        "slides": "https://ashleygwilliams.github.io/ffconf-2016/",
         "audio": "",
-        "video": ""
+        "video": "https://www.youtube.com/watch?list=PLXmT1r4krsTpDoGcdh1baZPIV6DtX9_rX&v=nYj4exblbgI"
       },
       {
         "duration": 40,
@@ -284,9 +284,9 @@
         },
         "bio": "",
         "links": [],
-        "slides": "",
+        "slides": "http://www.p01.org/artjs_at_ffconf/",
         "audio": "",
-        "video": ""
+        "video": "https://www.youtube.com/watch?list=PLXmT1r4krsTpDoGcdh1baZPIV6DtX9_rX&v=OT-Dc4nJKEo"
       },
       {
         "break": true,
