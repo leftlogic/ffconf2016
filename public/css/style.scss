@@ -452,3 +452,7 @@ ul, ol, li {
 
 
 @import "mq";
+
+:target {
+  margin-top: 100px;
+}
