@@ -1,23 +1,24 @@
 {
   "name": "@remy/ffconf2016",
-  "version": "1.4.4",
+  "version": "1.5.0",
   "description": "ffconf2016",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node .",
     "env": "env"
   },
   "engines": {
-    "node": "5"
+    "node": 7
   },
   "author": "Remy Sharp",
   "license": "MIT",
   "homepage": "https://2016.ffconf.org",
   "dependencies": {
-    "express": "^4.13.4",
-    "harp": "^0.20.3",
+    "postcss-loader": "^2.0.6",
+    "express": "^4.15.3",
+    "harp": "^0.24.0",
     "harp-static": "^0.1.0",
-    "jstransformer-marked": "^1.0.1",
-    "moment": "^2.13.0"
+    "jstransformer-marked": "^1.0.2",
+    "moment": "^2.18.1"
   }
 }

@@ -85,7 +85,7 @@ ul, ol, li {
     width: 100%;
   }
 
-  @supports (object-fit: cover) {
+  // @supports (object-fit: cover) {
     &:before {
       display: none;
     }
@@ -95,7 +95,7 @@ ul, ol, li {
       object-fit: cover;
       width: 100%;
     }
-  }
+  // }
 }
 
 /* Nav */
